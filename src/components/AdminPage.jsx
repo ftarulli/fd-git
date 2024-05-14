@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/Adminpage.css';
 
 export const AdminPage = () => {
+	const [clickeado, setClickeado] = useState(false);
+
+	const ShowOptions = () => {
+		setClickeado(!clickeado);
+	};
 	return (
 		<>
 			<div className="Sidebar">
@@ -10,17 +15,17 @@ export const AdminPage = () => {
 						src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"
 						alt="Admin"
 					/>
-					<p>Admin</p>
+					<p>Administrador</p>
 				</div>
 				<div className="sideBarControlls">
 					<div>
 						<p className="OptionSidebar">Reservas</p>
-						<p className="OptionSidebar">
+						<p className="OptionSidebar" onClick={ShowOptions}>
 							Usuarios
 							<i className="fa-solid fa-angle-up"></i>
 						</p>
 					</div>
-					<div>
+					<div className={clickeado ? 'Options clickeado' : 'Options'}>
 						<p className="OptionUsers">Bloqueados</p>
 						<p className="OptionUsers">Nuevos</p>
 						<p className="OptionUsers">Todos</p>
