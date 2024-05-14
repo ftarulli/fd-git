@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*tipografía*/
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.container-imagen-principal {
+  background-image: url(../assets/img_home/fideos-carne.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(10%);
+  position: absolute;
+}
+
+.container-principal {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.container-columnas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+
+/*Columna íconos*/
+.container-iconos-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.iconos-redes-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+}
+
+.linea-vertical-principal {
+  height: 10rem;
+  width: 0.8px;
+  background-color: white;
+}
+
+/*Columna texto*/
+
+.container-texto-principal {
+  color: white;
+}
+
+.boton-reserva {
+  background-color: #ff9f0d;
+  width: 10rem;
+}
+
+/*Columna imagen plato*/
+
+.imagen-principal-plato {
+  width: 150%;
+}

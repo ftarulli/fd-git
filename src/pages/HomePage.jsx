@@ -1,20 +1,37 @@
 import React from "react";
 import "../css/home.css";
+import principal from "../assets/img_home/principal.png";
 
 const HomePage = () => {
   return (
     <div>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col d-flex">
-            <hr />
-            <hr />
-          </div>
-          <div className="col">
-            <div>
-              <h3>Es rápido y divertido!</h3>
+      {/* Container Imagen fondo principal */}
+      <div className="container-imagen-principal"></div>
 
-              <h2>Rápido y delicioso la calidad en cada plato, sin esperas</h2>
+      {/* Container principal */}
+      <div className="container-fluid container-principal">
+        <div className="row container-columnas">
+          {/* Columna íconos principal */}
+          <div className="col-2">
+            <div className="container-iconos-principal my-5">
+              <div className="linea-vertical-principal my-3"></div>
+              <div className="iconos-redes-principal">
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+                <i className="fa fa-pinterest-p" aria-hidden="true"></i>
+              </div>
+              <div className="linea-vertical-principal my-3"></div>
+            </div>
+          </div>
+
+          {/* Columna texto principal */}
+          <div className="col-4">
+            <div className="container-texto-principal">
+              <p>¡Es rápido y divertido!</p>
+              <p>
+                <span>Rápido y delicioso</span> <br /> la calidad en cada <br />{" "}
+                plato, sin esperas.
+              </p>
 
               <p>
                 ¡Reserva tu mesa hoy mismo y prepárate para una experiencia
@@ -23,10 +40,16 @@ const HomePage = () => {
                 sentidos. ¡Haz tu reserva ahora y déjanos sorprenderte con lo
                 mejor de nuestra cocina!
               </p>
+
+              <button className="btn btn-primary boton-reserva">
+                Reservar
+              </button>
             </div>
           </div>
-          <div className="col">
-            <div></div>
+
+          {/* Columna imagen principal */}
+          <div className="col-4">
+            <img src={principal} alt="" className="imagen-principal-plato" />
           </div>
         </div>
       </div>
