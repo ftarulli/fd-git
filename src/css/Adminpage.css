@@ -1,13 +1,48 @@
 .Sidebar {
     width: 20vw;
     height: 100vh;
-    background-color: red;
+    background-color: #222222;
+    color: #FFFF;
 }
 
-.SidebarUser {}
+.SidebarUser {
+    width: 100%;
+    max-height: 10vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-.sideBarControlls {}
+.SidebarUser img {
+    box-sizing: content-box;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+}
 
-.OptionSidebar {}
+.SidebarUser p {
+    font-size: 20px;
+}
 
-.OptionUsers {}
+.sideBarControlls {
+    background-color: blue;
+    height: 90%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OptionSidebar {
+    background-color: orange;
+    width: 135px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OptionUsers {
+    
+}
