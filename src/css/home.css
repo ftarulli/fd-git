@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-/*tipografía*/
-
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-
 .container-imagen-principal {
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
@@ -38,6 +34,7 @@
   justify-content: space-around;
   align-items: center;
   color: white;
+  width: 5rem;
 }
 
 .iconos-redes-principal {
@@ -58,15 +55,41 @@
 
 .container-texto-principal {
   color: white;
+  width: 40rem;
 }
 
 .boton-reserva {
   background-color: #ff9f0d;
-  width: 10rem;
+  width: 5rem;
+}
+
+.texto_uno {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #ff9f0d;
+  font-size: 32px;
+}
+
+.parrafo_uno {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.parrafo_dos {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.texto_destacado {
+  color: #ff9f0d;
 }
 
 /*Columna imagen plato*/
-
+.container-imagen-plato {
+  width: 20rem;
+}
 .imagen-principal-plato {
   width: 150%;
 }

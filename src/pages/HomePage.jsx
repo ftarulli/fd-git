@@ -27,13 +27,13 @@ const HomePage = () => {
           {/* Columna texto principal */}
           <div className="col-4">
             <div className="container-texto-principal">
-              <p>¡Es rápido y divertido!</p>
-              <p>
-                <span>Rápido y delicioso</span> <br /> la calidad en cada <br />{" "}
-                plato, sin esperas.
+              <p className="texto_uno">¡Es rápido y divertido!</p>
+              <p className="parrafo_uno">
+                <span className="texto_destacado">Rápido y delicioso</span>{" "}
+                <br /> la calidad en cada <br /> plato, sin esperas.
               </p>
 
-              <p>
+              <p className="parrafo_dos">
                 ¡Reserva tu mesa hoy mismo y prepárate para una experiencia
                 gourmet inolvidable! Desde platos exquisitos hasta un servicio
                 excepcional, te garantizamos una velada que estimulará todos tus
@@ -48,7 +48,7 @@ const HomePage = () => {
           </div>
 
           {/* Columna imagen principal */}
-          <div className="col-4">
+          <div className="col-4 container-imagen-plato">
             <img src={principal} alt="" className="imagen-principal-plato" />
           </div>
         </div>
