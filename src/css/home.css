@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/* .container-general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rem;
+  width: 100vw;
+} */
 .container-imagen-principal {
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
@@ -22,12 +29,15 @@
 
 .container-columnas {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 80vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 4rem;
 }
 
-/*Columna íconos*/
+/* Columna íconos */
 .container-iconos-principal {
   display: flex;
   flex-direction: column;
@@ -51,7 +61,7 @@
   background-color: white;
 }
 
-/*Columna texto*/
+/* Columna texto */
 
 .container-texto-principal {
   color: white;
@@ -60,7 +70,7 @@
 
 .boton-reserva {
   background-color: #ff9f0d;
-  width: 5rem;
+  width: 10rem;
 }
 
 .texto_uno {
@@ -68,28 +78,54 @@
   font-weight: 400;
   font-style: normal;
   color: #ff9f0d;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .parrafo_uno {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 3rem;
 }
 
 .parrafo_dos {
   font-family: Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .texto_destacado {
   color: #ff9f0d;
 }
 
-/*Columna imagen plato*/
-.container-imagen-plato {
-  width: 20rem;
-}
+/* Columna imagen plato */
+
 .imagen-principal-plato {
-  width: 150%;
+  width: 100%;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 768px) {
+  .container-columnas {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+  }
+  .container-iconos-principal {
+    display: none;
+  }
+  .container-texto-principal {
+    width: 100%;
+  }
+  .parrafo_uno {
+    font-size: 1.5rem;
+  }
+
+  .parrafo_dos {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.5rem;
+  }
+
+  .imagen-principal-plato {
+    display: none;
+  }
 }
