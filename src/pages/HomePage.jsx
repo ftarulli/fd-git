@@ -1,6 +1,12 @@
 import React from "react";
 import "../css/home.css";
 import principal from "../assets/img_home/principal.png";
+import tacos from "../assets/img_home/tacos.png";
+import hamburguesa from "../assets/img_home/hamburguesa.png";
+import rebosado from "../assets/img_home/rebosado.png";
+import hamburguesaCheddar from "../assets/img_home/hamburguesaCheddar.png";
+import combo from "../assets/img_home/combo.png";
+import pizza from "../assets/img_home/pizza.png";
 
 const HomePage = () => {
   return (
@@ -44,6 +50,42 @@ const HomePage = () => {
           <div className="col-10 offset-1 col-md-4 offset-md-0 container-imagen-plato">
             <img src={principal} alt="" className="imagen-principal-plato" />
           </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="row mx-5">
+          <div className="col-6 ps-3">
+            <div className="fotos my-5">
+              <div className="galeria">
+                <div className="imagen-a">
+                  <img src={tacos} alt="" />
+                </div>
+
+                <div className="imagen-b">
+                  <img src={hamburguesa} alt="" />
+                </div>
+
+                <div className="imagen-c">
+                  <img src={rebosado} alt="" />
+                </div>
+
+                <div className="imagen-d">
+                  <img src={hamburguesaCheddar} alt="" />
+                </div>
+
+                <div className="imagen-e">
+                  <img src={combo} alt="" />
+                </div>
+
+                <div className="imagen-f">
+                  <img src={pizza} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col"></div>
         </div>
       </div>
     </div>

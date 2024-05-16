@@ -4,13 +4,9 @@
   box-sizing: border-box;
 }
 
-/* .container-general {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100rem;
-  width: 100vw;
-} */
+.container-general {
+  background-color: #0d0d0d;
+}
 .container-imagen-principal {
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
@@ -103,6 +99,43 @@
   width: 100%;
 }
 
+/*GRILLA DE FOTOS*/
+
+.fotos {
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  color: white;
+}
+
+.fotos .galeria {
+  padding: 4rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.fotos .galeria .imagen-a {
+  grid-column: 1/3;
+}
+
+.fotos .galeria .imagen-b {
+  grid-row: 2/4;
+}
+
+.fotos .galeria .imagen-f {
+  grid-column: 2/4;
+}
+
+.fotos .galeria img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
 /*Media queries*/
 
 @media screen and (max-width: 576px) {
