@@ -11,7 +11,7 @@ const HomePage = () => {
       <div className="container-fluid container-principal">
         <div className="row container-columnas">
           {/* Columna íconos principal */}
-          <div className="col-2 container-iconos-principal">
+          <div className="col col-md-2 container-iconos-principal">
             <div className="linea-vertical-principal my-3"></div>
             <div className="iconos-redes-principal">
               <i className="fa fa-facebook" aria-hidden="true"></i>
@@ -22,7 +22,7 @@ const HomePage = () => {
           </div>
 
           {/* Columna texto principal */}
-          <div className="col-10 offset-1 col-md-5 offset-md-0 container-texto-principal">
+          <div className="col-10 col-md-6 container-texto-principal">
             <p className="texto_uno">¡Es rápido y divertido!</p>
             <p className="parrafo_uno">
               <span className="texto_destacado">Rápido y delicioso</span> <br />{" "}
@@ -37,11 +37,11 @@ const HomePage = () => {
               mejor de nuestra cocina!
             </p>
 
-            <button className="btn btn-primary boton-reserva">Reservar</button>
+            <button className="btn btn-primary boton-reserva ">Reservar</button>
           </div>
 
           {/* Columna imagen principal */}
-          <div className="col-10 offset-1 col-md-5 offset-md-0 container-imagen-plato">
+          <div className="col-10 offset-1 col-md-4 offset-md-0 container-imagen-plato">
             <img src={principal} alt="" className="imagen-principal-plato" />
           </div>
         </div>

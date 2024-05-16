@@ -66,6 +66,7 @@
 .container-texto-principal {
   color: white;
   width: 40rem;
+  width: 100%;
 }
 
 .boton-reserva {
@@ -104,28 +105,38 @@
 
 /*Media queries*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-columnas {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 0;
+    justify-content: space-evenly;
+    gap: 3rem;
   }
+
   .container-iconos-principal {
     display: none;
   }
   .container-texto-principal {
-    width: 100%;
+    width: 50%;
+  }
+
+  .texto_uno {
+    text-align: center;
+    padding-bottom: 1rem;
   }
   .parrafo_uno {
     font-size: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .parrafo_dos {
-    font-family: Helvetica, sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    word-spacing: 0.3rem;
   }
 
   .imagen-principal-plato {
-    display: none;
+    width: 60%;
+    margin-left: 3rem;
   }
 }
