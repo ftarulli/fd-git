@@ -6,14 +6,16 @@ import { SidebarAdmin } from './SidebarAdmin';
 import { ReservasTable } from './ReservasTable';
 
 export const AdminPage = () => {
+	const [activeTable, setActiveTable] = useState('usuarios');
+
 	return (
 		<>
 			<section className="AdminPage">
-				<SidebarAdmin />
-				<div className='ContenedorAdmin'>
+				<SidebarAdmin setActiveTable={setActiveTable} />
+				<div className="ContenedorAdmin">
 					<ContadorAdmin />
-					<UsersTable />
-					<ReservasTable />
+					{activeTable === 'usuarios' && <UsersTable />}
+					{activeTable === 'reservas' && <ReservasTable />}
 				</div>
 			</section>
 		</>

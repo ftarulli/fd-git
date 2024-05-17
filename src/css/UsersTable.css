@@ -1,8 +1,9 @@
 /* Estilos para la tabla de usuarios */
-.Tabla_Usuarios{
+.Tabla_Usuarios {
     max-width: 80vw;
     min-width: 80vw;
 }
+
 .Tabla_Usuarios th,
 .Tabla_Usuarios td {
     text-align: center;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/SidebarAdmin.css';
 
-export const SidebarAdmin = () => {
+export const SidebarAdmin = ({ setActiveTable }) => {
 	const [clickeado, setClickeado] = useState(false);
 
 	const ShowOptions = () => {
@@ -19,7 +19,9 @@ export const SidebarAdmin = () => {
 			</div>
 			<div className="sideBarControlls">
 				<div>
-					<p className="OptionSidebar">Reservas</p>
+					<p className="OptionSidebar" onClick={() => setActiveTable('reservas')}>
+						Reservas
+					</p>
 					<p className="OptionSidebar" onClick={ShowOptions}>
 						Usuarios
 						<i className="fa-solid fa-angle-up"></i>
@@ -28,7 +30,9 @@ export const SidebarAdmin = () => {
 				<div className={clickeado ? 'Options clickeado' : 'Options'}>
 					<p className="OptionUsers">Bloqueados</p>
 					<p className="OptionUsers">Nuevos</p>
-					<p className="OptionUsers">Todos</p>
+					<p className="OptionUsers" onClick={() => setActiveTable('usuarios')}>
+						Todos
+					</p>
 				</div>
 			</div>
 		</div>
