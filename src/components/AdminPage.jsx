@@ -6,7 +6,7 @@ import { SidebarAdmin } from './SidebarAdmin';
 import { ReservasTable } from './ReservasTable';
 
 export const AdminPage = () => {
-	const [activeTable, setActiveTable] = useState('usuarios');
+	const [activeTable, setActiveTable] = useState('reservas');
 
 	return (
 		<>

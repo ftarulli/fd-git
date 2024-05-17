@@ -2,12 +2,6 @@ import React, { useState } from 'react';
 import '../css/SidebarAdmin.css';
 
 export const SidebarAdmin = ({ setActiveTable }) => {
-	const [clickeado, setClickeado] = useState(false);
-
-	const ShowOptions = () => {
-		setClickeado(!clickeado);
-	};
-
 	return (
 		<div className="Sidebar">
 			<div className="SidebarUser">
@@ -22,16 +16,8 @@ export const SidebarAdmin = ({ setActiveTable }) => {
 					<p className="OptionSidebar" onClick={() => setActiveTable('reservas')}>
 						Reservas
 					</p>
-					<p className="OptionSidebar" onClick={ShowOptions}>
+					<p className="OptionSidebar" onClick={() => setActiveTable('usuarios')}>
 						Usuarios
-						<i className="fa-solid fa-angle-up"></i>
-					</p>
-				</div>
-				<div className={clickeado ? 'Options clickeado' : 'Options'}>
-					<p className="OptionUsers">Bloqueados</p>
-					<p className="OptionUsers">Nuevos</p>
-					<p className="OptionUsers" onClick={() => setActiveTable('usuarios')}>
-						Todos
 					</p>
 				</div>
 			</div>
