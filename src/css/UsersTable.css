@@ -1,5 +1,9 @@
 /* Estilos para la tabla de usuarios */
-
+.Tabla_Usuarios{
+    margin-left: 19vw;
+    max-width: 80vw;
+    min-width: 80vw;
+}
 .Tabla_Usuarios th,
 .Tabla_Usuarios td {
     text-align: center;
@@ -27,7 +31,7 @@
 }
 
 .Tabla_Id {
-    width: 15%;
+    width: 10%;
 }
 
 .Tabla_User {
@@ -35,11 +39,11 @@
 }
 
 .Tabla_Cel {
-    width: 30%;
+    width: 25%;
 }
 
 .Tabla_Email {
-    width: 30%;
+    width: 40%;
 }
 
 .Tabla_Botons {
