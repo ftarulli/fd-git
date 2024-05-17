@@ -54,14 +54,15 @@ const HomePage = () => {
 
       {/*Sección elegirnos */}
 
-      <div className="container-fluid container-elegirnos my-5">
+      <div className="container-fluid container-elegirnos">
         <div className="row container-filas-elegirnos">
+          {/*Columna grupo de imágenes*/}
           <div className="col-10 col-md-5">
             <div className="imagen-grupo-elegirnos">
               <img src={grupo} alt="" />
             </div>
           </div>
-
+          {/*Columna texto e iconos*/}
           <div className="col col-10 col-md-5">
             <div>
               <p className="texto_uno">¿Por qué elegirnos?</p>
@@ -82,14 +83,45 @@ const HomePage = () => {
             </div>
 
             <div className="container-iconos-elegirnos">
-              <div>
-                <img src={Hamburger} alt="" />
+              <div className="iconos-texto-elegirnos">
+                <div className="iconos-elegirnos">
+                  <img src={Hamburger} alt="" />
+                </div>
+
+                <div>
+                  <span>Fast food</span>
+                </div>
               </div>
-              <div>
-                <img src={Cookie} alt="" />
+
+              <div className="iconos-texto-elegirnos">
+                <div className="iconos-elegirnos">
+                  <img src={Cookie} alt="" />
+                </div>
+
+                <div>
+                  <span>Almuerzo</span>
+                </div>
               </div>
-              <div>
-                <img src={Wine} alt="" />
+
+              <div className="iconos-texto-elegirnos">
+                <div className="iconos-elegirnos">
+                  <img src={Wine} alt="" />
+                </div>
+
+                <div>
+                  <span>Cena</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="container">
+              <div className="cajita-experiencia">
+                <span className="numero-experiencia">30+</span>
+                <div className="experiencia-texto">
+                  <span>Años de</span>
+                  <br />
+                  <span className="experiencia-destacado">Experiencia</span>
+                </div>
               </div>
             </div>
           </div>

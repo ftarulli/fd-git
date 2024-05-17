@@ -7,6 +7,9 @@
 .container-general {
   background-color: #0d0d0d;
 }
+
+/*Sección principal*/
+
 .container-imagen-principal {
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
@@ -101,6 +104,7 @@
 /*Sección elegirnos*/
 .container-elegirnos {
   color: white;
+  margin: 5rem;
 }
 .container-filas-elegirnos {
   display: flex;
@@ -110,7 +114,7 @@
 
 .imagen-grupo-elegirnos {
   width: 50%;
-  padding-left: 7rem;
+  padding-left: 7.5rem;
 }
 
 .imagen-grupo-elegirnos img {
@@ -126,22 +130,61 @@
 .container-iconos-elegirnos {
   display: flex;
   justify-content: flex-start;
+  margin-left: -2rem;
 }
 
-.container-iconos-elegirnos div {
-  border: 1px solid #ff9f0d;
+.iconos-elegirnos {
   background-color: #ff9f0d;
-  /* width: 4rem; */
-  margin-left: 1rem;
-  border-radius: 0.8rem;
+  margin-left: 2rem;
+  border-radius: 0.3rem;
 }
 
-.container-iconos-elegirnos div img {
+.iconos-elegirnos img {
   width: 4rem;
   padding: 1rem;
 }
-/*Media queries*/
 
+.iconos-texto-elegirnos {
+  text-align: center;
+}
+
+.iconos-texto-elegirnos div span {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.cajita-experiencia {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+  background-color: white;
+  border-radius: 0.4rem;
+  width: 16.4rem;
+  padding: 1rem;
+  height: 3.5rem;
+  border-left: 10px solid #ff9f0d;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -0.9rem;
+}
+
+.numero-experiencia {
+  font-size: 2.8rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  color: #ff9f0d;
+  padding-right: 0.5rem;
+}
+
+.experiencia-texto {
+  font-family: Helvetica, sans-serif;
+}
+
+.experiencia-destacado {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
 @media screen and (max-width: 576px) {
   .container-columnas {
     padding-top: 1rem;
