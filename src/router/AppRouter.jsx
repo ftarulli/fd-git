@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { HomePage } from '../components/HomePage';
-import { AdminPage } from '../components/AdminPage';
-import { LoginPage } from '../components/LoginPage';
-import { ErrorPage } from '../components/ErrorPage';
-import { RegPage } from '../components/RegPage';
+import { HomePage } from '../pages/HomePage';
+import { AdminPage } from '../pages/AdminPage';
+import { LoginPage } from '../pages/LoginPage';
+import { ErrorPage } from '../pages/ErrorPage';
+import { RegPage } from '../pages/RegPage';
 
 export const AppRouter = () => {
 	return (
