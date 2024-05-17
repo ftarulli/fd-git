@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import '../css/SidebarAdmin.css';
 
 export const SidebarAdmin = ({ setActiveTable }) => {
