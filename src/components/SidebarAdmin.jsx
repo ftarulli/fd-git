@@ -13,9 +13,11 @@ export const SidebarAdmin = ({ setActiveTable }) => {
 			<div className="sideBarControlls">
 				<div>
 					<p className="OptionSidebar" onClick={() => setActiveTable('reservas')}>
+						<i class="fa-solid fa-utensils me-3"></i>
 						Reservas
 					</p>
 					<p className="OptionSidebar" onClick={() => setActiveTable('usuarios')}>
+						<i class="fa-solid fa-users me-3"></i>
 						Usuarios
 					</p>
 				</div>
