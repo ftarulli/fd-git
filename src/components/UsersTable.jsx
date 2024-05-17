@@ -56,7 +56,7 @@ export const UsersTable = () => {
 					{users.map((user) => (
 						<tr key={user.id}>
 							<td>{user.id}</td>
-							<td>{user.username}</td>
+							<td id="UserTable">{user.username}</td>
 							<td>{user.phone}</td>
 							<td>{user.email}</td>
 							<td>

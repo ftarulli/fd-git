@@ -1,0 +1,62 @@
+.Tabla_Reservas {
+    max-width: 80vw;
+    min-width: 80vw;
+}
+
+.Tabla_Reservas th,
+.Tabla_Reservas td {
+    text-align: center;
+    vertical-align: middle;
+    color: #7D7D7D !important;
+}
+
+.Tabla_Reservas th {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.Tabla_Reservas td {
+    font-size: 13px;
+}
+
+.Tabla_Reservas tr {
+    height: 102px;
+}
+
+#UserTableReservas {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222222 !important;
+}
+
+.TablaRes_Id {
+    width: 5%;
+}
+
+.TablaRes_User {
+    width: 15%;
+}
+
+.TablaRes_Cel {
+    width: 20%;
+}
+
+.TablaRes_Email {
+    width: 30%;
+}
+
+.TablaRes_Comensales {
+    width: 5%;
+}
+
+.TablaRes_Fecha {
+    width: 10%;
+}
+
+.TablaRes_Hora {
+    width: 5%;
+}
+
+.TablaRes_Botons {
+    width: 5%;
+}
