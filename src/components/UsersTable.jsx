@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
+import '../css/UsersTable.css';
 
 export const UsersTable = () => {
 	const [visibleMenu, setVisibleMenu] = useState(null);
@@ -21,6 +22,22 @@ export const UsersTable = () => {
 		};
 	}, [visibleMenu]);
 
+	//Pruebas para la tabla (Borrar)
+	const users = [
+		{
+			id: '123',
+			username: 'Pablo',
+			phone: '123456789',
+			email: 'pablo@gmail.com',
+		},
+		{
+			id: '1234',
+			username: 'Pablo1',
+			phone: '12345678910',
+			email: 'pablo1@gmail.com',
+		},
+	];
+
 	return (
 		<>
 			<Table bordered hover className="Tabla_Usuarios">
@@ -31,30 +48,32 @@ export const UsersTable = () => {
 						<th className="Tabla_Cel">Numero de telefono</th>
 						<th className="Tabla_Email">Email</th>
 						<th className="Tabla_Botons">
-							<i class="fa-solid fa-ellipsis-vertical"></i>
+							<i className="fa-solid fa-ellipsis-vertical"></i>
 						</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>Id</td>
-						<td id='UserTable'>Usuario</td>
-						<td>Numero de telefono</td>
-						<td>Email</td>
-						<td>
-							<div className="menu-container">
-								<button className="menu-btn" onClick={() => toggleMenu(user.id)}>
-									<i class="fa-solid fa-ellipsis-vertical"></i>
-								</button>
-								{visibleMenu && (
-									<div className="menu">
-										<button className="menu-item">Eliminar</button>
-										<button className="menu-item">Editar</button>
-									</div>
-								)}
-							</div>
-						</td>
-					</tr>
+					{users.map((user) => (
+						<tr key={user.id}>
+							<td>{user.id}</td>
+							<td>{user.username}</td>
+							<td>{user.phone}</td>
+							<td>{user.email}</td>
+							<td>
+								<div className="menu-container">
+									<button className="menu-btn" onClick={() => toggleMenu(user.id)}>
+										<i className="fa-solid fa-ellipsis-vertical"></i>
+									</button>
+									{visibleMenu === user.id && (
+										<div className="menu">
+											<button className="menu-item">Eliminar</button>
+											<button className="menu-item">Editar</button>
+										</div>
+									)}
+								</div>
+							</td>
+						</tr>
+					))}
 				</tbody>
 			</Table>
 		</>

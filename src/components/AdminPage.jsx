@@ -34,7 +34,7 @@ export const AdminPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className='Panel' >
+				<div className="Panel">
 					<div className="ControlNumbers mt-3">
 						<div className="bloquesdatos">
 							<h2>15</h2>
