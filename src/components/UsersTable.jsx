@@ -22,7 +22,7 @@ export const UsersTable = () => {
 		};
 	}, [visibleMenu]);
 
-	//Pruebas para la tabla (Borrar)
+	//Pruebas para la tabla (Borrar) falta traer los datos de la base de datos
 	const users = [
 		{
 			id: '123',

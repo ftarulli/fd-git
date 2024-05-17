@@ -98,30 +98,3 @@
 .AdminPage {
     display: flex;
 }
-/* Estilos para el contador de arriba de la pagina */
-.ControlNumbers {
-    width: 80vw;
-    height: 140px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.bloquesdatos {
-    width: 141px;
-    height: 141px;
-    text-align: center;
-}
-
-.bloquesdatos h2 {
-    font-size: 40px;
-    color: #343434;
-}
-
-.bloquesdatos h3 {
-    font-size: 15px;
-    color: #C4C4C4;
-}
-
-.Panel{
-    margin-left: 19vw;
-}
