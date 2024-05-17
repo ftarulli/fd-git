@@ -5,6 +5,12 @@
     justify-content: center;
 }
 
-.ContenedorAdmin{
+.ContenedorAdmin {
     margin-left: 18vw;
+}
+
+@media (max-width: 600px) {
+    .ContenedorAdmin {
+        margin-left: 0vw;
+    }
 }

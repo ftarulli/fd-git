@@ -85,3 +85,19 @@
 .menu-item:hover {
     background-color: #ddd;
 }
+
+@media (max-width: 600px) {
+    .Tabla_Usuarios {
+        max-width: 95vw;
+        min-width: 95vw;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Tabla_Usuarios {
+        max-width: 95vw;
+        min-width: 95vw;
+        margin-top: 50px;
+    }
+}
