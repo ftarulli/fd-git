@@ -232,6 +232,33 @@
   font-weight: 700;
 }
 
+/*Sección Chefs*/
+
+.container-chefs {
+  background-image: url(../assets/img_home/fondo1.png);
+  background-repeat: no-repeat;
+  background-position: start;
+  background-size: contain;
+  filter: brightness(15%);
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.container-chefs-detalle {
+  padding-top: 3rem;
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imagen-chefs {
+  width: 15rem;
+}
 /*Media queries*/
 @media screen and (max-width: 576px) {
   .container-columnas {

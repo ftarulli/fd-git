@@ -9,6 +9,11 @@ import chefs from "../assets/img_home/Iconos/chefs.png";
 import combo from "../assets/img_home/Iconos/combo.png";
 import utensilios from "../assets/img_home/Iconos/utensilios.png";
 import pizzaPorcion from "../assets/img_home/Iconos/pizzaPorcion.png";
+import chef1 from "../assets/img_home/chef1.png";
+import chef2 from "../assets/img_home/chef2.png";
+import chef3 from "../assets/img_home/chef3.png";
+import chef4 from "../assets/img_home/chef4.png";
+
 const HomePage = () => {
   useLayoutEffect(() => {
     document.body.style.backgroundColor = "black";
@@ -181,6 +186,38 @@ const HomePage = () => {
             </div>
             <div>
               <span className="texto-info-destacado">550</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*Sección Chefs */}
+
+      <div className="container-chefs"></div>
+      <div>
+        <p className="titulo-chefs">Chefs</p>
+        <p>Conoce a nuestros Chefs</p>
+      </div>
+      <div className="container-chefs-detalle">
+        <div className="row">
+          <div className="col columnas-chefs">
+            <div>
+              <img src={chef1} alt="" className="imagen-chefs" />
+            </div>
+          </div>
+          <div className="col columnas-chefs">
+            <div>
+              <img src={chef2} alt="" className="imagen-chefs" />
+            </div>
+          </div>
+          <div className="col columnas-chefs">
+            <div>
+              <img src={chef3} alt="" className="imagen-chefs" />
+            </div>
+          </div>
+          <div className="col columnas-chefs">
+            <div>
+              <img src={chef4} alt="" className="imagen-chefs" />
             </div>
           </div>
         </div>
