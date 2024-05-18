@@ -3,10 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.container-general {
-  background-color: #0d0d0d;
-}
+/* 
 
 /*Sección principal*/
 
@@ -42,7 +39,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: #ffffff;
   width: 5rem;
 }
 
@@ -57,13 +54,13 @@
 .linea-vertical-principal {
   height: 10rem;
   width: 0.8px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 /* Columna texto */
 
 .container-texto-principal {
-  color: white;
+  color: #ffffff;
   width: 40rem;
 }
 
@@ -103,9 +100,10 @@
 
 /*Sección elegirnos*/
 .container-elegirnos {
-  color: white;
+  color: #ffffff;
   margin: 5rem;
 }
+
 .container-filas-elegirnos {
   display: flex;
   justify-content: space-evenly;
@@ -121,6 +119,7 @@
   width: 30rem;
   padding: 1rem;
 }
+
 .parrafo_uno-elegirnos {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -157,7 +156,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: black;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 0.4rem;
   width: 16.4rem;
   padding: 1rem;
@@ -185,6 +184,55 @@
   font-weight: 700;
   font-size: 1.2rem;
 }
+
+/*Sección Info*/
+
+.container-info {
+  background-image: url(../assets/img_home/fondo4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(15%);
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+}
+
+.container-iconos-info {
+  height: 50vh;
+  position: relative;
+}
+
+.filas-iconos-info {
+  margin: 0;
+  height: 100%;
+}
+
+.columnas-iconos-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.imagen-info {
+  width: 5rem;
+  padding-bottom: 1rem;
+}
+
+.texto-info {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.texto-info-destacado {
+  font-family: Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/*Media queries*/
 @media screen and (max-width: 576px) {
   .container-columnas {
     padding-top: 1rem;

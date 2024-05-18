@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "../css/home.css";
 import principal from "../assets/img_home/principal.png";
 import grupo from "../assets/img_home/grupo.png";
 import Hamburger from "../assets/img_home/Iconos/Hamburger.png";
 import Cookie from "../assets/img_home/Iconos/Cookie.png";
 import Wine from "../assets/img_home/Iconos/Wine.png";
-
+import chefs from "../assets/img_home/Iconos/chefs.png";
+import combo from "../assets/img_home/Iconos/combo.png";
+import utensilios from "../assets/img_home/Iconos/utensilios.png";
+import pizzaPorcion from "../assets/img_home/Iconos/pizzaPorcion.png";
 const HomePage = () => {
+  useLayoutEffect(() => {
+    document.body.style.backgroundColor = "black";
+  });
   return (
     <div className="container-general">
       {/*Sección principal */}
@@ -53,7 +59,6 @@ const HomePage = () => {
       </div>
 
       {/*Sección elegirnos */}
-
       <div className="container-fluid container-elegirnos">
         <div className="row container-filas-elegirnos">
           {/*Columna grupo de imágenes*/}
@@ -63,7 +68,7 @@ const HomePage = () => {
             </div>
           </div>
           {/*Columna texto e iconos*/}
-          <div className="col col-10 col-md-5">
+          <div className="col-10  col-md-5">
             <div>
               <p className="texto_uno">¿Por qué elegirnos?</p>
               <p className="parrafo_uno-elegirnos">
@@ -123,6 +128,59 @@ const HomePage = () => {
                   <span className="experiencia-destacado">Experiencia</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*Sección info */}
+
+      <div className="container-info"></div>
+
+      <div className="container container-iconos-info">
+        <div className="row filas-iconos-info">
+          <div className="col columnas-iconos-info">
+            <div>
+              <img src={chefs} alt="" className="imagen-info" />
+            </div>
+            <div>
+              <span className="texto-info">Chefs profesionales</span>
+            </div>
+            <div>
+              <span className="texto-info-destacado">20</span>
+            </div>
+          </div>
+          <div className="col columnas-iconos-info">
+            <div>
+              <img src={combo} alt="" className="imagen-info" />
+            </div>
+            <div>
+              <span className="texto-info">Platos de comida</span>
+            </div>
+            <div>
+              <span className="texto-info-destacado">150</span>
+            </div>
+          </div>
+          <div className="col columnas-iconos-info">
+            <div>
+              <img src={utensilios} alt="" className="imagen-info" />
+            </div>
+            <div>
+              <span className="texto-info">Años de experiencia</span>
+            </div>
+            <div>
+              <span className="texto-info-destacado">30+</span>
+            </div>
+          </div>
+          <div className="col columnas-iconos-info">
+            <div>
+              <img src={pizzaPorcion} alt="" className="imagen-info" />
+            </div>
+            <div>
+              <span className="texto-info">Clientes felices</span>
+            </div>
+            <div>
+              <span className="texto-info-destacado">550</span>
             </div>
           </div>
         </div>
