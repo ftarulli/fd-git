@@ -1,9 +1,12 @@
-import { AppRouter } from './router/AppRouter';
+import { Footer } from './components/Footer';
+/*import { AppRouter } from './router/AppRouter';*/
 
 function App() {
 	return (
 		<>
-			<AppRouter />
+
+		<Footer />
+			¨{/*<AppRouter />*/}
 		</>
 	);
 }
