@@ -1,0 +1,25 @@
+
+.color {
+    background-color: #00000000 ; /* Cambia el fondo a gris claro */
+    font-family: "Inter","Work Sans";
+    letter-spacing: 0.3px; /* Agrega espacio entre las letras */
+  }
+  
+  .color .nav-link {
+    color: #ffffff; /* Cambia el color del texto a negro */
+    font-size: 16px; /* Establece el tamaño de la fuente a 16px */
+    font-weight: 300; /* Establece la regularidad del texto */
+    margin-right: 20px; /* Agrega espacio entre cada enlace */}
+  
+  .color .nav-link:hover {
+    color: orange; /* Cambia el color del texto a naranja al hacer hover */
+    font-weight: 500;
+  }
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:active,
+  .navbar-nav .show > .nav-link {
+    color: orange !important; /* Cambia el color del texto a naranja */
+    font-weight: 500;
+  }
+  
