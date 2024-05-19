@@ -193,33 +193,44 @@ const HomePage = () => {
 
       {/*Sección Chefs */}
 
-      <div className="container-chefs"></div>
-      <div>
-        <p className="titulo-chefs">Chefs</p>
-        <p>Conoce a nuestros Chefs</p>
-      </div>
-      <div className="container-chefs-detalle">
-        <div className="row">
-          <div className="col columnas-chefs">
-            <div>
-              <img src={chef1} alt="" className="imagen-chefs" />
+      <div className="container-chefs-fondo"></div>
+
+      <div className="container-chefs">
+        <div className="texto-chefs">
+          <p className="texto_uno">Chefs</p>
+          <p className="texto_dos-chefs">
+            <span className="destacado-chefs">Conoce</span> a nuestros Chefs
+          </p>
+        </div>
+        <div className="container-chefs-detalle">
+          <div className="row">
+            <div className="col columnas-chefs">
+              <div>
+                <img src={chef1} alt="" className="imagen-chefs" />
+              </div>
+            </div>
+            <div className="col columnas-chefs">
+              <div>
+                <img src={chef2} alt="" className="imagen-chefs" />
+              </div>
+            </div>
+            <div className="col columnas-chefs">
+              <div>
+                <img src={chef3} alt="" className="imagen-chefs" />
+              </div>
+            </div>
+            <div className="col columnas-chefs">
+              <div>
+                <img src={chef4} alt="" className="imagen-chefs" />
+              </div>
             </div>
           </div>
-          <div className="col columnas-chefs">
-            <div>
-              <img src={chef2} alt="" className="imagen-chefs" />
-            </div>
-          </div>
-          <div className="col columnas-chefs">
-            <div>
-              <img src={chef3} alt="" className="imagen-chefs" />
-            </div>
-          </div>
-          <div className="col columnas-chefs">
-            <div>
-              <img src={chef4} alt="" className="imagen-chefs" />
-            </div>
-          </div>
+        </div>
+
+        <div className="container-boton-chefs">
+          <button className="btn btn-outline-primary boton-chefs">
+            Ver mas
+          </button>
         </div>
       </div>
     </div>

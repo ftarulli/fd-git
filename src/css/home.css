@@ -234,7 +234,7 @@
 
 /*Sección Chefs*/
 
-.container-chefs {
+.container-chefs-fondo {
   background-image: url(../assets/img_home/fondo1.png);
   background-repeat: no-repeat;
   background-position: start;
@@ -247,6 +247,9 @@
   margin-bottom: 5rem;
 }
 
+.container-chefs {
+  margin-top: 1.5rem;
+}
 .container-chefs-detalle {
   padding-top: 3rem;
   position: relative;
@@ -257,8 +260,41 @@
 }
 
 .imagen-chefs {
-  width: 15rem;
+  width: 13rem;
 }
+
+.texto-chefs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto_dos-chefs {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.destacado-chefs {
+  color: #ff9f0d;
+}
+.container-boton-chefs {
+  margin: 4rem;
+  text-align: center;
+}
+
+.btn .boton-chefs {
+  border-radius: 5rem;
+  border-color: #ff9f0d;
+  width: 10rem;
+}
+
+.btn .boton-chefs:hover {
+  border-color: #ff9f0d;
+}
+
 /*Media queries*/
 @media screen and (max-width: 576px) {
   .container-columnas {
