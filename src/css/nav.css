@@ -6,6 +6,7 @@
   }
   
   .color .nav-link {
+    /* background-color: #000; */
     color: #ffffff; /* Cambia el color del texto a negro */
     font-size: 16px; /* Establece el tamaño de la fuente a 16px */
     font-weight: 300; /* Establece la regularidad del texto */

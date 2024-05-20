@@ -1,17 +1,16 @@
- import { AppRouter } from './router/AppRouter';
 
+// import { AppRouter } from './router/AppRouter'
 
+import Navegador from "./components/Navegador";
 
-
-
-
+	
 
 
 function App() {
 	return (
 		<>
-	
-			<AppRouter />
+		<Navegador/>
+			{/* <AppRouter /> */}
 		</>
 	);
 }
