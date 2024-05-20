@@ -1,20 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { HomePage } from '../components/HomePage';
-import { AdminPage } from '../components/AdminPage';
-import { LoginPage } from '../components/LoginPage';
-import { ErrorPage } from '../components/ErrorPage';
-import { RegPage } from '../components/RegPage';
+import GaleriaImg from '../pages/GaleriaImg';
+import { Contacto } from '../pages/Contacto';
 
 export const AppRouter = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/admin" element={<AdminPage />} />
-				<Route path="/reg" element={<RegPage />} />
-				<Route path="/" element={<HomePage id={'1'} />} />
-				<Route path="/404" element={<ErrorPage />} />
-				<Route path="/login" element={<LoginPage />} />
+				<Route path="/contacto" element={<Contacto />} />
 			</Routes>
 		</BrowserRouter>
 	);
