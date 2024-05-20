@@ -372,6 +372,33 @@
   padding: 1rem;
 }
 
+/*Sección Banner*/
+
+.container-banner {
+  background-image: url(../assets/img_home/fondo5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 0;
+  position: absolute;
+}
+
+.container-texto-banner {
+  position: relative;
+  color: white;
+  height: 10rem;
+  width: 100%;
+  top: 11rem;
+}
+
+.columna-texto-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: end;
+}
 /*Media queries*/
 @media screen and (max-width: 576px) {
   .container-columnas {

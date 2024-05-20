@@ -16,6 +16,7 @@ import chef4 from "../assets/img_home/chef4.png";
 import testimonios1 from "../assets/img_home/testimonios1.png";
 import testimonios2 from "../assets/img_home/testimonios2.png";
 import testimonios3 from "../assets/img_home/testimonios3.png";
+
 const HomePage = () => {
   useLayoutEffect(() => {
     document.body.style.backgroundColor = "black";
@@ -407,6 +408,34 @@ const HomePage = () => {
                   aria-hidden="true"
                 ></span>
                 <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*Sección Banner */}
+
+      <div className="container-banner"></div>
+
+      <div className="container container-texto-banner">
+        <div className="row h-100">
+          <div className="col-10 offset-1 col-md-6 offset-md-6 align-self-end columna-texto-banner">
+            <span>Reservas online </span>
+            <span>
+              ¡Reserva Ahora y Garantiza tu Lugar en Nuestro Festín
+              Gastronómico!
+            </span>
+            <p>
+              Con nuestra conveniente plataforma de reservas en línea, puedes
+              planificar tu próxima comida con facilidad y tranquilidad ¡No
+              esperes más, reserva tu lugar hoy y déjanos deleitarte con nuestro
+              menú exquisito!
+            </p>
+
+            <div>
+              <button className="btn btn-outline-primary">
+                Reservar Online
               </button>
             </div>
           </div>
