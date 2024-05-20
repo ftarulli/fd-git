@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../css/registro.css'; // Asegúrate de tener un archivo CSS para los estilos específicos de tu página de login
 
 export const Registro = () => {
@@ -15,28 +17,28 @@ export const Registro = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="img/cheerful-friends-having-fun-while-talking-waiter-cafe.jpg"
+            src="src\img-registro\chef-taking-pizza-out-woodburning-oven-old-cafe-city-center-small-local-business.jpg"
             alt="First slide"
           />
           <Carousel.Caption className="caption-right">
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="img/sunrise-1014712 5.png"
+            src="src\img-registro\chef-working-together-professional-kitchen.jpg"
             alt="Second slide"
           />
           <Carousel.Caption className="caption-right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
           </Carousel.Caption>
         </Carousel.Item>
         {/* Agrega más elementos Carousel.Item según sea necesario */}
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="img/sunrise-1014712 6.png"
+            src="src\img-registro\group-friends-eating-restaurant.jpg"
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
@@ -46,7 +48,7 @@ export const Registro = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="img/sunrise-1014712 7.png"
+            src="src\img-registro\medium-shot-woman-working-luxury-restaurant.jpg"
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
@@ -56,7 +58,7 @@ export const Registro = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="img/sunrise-1014712 8.png"
+            src="src\img-registro\woman-eating-pasta-italian-restaurant.jpg"
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
@@ -68,7 +70,7 @@ export const Registro = () => {
         <div className="info-contenedor">
           <div > 
             <h1>Registrate</h1>
-            <p>¿Ya estás registrado? <a href="#" className="iniciar-sesion">Iniciar Sesión</a> <img src="img\Vector.png" alt="Icono de Usuario" /></p>
+            <p>¿Ya estás registrado? <a href="#" className="iniciar-sesion">Iniciar Sesión</a> <img src="src\img-registro\Vector.png" alt="Icono de Usuario" /></p>
           </div>
         </div>
 

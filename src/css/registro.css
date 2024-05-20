@@ -1,6 +1,7 @@
 body {
     margin: 0;
     overflow: hidden; /* Evita el scroll vertical y horizontal */
+    font-family: "Inter";
   }
   
   .contenedor {
