@@ -344,6 +344,9 @@
 }
 .card-text {
   text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .iconos-testimonios {
@@ -354,6 +357,12 @@
 
 .iconos-testimonios i {
   color: #ff9f0d;
+}
+
+.nombre-testimonios {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .icono-quote {

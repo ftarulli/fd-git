@@ -303,7 +303,9 @@ const HomePage = () => {
                       </div>
 
                       <div>
-                        <span>Maximiliano Cruz</span>
+                        <span className="nombre-testimonios">
+                          Maximiliano Cruz
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -338,7 +340,9 @@ const HomePage = () => {
                       </div>
 
                       <div>
-                        <span>Valentina Reyes</span>
+                        <span className="nombre-testimonios">
+                          Valentina Reyes
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -372,7 +376,9 @@ const HomePage = () => {
                       </div>
 
                       <div>
-                        <span>Esteban Sanchez</span>
+                        <span className="nombre-testimonios">
+                          Esteban Sanchez
+                        </span>
                       </div>
                     </div>
                   </div>
