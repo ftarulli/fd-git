@@ -1,5 +1,4 @@
 
-
 import '../css/sobrenosotros.css';
 
 export const SobreNosotros = () => {
@@ -11,7 +10,7 @@ export const SobreNosotros = () => {
       <div className="row">
         <div className="col-12">
           <div className="banner">
-            <img src="img\Sobre nosotros.png" alt="Banner" className="banner-img" />
+            <img src="src\assets\img-sobrenosotros\Sobre nosotros.png" alt="Banner" className="banner-img" />
           </div>
         </div>
       </div>
@@ -36,13 +35,20 @@ export const SobreNosotros = () => {
           {/* Imagen */}
           <div className="col-10 col-md-6 align-self-center">
             <div className="imagen">
-              <img src="img\Group 1000002274.png" alt="Imagen" className="imagen" />
+              <img src="src\assets\img-sobrenosotros\Group 1000002274.png" alt="Imagen" className="imagen" />
             </div>
           </div>
         </div>
 
         {/* Sección 2: Texto e Imagen */}
-        <div className="row align-items-center">
+        <div className="row ">
+         
+        <div className="col-10 col-md-6 order-md-0 align-self-center">
+            <div className="imagen">
+              <img src="src\assets\img-sobrenosotros\Group 1000002276.png" alt="Imagen" className="imagen" />
+            </div>
+          </div>
+         
           {/* Texto */}
           <div className="col-10 col-md-6 order-md-1 align-self-center">
             <div className="texto">
@@ -54,15 +60,11 @@ export const SobreNosotros = () => {
             </div>
           </div>
           {/* Imagen */}
-          <div className="col-10 col-md-6 order-md-0 align-self-center">
-            <div className="imagen">
-              <img src="img\Group 1000002276.png" alt="Imagen" className="imagen" />
-            </div>
-          </div>
+        
         </div>
 
         {/* Sección 3: Texto e Imagen */}
-        <div className="row align-items-center">
+        <div className="row">
           {/* Texto */}
           <div className="col-10 col-md-6 align-self-center">
             <div className="texto">
@@ -76,15 +78,21 @@ export const SobreNosotros = () => {
           {/* Imagen */}
           <div className="col-10 col-md-6 align-self-center">
             <div className="imagen">
-              <img src="img\Group 1000002277.png" alt="Imagen" className="imagen" />
+              <img src="src\assets\img-sobrenosotros\Group 1000002277.png" alt="Imagen" className="imagen" />
             </div>
           </div>
         </div>
 
         {/* Sección 4: Texto e Imagen */}
-        <div className="row align-items-center">
+        <div className="row">
+
+        <div className="col-10 col-md-6 order-md-0 align-self-center">
+            <div className="imagen">
+              <img src="src\assets\img-sobrenosotros\Group 1000002278.png" alt="Imagen" className="imagen" />
+            </div>
+          </div>
           {/* Texto */}
-          <div className="col-10 col-md-6 order-md-1 align-self-center">
+          <div className="col-10 col-md-6 order-md-1 align-self-center ">
             <div className="texto">
               <div className="seccion4">
                 <h1 className="seccion4-subtitle">  <span style={{ color: 'orange' }}>Nuestros</span> Valores</h1>
@@ -93,11 +101,7 @@ export const SobreNosotros = () => {
             </div>
           </div>
           {/* Imagen */}
-          <div className="col-10 col-md-6 order-md-0 align-self-center">
-            <div className="imagen">
-              <img src="img\Group 1000002278.png" alt="Imagen" className="imagen" />
-            </div>
-          </div>
+         
         </div>
       </div>
 
@@ -107,7 +111,7 @@ export const SobreNosotros = () => {
         <h4 className="texto-final">Te invitamos a unirte a nosotros en nuestro viaje culinario y descubrir todo lo que Rincón Gourmet tiene para ofrecer. Desde una comida casual entre amigos hasta una celebración especial, estamos aquí para hacer que cada visita sea inolvidable. Ven a descubrir el sabor de la excelencia en Rincón Gourmet, donde la buena comida y la hospitalidad excepcional se encuentran en cada plato.</h4>
       </div>
 
-    
+ 
     </div>
   );
 }
