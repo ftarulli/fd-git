@@ -421,12 +421,12 @@ const HomePage = () => {
       <div className="container container-texto-banner">
         <div className="row h-100">
           <div className="col-10 offset-1 col-md-6 offset-md-6 align-self-end columna-texto-banner">
-            <span>Reservas online </span>
-            <span>
-              ¡Reserva Ahora y Garantiza tu Lugar en Nuestro Festín
-              Gastronómico!
-            </span>
-            <p>
+            <span className="texto_uno">Reservas online </span>
+            <p className="parrafo-uno-banner">
+              <span className="texto_destacado">¡Reserva </span>Ahora y
+              Garantiza tu Lugar en Nuestro Festín Gastronómico!
+            </p>
+            <p className="parrafo-dos-banner">
               Con nuestra conveniente plataforma de reservas en línea, puedes
               planificar tu próxima comida con facilidad y tranquilidad ¡No
               esperes más, reserva tu lugar hoy y déjanos deleitarte con nuestro
