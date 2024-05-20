@@ -13,7 +13,9 @@ import chef1 from "../assets/img_home/chef1.png";
 import chef2 from "../assets/img_home/chef2.png";
 import chef3 from "../assets/img_home/chef3.png";
 import chef4 from "../assets/img_home/chef4.png";
-
+import testimonios1 from "../assets/img_home/testimonios1.png";
+import testimonios2 from "../assets/img_home/testimonios2.png";
+import testimonios3 from "../assets/img_home/testimonios3.png";
 const HomePage = () => {
   useLayoutEffect(() => {
     document.body.style.backgroundColor = "black";
@@ -21,6 +23,7 @@ const HomePage = () => {
   return (
     <div className="container-general">
       {/*Sección principal */}
+
       {/* Container Imagen fondo principal */}
       <div className="container-imagen-principal"></div>
       {/* Container principal */}
@@ -64,6 +67,7 @@ const HomePage = () => {
       </div>
 
       {/*Sección elegirnos */}
+
       <div className="container-fluid container-elegirnos">
         <div className="row container-filas-elegirnos">
           {/*Columna grupo de imágenes*/}
@@ -231,6 +235,175 @@ const HomePage = () => {
           <button className="btn btn-outline-primary boton-chefs">
             Ver mas
           </button>
+        </div>
+      </div>
+
+      {/*Sección Testimonios Clientes */}
+
+      <div className="container-testimonios"></div>
+
+      <div className="container-carrousel-testimonios">
+        <div className="row fila-carousel-testimonios">
+          <div className="col-10 offset-1 col-md-6 offset-md-0">
+            <div
+              id="carouselExampleIndicators"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  className="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="card card-testimonios">
+                    <img
+                      src={testimonios1}
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <i
+                        class="fa fa-quote-right icono-quote"
+                        aria-hidden="true"
+                      ></i>
+                      <p className="card-text">
+                        ¡Simplemente asombroso! Desde el primer bocado hasta el
+                        último, cada plato fue una explosión de sabor que
+                        deleitó mis sentidos. El personal fue muy acogedor y
+                        conocedor, creando una atmósfera cálida y acogedora.
+                        Definitivamente, este restaurante se ha convertido en mi
+                        lugar favorito.
+                      </p>
+
+                      <div className="iconos-testimonios">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+
+                      <div>
+                        <span>Maximiliano Cruz</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="card card-testimonios">
+                    <img
+                      src={testimonios2}
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <i
+                        class="fa fa-quote-right icono-quote"
+                        aria-hidden="true"
+                      ></i>
+                      <p className="card-text">
+                        ¡Una experiencia gastronómica única! Cada plato fue una
+                        obra maestra de sabores exquisitos y presentación
+                        impecable. El ambiente elegante y el servicio atento
+                        hicieron que nuestra velada fuera verdaderamente
+                        inolvidable. Sin duda, volveremos para explorar más
+                        deliciosas creaciones culinarias.
+                      </p>
+
+                      <div className="iconos-testimonios">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+
+                      <div>
+                        <span>Valentina Reyes</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="card card-testimonios">
+                    <img
+                      src={testimonios3}
+                      className="card-img-top"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <i
+                        class="fa fa-quote-right icono-quote"
+                        aria-hidden="true"
+                      ></i>
+                      <p className="card-text">
+                        ¡Una experiencia gastronómica extraordinaria! Cada
+                        detalle, desde la presentación de los platos hasta la
+                        atención al cliente, reflejaba un compromiso con la
+                        excelencia. La diversidad de sabores y la creatividad en
+                        cada plato me dejaron impresionado.
+                      </p>
+
+                      <div className="iconos-testimonios">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+
+                      <div>
+                        <span>Esteban Sanchez</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
