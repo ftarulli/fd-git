@@ -308,9 +308,12 @@
   position: absolute;
 }
 
+.carousel-item {
+  height: 30rem;
+}
+
 .container-carrousel-testimonios {
   position: relative;
-  height: 80%;
   width: 98%;
 }
 
@@ -318,14 +321,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .card-testimonios {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   padding: 2rem;
 }
 
@@ -342,6 +343,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .card-text {
   text-align: center;
   font-family: Helvetica, sans-serif;
