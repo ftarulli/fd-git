@@ -1,15 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Registro from '../pages/Registro';
+import Login from '../pages/Login';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import { Registro } from '../pages/Registro';
-
-export const AppRouter = () => {
-	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/registro" element={<Registro />} />
-				
-			</Routes>
-		</BrowserRouter>
-	);
+const AppRouter = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/registro" element={<Registro />} />
+		<Route path="/login" element={<Login />} />
+  
+        {/* Agrega más rutas según sea necesario */}
+      </Routes>
+    </Router>
+  );
 };
+
+export default AppRouter;
