@@ -1,4 +1,5 @@
 
+
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import { Navegador } from '../components/Navegador';
 
@@ -17,4 +18,7 @@ export const AppRouter = () => {
 		</BrowserRouter>
 	</>
 	);
+
 };
+
+export default AppRouter;

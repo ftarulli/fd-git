@@ -1,5 +1,6 @@
 
-// import { AppRouter } from './router/AppRouter'
+
+import { AppRouter } from './router/AppRouter'
 
 import Navegador from "./components/Navegador";
 
@@ -10,9 +11,10 @@ function App() {
 	return (
 		<>
 		<Navegador/>
-			{/* <AppRouter /> */}
+			{<AppRouter />}
 		</>
 	);
+
 }
 
 export default App;
