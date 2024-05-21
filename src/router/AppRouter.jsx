@@ -1,21 +1,18 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { HomePage } from '../components/HomePage';
-import { AdminPage } from '../components/AdminPage';
-import { LoginPage } from '../components/LoginPage';
-import { ErrorPage } from '../components/ErrorPage';
-import { RegPage } from '../components/RegPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Registro from '../pages/Registro';
+import Login from '../pages/Login';
 
-export const AppRouter = () => {
-	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/admin" element={<AdminPage />} />
-				<Route path="/reg" element={<RegPage />} />
-				<Route path="/" element={<HomePage id={'1'} />} />
-				<Route path="/404" element={<ErrorPage />} />
-				<Route path="/login" element={<LoginPage />} />
-			</Routes>
-		</BrowserRouter>
-	);
+const AppRouter = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/registro" element={<Registro />} />
+		<Route path="/login" element={<Login />} />
+  
+        {/* Agrega más rutas según sea necesario */}
+      </Routes>
+    </Router>
+  );
 };
+
+export default AppRouter;
