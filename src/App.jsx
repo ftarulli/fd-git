@@ -1,17 +1,20 @@
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { AppRouter } from './router/AppRouter'
+import { Footer } from "./components/Footer";
 
-import Navegador from "./components/Navegador";
 
-	
 
 
 function App() {
 	return (
 		<>
+
+
 		<Navegador/>
 			{<AppRouter />}
+    <Footer />
+
 		</>
 	);
 
