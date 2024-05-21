@@ -1,23 +1,19 @@
 
-
-import { BrowserRouter,Route, Routes } from 'react-router-dom';
-import { Navegador } from '../components/Navegador';
-
-
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "../pages/HomePage";
 
 
 export const AppRouter = () => {
-	return (
-	<>
-		<BrowserRouter>
-			<Routes>
-				<Route>
-						<Navegador/>
-				</Route>
-			</Routes>
-		</BrowserRouter>
-	</>
-	);
+  return (
+    <BrowserRouter>
+      <Routes>
+       
+        <Route path="/" element={<HomePage />} />
+       
+      </Routes>
+    </BrowserRouter>
+  );
 
 };
 
