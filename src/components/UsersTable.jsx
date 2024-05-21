@@ -80,6 +80,15 @@ export const UsersTable = () => {
 		}
 	};
 
+	const deleteUser = async (_id) => {
+		try {
+			await apiTest.delete(`/admin/deleteUsers/${_id}`);
+			listaUsersBack();
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	return (
 		<>
 			<Table bordered hover className="Tabla_Usuarios">
@@ -102,6 +111,7 @@ export const UsersTable = () => {
 							visibleMenu={visibleMenu}
 							toggleMenu={toggleMenu}
 							editarUser={editarUser}
+							deleteUser={deleteUser}
 						/>
 					))}
 				</tbody>

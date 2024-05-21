@@ -1,10 +1,15 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import { UserMenu } from './UserMenu';
 
-export const UserRow = ({ user, visibleMenu, toggleMenu, editarUser }) => (
+export const UserRow = ({
+	user,
+	visibleMenu,
+	toggleMenu,
+	editarUser,
+	deleteUser,
+}) => (
 	<tr>
-		<td>{user._id.slice(0, 8)}</td>
+		<td>...{user._id.slice(19, 24)}</td>
 		<td id="UserTable">{user.username}</td>
 		<td>{user.phone}</td>
 		<td>{user.mail}</td>
@@ -14,7 +19,14 @@ export const UserRow = ({ user, visibleMenu, toggleMenu, editarUser }) => (
 					<i className="fa-solid fa-ellipsis-vertical"></i>
 				</button>
 				{visibleMenu === user._id && (
-					<UserMenu user={user} editarUser={editarUser} />
+					<div className="menu">
+						<Button className="menu-item my-1" onClick={() => deleteUser(user._id)}>
+							Eliminar
+						</Button>
+						<Button className="menu-item my-1" onClick={() => editarUser(user)}>
+							Editar
+						</Button>
+					</div>
 				)}
 			</div>
 		</td>

@@ -31,8 +31,6 @@ export const EditUserModal = ({
 						type="text"
 						value={user.user}
 						onChange={(e) => handleChangeEditUser('user', e.target.value)}
-						readOnly
-						disabled
 					/>
 				</Form.Group>
 
@@ -42,8 +40,6 @@ export const EditUserModal = ({
 						type="number"
 						value={user.phone}
 						onChange={(e) => handleChangeEditUser('phone', e.target.value)}
-						readOnly
-						disabled
 					/>
 				</Form.Group>
 
@@ -53,8 +49,6 @@ export const EditUserModal = ({
 						type="email"
 						value={user.mail}
 						onChange={(e) => handleChangeEditUser('mail', e.target.value)}
-						readOnly
-						disabled
 					/>
 				</Form.Group>
 
