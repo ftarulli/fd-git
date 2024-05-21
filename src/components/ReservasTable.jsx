@@ -4,8 +4,10 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import '../css/ReservasTable.css';
+import apiTest from '../api/api';
 
 export const ReservasTable = () => {
+	//Tres puntos
 	const [visibleMenu, setVisibleMenu] = useState(null);
 
 	const toggleMenu = (reservasId) => {
@@ -27,37 +29,73 @@ export const ReservasTable = () => {
 
 	//Modal para editar
 	const [show, setShow] = useState(false);
-
 	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
 
-	const [user, setUser] = useState('');
-	const [phone, setPhone] = useState('');
-	const [email, setEmail] = useState('');
-	const [comensales, setComensales] = useState('');
-	const [fecha, setFecha] = useState('');
-	const [hora, serHora] = useState('');
+	//Peticion get para traer las reservas
 
-	const reservas = [
-		{
-			id: 12345,
-			username: 'Pablo',
-			phone: 123746879,
-			email: 'pablo@gmail.com',
-			comensales: 4,
-			fecha: '12/12/12',
-			hora: '19:00',
-		},
-		{
-			id: 123456,
-			username: 'Pablo1',
-			phone: 123746879123,
-			email: 'pablo12@gmail.com',
-			comensales: 8,
-			fecha: '11/12/12',
-			hora: '19:00',
-		},
-	];
+	const [cargarReservas, setCargarReservas] = useState([]);
+
+	const listReservas = async () => {
+		try {
+			const resp = await apiTest.get('/admin/sendReservas');
+
+			setCargarReservas(resp.data.listReservas);
+		} catch (error) {}
+	};
+
+	useEffect(() => {
+		listReservas();
+	}, []);
+
+	//Editar Reserva
+
+	const [reservaEditarSeleccionado, setReservaEditarSeleccionado] = useState({});
+
+	const editarReserva = (reserva) => {
+		setShow(true);
+		setReservaEditarSeleccionado(reserva);
+	};
+
+	const handleChangeEditar = (propiedad, valor) => {
+		setReservaEditarSeleccionado({
+			...reservaEditarSeleccionado,
+			[propiedad]: valor,
+		});
+	};
+
+	const handleSubmitEditar = (e) => {
+		e.preventDefault();
+
+		//Validaciones
+
+		editarReservaDB(productoEditarSeleccionado);
+	};
+
+	const editarReservaDB = async ({
+		_id,
+		user,
+		phone,
+		email,
+		comensales,
+		fecha,
+		hora,
+	}) => {
+		try {
+			const resp = await apiTest.put('/admin/editReservas', {
+				_id,
+				user,
+				phone,
+				email,
+				comensales,
+				fecha,
+				hora,
+			});
+
+			setCargarReservas(resp.data.listReservas);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 	return (
 		<>
 			<Table bordered hover className="Tabla_Reservas">
@@ -77,27 +115,30 @@ export const ReservasTable = () => {
 				</thead>
 
 				<tbody>
-					{reservas.map((reservas) => (
-						<tr key={reservas.id}>
-							<td>{reservas.id}</td>
-							<td id="UserTableReservas">{reservas.username}</td>
-							<td>{reservas.phone}</td>
-							<td>{reservas.email}</td>
-							<td>{reservas.comensales}</td>
-							<td>{reservas.fecha}</td>
-							<td>{reservas.hora}</td>
+					{cargarReservas.map((reserva) => (
+						<tr key={reserva.id}>
+							<td>{reserva.id}</td>
+							<td id="UserTableReservas">{reserva.username}</td>
+							<td>{reserva.phone}</td>
+							<td>{reserva.email}</td>
+							<td>{reserva.comensales}</td>
+							<td>{reserva.fecha}</td>
+							<td>{reserva.hora}</td>
 							<td>
 								<div className="menu-container">
 									<button
 										className="menu-btn"
-										onClick={() => toggleMenu(reservas.id)}
+										onClick={() => toggleMenu(reserva.id)}
 									>
 										<i className="fa-solid fa-ellipsis-vertical"></i>
 									</button>
-									{visibleMenu === reservas.id && (
+									{visibleMenu === reserva.id && (
 										<div className="menu">
 											<Button className="menu-item my-1">Eliminar</Button>
-											<Button className="menu-item my-1" onClick={handleShow}>
+											<Button
+												className="menu-item my-1"
+												onClick={() => editarReserva(reserva)}
+											>
 												Editar
 											</Button>
 										</div>
@@ -116,38 +157,63 @@ export const ReservasTable = () => {
 				<Modal.Body>
 					<Form.Group className="mb-3">
 						<Form.Label>Usuario</Form.Label>
-						<Form.Control type="text" onChange={(e) => setUser(e.target.value)} />
+						<Form.Control
+							type="text"
+							// value={productoEditarSeleccionado.user}
+							onChange={(e) => handleChangeEditar('user', e.target.value)}
+						/>
 					</Form.Group>
 
 					<Form.Group className="mb-3">
 						<Form.Label>Numero de Telefono</Form.Label>
-						<Form.Control type="number" onChange={(e) => setPhone(e.target.value)} />
+						<Form.Control
+							type="number"
+							// value={productoEditarSeleccionado.phone}
+							onChange={(e) => handleChangeEditar('phone', e.target.value)}
+						/>
 					</Form.Group>
 
 					<Form.Group className="mb-3">
 						<Form.Label>Email </Form.Label>
-						<Form.Control type="email" onChange={(e) => setEmail(e.target.value)} />
+						<Form.Control
+							type="email"
+							// value={productoEditarSeleccionado.email}
+							onChange={(e) => handleChangeEditar('email', e.target.value)}
+						/>
 					</Form.Group>
 
 					<Form.Group className="mb-3">
 						<Form.Label>Comensales</Form.Label>
 						<Form.Control
 							type="number"
-							onChange={(e) => setComensales(e.target.value)}
+							// value={productoEditarSeleccionado.comensales}
+							onChange={(e) => handleChangeEditar('comensales', e.target.value)}
 						/>
 					</Form.Group>
 
 					<Form.Group className="mb-3">
 						<Form.Label>Fecha</Form.Label>
-						<Form.Control type="text" onChange={(e) => setFecha(e.target.value)} />
+						<Form.Control
+							type="text"
+							// value={productoEditarSeleccionado.fecha}
+							onChange={(e) => handleChangeEditar('fecha', e.target.value)}
+						/>
 					</Form.Group>
 
 					<Form.Group className="mb-3">
 						<Form.Label>Hora</Form.Label>
-						<Form.Control type="text" onChange={(e) => setHora(e.target.value)} />
+						<Form.Control
+							type="text"
+							// value={productoEditarSeleccionado.hora}
+							onChange={(e) => handleChangeEditar('hora', e.target.value)}
+						/>
 					</Form.Group>
 
-					<Button type="submit" className="menu-item mt-4">
+					<Button
+						type="submit"
+						className="menu-item mt-4"
+						onClick={handleSubmitEditar}
+					>
 						Confirmar cambios
 					</Button>
 				</Modal.Body>

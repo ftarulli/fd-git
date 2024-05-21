@@ -1,54 +1,84 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
+import apiTest from '../api/api';
+import { UserRow } from './UserRow';
+import { EditUserModal } from './EditUserModal';
 import '../css/UsersTable.css';
 
 export const UsersTable = () => {
 	const [visibleMenu, setVisibleMenu] = useState(null);
+	const [show, setShow] = useState(false);
+	const [cargarUsers, setCargarUsers] = useState([]);
+	const [userEditarSeleccionado, setUserEditarSeleccionado] = useState({});
 
-	const toggleMenu = (userId) => {
-		setVisibleMenu(visibleMenu === userId ? null : userId);
-	};
+	const toggleMenu = useCallback((userId) => {
+		setVisibleMenu((prevVisibleMenu) =>
+			prevVisibleMenu === userId ? null : userId
+		);
+	}, []);
 
-	const handleClickOutside = (e) => {
-		if (visibleMenu !== null && !e.target.closest('.menu-container')) {
-			setVisibleMenu(null);
-		}
-	};
+	const handleClickOutside = useCallback(
+		(e) => {
+			if (visibleMenu !== null && !e.target.closest('.menu-container')) {
+				setVisibleMenu(null);
+			}
+		},
+		[visibleMenu]
+	);
 
 	useEffect(() => {
 		document.addEventListener('click', handleClickOutside);
 		return () => {
 			document.removeEventListener('click', handleClickOutside);
 		};
-	}, [visibleMenu]);
-	//Modal para editar
-	const [show, setShow] = useState(false);
+	}, [handleClickOutside]);
 
 	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
 
-	const [user, setUser] = useState('');
-	const [phone, setPhone] = useState('');
-	const [email, setEmail] = useState('');
+	const listaUsersBack = async () => {
+		try {
+			const resp = await apiTest.get('/admin/sendUsers');
+			setCargarUsers(resp.data.listUsers);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
-	//Pruebas para la tabla (Borrar) falta traer los datos de la base de datos
-	const users = [
-		{
-			id: '123',
-			username: 'Pablo',
-			phone: '123456789',
-			email: 'pablo@gmail.com',
-		},
-		{
-			id: '1234',
-			username: 'Pablo1',
-			phone: '12345678910',
-			email: 'pablo1@gmail.com',
-		},
-	];
+	useEffect(() => {
+		listaUsersBack();
+	}, []);
+
+	const editarUser = (user) => {
+		setShow(true);
+		setUserEditarSeleccionado(user);
+	};
+
+	const handleChangeEditUser = (propiedad, valor) => {
+		setUserEditarSeleccionado((prevUser) => ({
+			...prevUser,
+			[propiedad]: valor,
+		}));
+	};
+
+	const handleSubmitEditarUser = (e) => {
+		e.preventDefault();
+		editarUserDB(userEditarSeleccionado);
+	};
+
+	const editarUserDB = async ({ _id, username, phone, mail }) => {
+		try {
+			await apiTest.put('./admin/editUsers', {
+				_id,
+				username,
+				phone,
+				mail,
+			});
+			listaUsersBack();
+			setShow(false);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
 	return (
 		<>
@@ -65,56 +95,24 @@ export const UsersTable = () => {
 					</tr>
 				</thead>
 				<tbody>
-					{users.map((user) => (
-						<tr key={user.id}>
-							<td>{user.id}</td>
-							<td id="UserTable">{user.username}</td>
-							<td>{user.phone}</td>
-							<td>{user.email}</td>
-							<td>
-								<div className="menu-container">
-									<button className="menu-btn" onClick={() => toggleMenu(user.id)}>
-										<i className="fa-solid fa-ellipsis-vertical"></i>
-									</button>
-									{visibleMenu === user.id && (
-										<div className="menu">
-											<Button className="menu-item my-1">Eliminar</Button>
-											<Button className="menu-item my-1" onClick={handleShow}>
-												Editar
-											</Button>
-										</div>
-									)}
-								</div>
-							</td>
-						</tr>
+					{cargarUsers.map((user) => (
+						<UserRow
+							key={user._id}
+							user={user}
+							visibleMenu={visibleMenu}
+							toggleMenu={toggleMenu}
+							editarUser={editarUser}
+						/>
 					))}
 				</tbody>
 			</Table>
-			<Modal show={show} onHide={handleClose}>
-				<Modal.Header closeButton>
-					<Modal.Title>Editar Usuario</Modal.Title>
-				</Modal.Header>
-				<Modal.Body>
-					<Form.Group className="mb-3">
-						<Form.Label>Usuario</Form.Label>
-						<Form.Control type="text" onChange={(e) => setUser(e.target.value)} />
-					</Form.Group>
-
-					<Form.Group className="mb-3">
-						<Form.Label>Numero de Telefono</Form.Label>
-						<Form.Control type="number" onChange={(e) => setPhone(e.target.value)} />
-					</Form.Group>
-
-					<Form.Group className="mb-3">
-						<Form.Label>Email </Form.Label>
-						<Form.Control type="email" onChange={(e) => setEmail(e.target.value)} />
-					</Form.Group>
-
-					<Button type="submit" className="menu-item mt-4">
-						Confirmar cambios
-					</Button>
-				</Modal.Body>
-			</Modal>
+			<EditUserModal
+				show={show}
+				handleClose={handleClose}
+				user={userEditarSeleccionado}
+				handleChangeEditUser={handleChangeEditUser}
+				handleSubmitEditarUser={handleSubmitEditarUser}
+			/>
 		</>
 	);
 };
