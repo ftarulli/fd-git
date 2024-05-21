@@ -461,19 +461,18 @@ const HomePage = () => {
         </div>
 
         <div className="row fila-card-platos ms-4 my-3">
-          <div className="col-10 offset-1 col-md-3 offset-md-0 mb-3">
+          <div className="col-10 offset-1 col-md-6 offset-md-0 col-lg-3 offset-lg-0 mb-3 ">
             <div className="card card-platos">
-              <img
-                src={hamburguesa}
-                className="card-img-top img-platos"
-                alt="..."
-              />
+              <div className="img-platos">
+                <img src={hamburguesa} className="card-img-top " alt="..." />
+              </div>
+
               <div className="card-body card-body-platos">
                 <span className="texto-uno-platos">
                   Nuestra hamburgesa estrella
                 </span>
                 <h5 className="card-title">Fuego Infernal Burger</h5>
-                <p className="card-text">
+                <p>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -481,13 +480,17 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="col-10 offset-1 col-md-3 offset-md-0 mb-3">
+          <div className="col-10 offset-1 col-md-6 offset-md-0 col-lg-3 offset-lg-0 mb-3 ">
             <div className="card card-platos">
-              <img src={pizza} className="card-img-top img-platos" alt="..." />
+              <div className="img-platos">
+                <img src={pizza} className="card-img-top " alt="..." />
+              </div>
               <div className="card-body card-body-platos">
-                <span>Nuestra pizza más pedida</span>
+                <span className="texto-uno-platos">
+                  Nuestra pizza más pedida
+                </span>
                 <h5 className="card-title">Volcán de Queso Pizza</h5>
-                <p className="card-text">
+                <p>
                   Pizza con salsa de tomate, mozzarella, jamón cocido, tomate,
                   aceitunas y orégano, horneada en horno de piedra.
                 </p>
@@ -495,13 +498,17 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="col-10 offset-1 col-md-3 offset-md-0 mb-3">
+          <div className="col-10 offset-1 col-md-6 offset-md-0 col-lg-3 offset-lg-0 mb-3 ">
             <div className="card card-platos">
-              <img src={tacos} className="card-img-top img-platos" alt="..." />
+              <div className="img-platos">
+                <img src={tacos} className="card-img-top " alt="..." />
+              </div>
               <div className="card-body card-body-platos">
-                <span>El favorito de platos internacionales</span>
+                <span className="texto-uno-platos">
+                  El favorito de platos internacionales
+                </span>
                 <h5 className="card-title">Tornado de Sabor Tacos</h5>
-                <p className="card-text">
+                <p>
                   Tacos de carne asada marinada en chimichurri, con cebolla
                   morada, cilantro y salsa de tomate, en tortillas de maíz.
                 </p>

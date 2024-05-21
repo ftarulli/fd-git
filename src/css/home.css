@@ -422,10 +422,13 @@
 }
 
 .fila-card-texto {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
+}
+
+.fila-card-platos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo-platos {
@@ -446,22 +449,31 @@
   color: #ff9f0d;
 }
 
-.fila-card-platos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.card-platos {
-  min-width: 18rem;
-}
-
 .card-body-platos {
   background-color: black;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9rem;
 }
 
 .img-platos {
+  height: 100%;
+}
+
+.img-platos img {
+  height: 100%;
   object-fit: cover;
+}
+
+.texto-uno-platos {
+  color: #ff9f0d;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 /*Media queries*/
