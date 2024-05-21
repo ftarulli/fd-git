@@ -478,6 +478,7 @@
 
 /*Media queries*/
 @media screen and (max-width: 576px) {
+  /*Seccion principal*/
   .container-columnas {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -511,4 +512,23 @@
     width: 60%;
     margin-left: 3rem;
   }
+
+  /*Seccion elegirnos*/
+
+  .imagen-grupo-elegirnos {
+    width: 10%;
+    padding-left: 0;
+  }
+
+  .imagen-grupo-elegirnos img {
+    width: 20rem;
+  }
+
+  /*Seccion Info*/
+
+  .container-info {
+    display: none;
+  }
+
+  /*Seccion Chefs*/
 }

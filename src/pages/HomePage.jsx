@@ -81,7 +81,7 @@ const HomePage = () => {
             </div>
           </div>
           {/*Columna texto e iconos*/}
-          <div className="col-10  col-md-5">
+          <div className="col-10 col-md-5">
             <div>
               <p className="texto_uno">¿Por qué elegirnos?</p>
               <p className="parrafo_uno-elegirnos">
@@ -152,7 +152,7 @@ const HomePage = () => {
 
       <div className="container container-iconos-info">
         <div className="row filas-iconos-info">
-          <div className="col columnas-iconos-info">
+          <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-iconos-info">
             <div>
               <img src={chefs} alt="" className="imagen-info" />
             </div>
@@ -163,7 +163,7 @@ const HomePage = () => {
               <span className="texto-info-destacado">20</span>
             </div>
           </div>
-          <div className="col columnas-iconos-info">
+          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info">
             <div>
               <img src={combo} alt="" className="imagen-info" />
             </div>
@@ -174,7 +174,7 @@ const HomePage = () => {
               <span className="texto-info-destacado">150</span>
             </div>
           </div>
-          <div className="col columnas-iconos-info">
+          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info">
             <div>
               <img src={utensilios} alt="" className="imagen-info" />
             </div>
@@ -185,7 +185,7 @@ const HomePage = () => {
               <span className="texto-info-destacado">30+</span>
             </div>
           </div>
-          <div className="col columnas-iconos-info">
+          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info">
             <div>
               <img src={pizzaPorcion} alt="" className="imagen-info" />
             </div>
