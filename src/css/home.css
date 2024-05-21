@@ -148,7 +148,7 @@
 }
 
 .iconos-texto-elegirnos div span {
-  margin-left: 1rem;
+  margin-left: 2rem;
   font-size: 0.9rem;
 }
 
@@ -287,7 +287,7 @@
 
 .btn .boton-chefs {
   border-radius: 5rem;
-  border-color: #ff9f0d !important;
+  border-color: #ff9f0d;
   width: 10rem;
 }
 

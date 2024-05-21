@@ -57,7 +57,7 @@ const HomePage = () => {
               mejor de nuestra cocina!
             </p>
 
-            <button className="btn btn-primary boton-reserva ">Reservar</button>
+            <button className="btn btn-warning boton-reserva ">Reservar</button>
           </div>
 
           {/* Columna imagen principal */}
@@ -434,7 +434,7 @@ const HomePage = () => {
             </p>
 
             <div>
-              <button className="btn btn-outline-primary">
+              <button className="btn btn-outline-warning">
                 Reservar Online
               </button>
             </div>
