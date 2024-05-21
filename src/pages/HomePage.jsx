@@ -283,7 +283,7 @@ const HomePage = () => {
                     />
                     <div className="card-body">
                       <i
-                        class="fa fa-quote-right icono-quote"
+                        className="fa fa-quote-right icono-quote"
                         aria-hidden="true"
                       ></i>
                       <p className="card-text">
@@ -296,11 +296,11 @@ const HomePage = () => {
                       </p>
 
                       <div className="iconos-testimonios">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star-o" aria-hidden="true"></i>
                       </div>
 
                       <div>
@@ -320,7 +320,7 @@ const HomePage = () => {
                     />
                     <div className="card-body">
                       <i
-                        class="fa fa-quote-right icono-quote"
+                        className="fa fa-quote-right icono-quote"
                         aria-hidden="true"
                       ></i>
                       <p className="card-text">
@@ -333,11 +333,11 @@ const HomePage = () => {
                       </p>
 
                       <div className="iconos-testimonios">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star-o" aria-hidden="true"></i>
                       </div>
 
                       <div>
@@ -357,7 +357,7 @@ const HomePage = () => {
                     />
                     <div className="card-body">
                       <i
-                        class="fa fa-quote-right icono-quote"
+                        className="fa fa-quote-right icono-quote"
                         aria-hidden="true"
                       ></i>
                       <p className="card-text">
@@ -369,11 +369,11 @@ const HomePage = () => {
                       </p>
 
                       <div className="iconos-testimonios">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star" aria-hidden="true"></i>
+                        <i className="fa fa-star-o" aria-hidden="true"></i>
                       </div>
 
                       <div>
@@ -439,6 +439,19 @@ const HomePage = () => {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/*Sección Nuestros platos */}
+
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <div>
+              <span>Nuestros platos</span>
+            </div>
+          </div>
+          <div className="col"></div>
         </div>
       </div>
     </div>

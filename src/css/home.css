@@ -287,7 +287,7 @@
 
 .btn .boton-chefs {
   border-radius: 5rem;
-  border-color: #ff9f0d;
+  border-color: #ff9f0d !important;
   width: 10rem;
 }
 
@@ -412,6 +412,7 @@
   font-size: 1rem;
 }
 
+/*Sección Nuestros platos */
 /*Media queries*/
 @media screen and (max-width: 576px) {
   .container-columnas {
