@@ -5,13 +5,19 @@ import { Footer } from "./components/Footer";
 
 
 
+
 function App() {
 	return (
 		<>
 
-		<Footer />
+
+		<Navegador/>
+			{<AppRouter />}
+    <Footer />
+
 		</>
 	);
+
 }
 
 export default App;
