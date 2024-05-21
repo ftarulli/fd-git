@@ -1,18 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Registro from '../pages/Registro';
-import Login from '../pages/Login';
 
-const AppRouter = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/registro" element={<Registro />} />
-		<Route path="/login" element={<Login />} />
-  
-        {/* Agrega más rutas según sea necesario */}
-      </Routes>
-    </Router>
-  );
+
+import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import { Navegador } from '../components/Navegador';
+
+
+
+
+export const AppRouter = () => {
+	return (
+	<>
+		<BrowserRouter>
+			<Routes>
+				<Route>
+						<Navegador/>
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	</>
+	);
+
 };
 
 export default AppRouter;

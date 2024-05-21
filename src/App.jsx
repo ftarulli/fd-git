@@ -1,12 +1,20 @@
 
-import AppRouter from './router/AppRouter'; // Asegúrate de que esta ruta es correcta
+
+import { AppRouter } from './router/AppRouter'
+
+import Navegador from "./components/Navegador";
+
+	
+
 
 function App() {
-  return (
-    <>
-      <AppRouter />
-    </>
-  );
+	return (
+		<>
+		<Navegador/>
+			{<AppRouter />}
+		</>
+	);
+
 }
 
 export default App;
