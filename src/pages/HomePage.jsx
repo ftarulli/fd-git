@@ -16,6 +16,9 @@ import chef4 from "../assets/img_home/chef4.png";
 import testimonios1 from "../assets/img_home/testimonios1.png";
 import testimonios2 from "../assets/img_home/testimonios2.png";
 import testimonios3 from "../assets/img_home/testimonios3.png";
+import hamburguesa from "../assets/img_home/hamburguesa.png";
+import pizza from "../assets/img_home/pizza.png";
+import tacos from "../assets/img_home/tacos.png";
 
 const HomePage = () => {
   useLayoutEffect(() => {
@@ -43,7 +46,7 @@ const HomePage = () => {
 
           {/* Columna texto principal */}
           <div className="col-10 col-md-6 container-texto-principal">
-            <p className="texto_uno">¡Es rápido y divertido!</p>
+            <h1 className="texto_uno">¡Es rápido y divertido!</h1>
             <p className="parrafo_uno">
               <span className="texto_destacado">Rápido y delicioso</span> <br />{" "}
               la calidad en cada <br /> plato, sin esperas.
@@ -202,7 +205,7 @@ const HomePage = () => {
 
       <div className="container-chefs">
         <div className="texto-chefs">
-          <p className="texto_uno">Chefs</p>
+          <h3 className="texto_uno">Chefs</h3>
           <p className="texto_dos-chefs">
             <span className="destacado-chefs">Conoce</span> a nuestros Chefs
           </p>
@@ -444,14 +447,67 @@ const HomePage = () => {
 
       {/*Sección Nuestros platos */}
 
-      <div className="container">
-        <div className="row">
+      <div className="container-platos">
+        <div className="row fila-card-texto">
           <div className="col">
             <div>
-              <span>Nuestros platos</span>
+              <h6 className="titulo-platos">Nuestros platos</h6>
+              <p className="parrafo-platos">
+                <span className="texto-destacado-platos">Nuestros</span> platos
+                estrellas
+              </p>
             </div>
           </div>
-          <div className="col"></div>
+        </div>
+
+        <div className="row fila-card-platos ms-4 my-3">
+          <div className="col-10 offset-1 col-md-3 offset-md-0 mb-3">
+            <div className="card card-platos">
+              <img
+                src={hamburguesa}
+                className="card-img-top img-platos"
+                alt="..."
+              />
+              <div className="card-body card-body-platos">
+                <span className="texto-uno-platos">
+                  Nuestra hamburgesa estrella
+                </span>
+                <h5 className="card-title">Fuego Infernal Burger</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-10 offset-1 col-md-3 offset-md-0 mb-3">
+            <div className="card card-platos">
+              <img src={pizza} className="card-img-top img-platos" alt="..." />
+              <div className="card-body card-body-platos">
+                <span>Nuestra pizza más pedida</span>
+                <h5 className="card-title">Volcán de Queso Pizza</h5>
+                <p className="card-text">
+                  Pizza con salsa de tomate, mozzarella, jamón cocido, tomate,
+                  aceitunas y orégano, horneada en horno de piedra.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-10 offset-1 col-md-3 offset-md-0 mb-3">
+            <div className="card card-platos">
+              <img src={tacos} className="card-img-top img-platos" alt="..." />
+              <div className="card-body card-body-platos">
+                <span>El favorito de platos internacionales</span>
+                <h5 className="card-title">Tornado de Sabor Tacos</h5>
+                <p className="card-text">
+                  Tacos de carne asada marinada en chimichurri, con cebolla
+                  morada, cilantro y salsa de tomate, en tortillas de maíz.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
