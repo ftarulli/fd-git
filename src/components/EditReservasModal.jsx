@@ -23,6 +23,7 @@ export const EditModal = ({
 							type="text"
 							value={reserva.user || ''}
 							onChange={(e) => handleChange('user', e.target.value)}
+							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
@@ -31,6 +32,7 @@ export const EditModal = ({
 							type="number"
 							value={reserva.phone || ''}
 							onChange={(e) => handleChange('phone', e.target.value)}
+							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
@@ -39,6 +41,7 @@ export const EditModal = ({
 							type="email"
 							value={reserva.email || ''}
 							onChange={(e) => handleChange('email', e.target.value)}
+							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
