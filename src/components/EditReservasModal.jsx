@@ -13,7 +13,7 @@ export const EditModal = ({
 	return (
 		<Modal show={show} onHide={handleClose}>
 			<Modal.Header closeButton>
-				<Modal.Title>Editar Usuario</Modal.Title>
+				<Modal.Title>Editar Reserva</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
 				<Form onSubmit={handleSubmit}>
