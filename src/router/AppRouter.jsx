@@ -1,12 +1,5 @@
 
 
-
-import { SobreNosotros } from '../pages/SobreNosotros';
-
-
-
-
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Contacto } from '../pages/Contacto';
@@ -16,22 +9,16 @@ import { Login } from '../pages/Login';
 import { Registro } from '../pages/Registro';
 
 
-
 export const AppRouter = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-
-		
-				<Route path="/sobrenosotros" element={<SobreNosotros />} />
-				
 
 				<Route path="/" element={<HomePage />} />
 				<Route path="/contacto" element={<Contacto />} />
 				<Route path="/galeria" element={<Galeria />} />
 				<Route path="/login" element={<Login />} />
 				<Route path="/registro" element={<Registro />} />
-
 
 			</Routes>
 		</BrowserRouter>
