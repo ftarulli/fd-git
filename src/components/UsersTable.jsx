@@ -62,6 +62,9 @@ export const UsersTable = () => {
 
 	const handleSubmitEditarUser = (e) => {
 		e.preventDefault();
+
+		//Validaciones
+
 		editarUserDB(userEditarSeleccionado);
 	};
 
@@ -88,7 +91,7 @@ export const UsersTable = () => {
 			console.log(error);
 		}
 	};
-
+	
 	return (
 		<>
 			<Table bordered hover className="Tabla_Usuarios">

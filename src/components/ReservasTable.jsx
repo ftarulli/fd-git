@@ -96,6 +96,16 @@ export const ReservasTable = () => {
 			console.log(error);
 		}
 	};
+
+	const deleteReservas = async (_id) => {
+		try {
+			await apiTest.delete(`/deleteReservas/${_id}`);
+			listaUsersBack();
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	return (
 		<>
 			<Table bordered hover className="Tabla_Reservas">

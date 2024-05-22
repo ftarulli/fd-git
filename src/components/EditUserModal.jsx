@@ -22,6 +22,7 @@ export const EditUserModal = ({
 						type="text"
 						value={user._id}
 						onChange={(e) => handleChangeEditUser('_id', e.target.value)}
+						disabled
 					/>
 				</Form.Group>
 
