@@ -91,7 +91,7 @@ export const UsersTable = () => {
 			console.log(error);
 		}
 	};
-	
+
 	return (
 		<>
 			<Table bordered hover className="Tabla_Usuarios">

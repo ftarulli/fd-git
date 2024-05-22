@@ -99,7 +99,6 @@ export const ReservasTable = () => {
 			console.error('Error al eliminar la reserva:', error);
 		}
 	};
-
 	return (
 		<>
 			<Table bordered hover className="Tabla_Reservas">

@@ -60,3 +60,44 @@
 .TablaRes_Botons {
     width: 5%;
 }
+
+@media (max-width: 768px) {
+    .Tabla_Reservas thead {
+        display: none;
+    }
+
+    .Tabla_Reservas {
+        margin-top: 50px;
+        z-index: -5;
+    }
+
+    .Tabla_Reservas,
+    .Tabla_Reservas tbody,
+    .Tabla_Reservas tr,
+    .Tabla_Reservas td {
+        display: block;
+        width: 100%;
+    }
+
+    .Tabla_Reservas tr {
+        margin-bottom: 15px;
+        height: max-content;
+    }
+
+    .Tabla_Reservas td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        height: 40px;
+    }
+
+    .Tabla_Reservas td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
