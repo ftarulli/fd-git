@@ -1,9 +1,13 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import '../css/galeria.css';
+import "../css/galeria.css";
+import { useLayoutEffect } from "react";
 
 export const Galeria = () => {
+  useLayoutEffect(() => {
+    document.body.style.backgroundColor = "black";
+  });
   const settings = {
     dots: false,
     infinite: true,
