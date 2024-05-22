@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+
+/*Sección principal*/
+
+.container-imagen-principal {
+  background-image: url(../assets/img_home/fideos-carne.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  filter: brightness(10%);
+  position: absolute;
+}
+
+.container-principal {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.container-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 4rem;
+}
+
+/* Columna íconos */
+.container-iconos-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  width: 5rem;
+}
+
+.iconos-redes-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+}
+
+.linea-vertical-principal {
+  height: 10rem;
+  width: 0.8px;
+  background-color: #ffffff;
+}
+
+/* Columna texto */
+
+.container-texto-principal {
+  color: #ffffff;
+  width: 40rem;
+}
+
+.boton-reserva {
+  background-color: #ff9f0d;
+  width: 10rem;
+}
+
+.texto_uno {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #ff9f0d;
+  font-size: 2rem;
+}
+
+.parrafo_uno {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.parrafo_dos {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.texto_destacado {
+  color: #ff9f0d;
+}
+
+/* Columna imagen plato */
+
+.imagen-principal-plato {
+  width: 100%;
+}
+
+/*Sección elegirnos*/
+.container-elegirnos {
+  color: #ffffff;
+  margin: 5rem;
+}
+
+.container-filas-elegirnos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imagen-grupo-elegirnos {
+  width: 50%;
+  padding-left: 7.5rem;
+}
+
+.imagen-grupo-elegirnos img {
+  width: 30rem;
+  padding: 1rem;
+}
+
+.parrafo_uno-elegirnos {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.container-iconos-elegirnos {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -2rem;
+}
+
+.iconos-elegirnos {
+  background-color: #ff9f0d;
+  margin-left: 2rem;
+  border-radius: 0.3rem;
+}
+
+.iconos-elegirnos img {
+  width: 4rem;
+  padding: 1rem;
+}
+
+.iconos-texto-elegirnos {
+  text-align: center;
+}
+
+.iconos-texto-elegirnos div span {
+  margin-left: 2rem;
+  font-size: 0.9rem;
+}
+
+.cajita-experiencia {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  width: 16.4rem;
+  padding: 1rem;
+  height: 3.5rem;
+  border-left: 10px solid #ff9f0d;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -0.9rem;
+}
+
+.numero-experiencia {
+  font-size: 2.8rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  color: #ff9f0d;
+  padding-right: 0.5rem;
+}
+
+.experiencia-texto {
+  font-family: Helvetica, sans-serif;
+}
+
+.experiencia-destacado {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/*Sección Info*/
+
+.container-info {
+  background-image: url(../assets/img_home/fondo4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(15%);
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+}
+
+.container-iconos-info {
+  height: 50vh;
+  position: relative;
+}
+
+.filas-iconos-info {
+  margin: 0;
+  height: 100%;
+}
+
+.columnas-iconos-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.imagen-info {
+  width: 5rem;
+  padding-bottom: 1rem;
+}
+
+.texto-info {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.texto-info-destacado {
+  font-family: Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/*Sección Chefs*/
+
+.container-chefs-fondo {
+  background-image: url(../assets/img_home/fondo1.png);
+  background-repeat: no-repeat;
+  background-position: start;
+  background-size: contain;
+  filter: brightness(15%);
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.container-chefs {
+  margin-top: 1.5rem;
+}
+.container-chefs-detalle {
+  padding-top: 3rem;
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imagen-chefs {
+  width: 13rem;
+}
+
+.texto-chefs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto_dos-chefs {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.destacado-chefs {
+  color: #ff9f0d;
+}
+.container-boton-chefs {
+  margin: 4rem;
+  text-align: center;
+}
+
+.btn .boton-chefs {
+  border-radius: 5rem;
+  border-color: #ff9f0d;
+  width: 10rem;
+}
+
+.btn .boton-chefs:hover {
+  border-color: #ff9f0d;
+}
+
+/*Sección Testimonios Clientes */
+
+.container-testimonios {
+  background-image: url(../assets/img_home/fondo2.png);
+  background-position-x: 50rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  filter: brightness(10%);
+  position: absolute;
+}
+
+.carousel-item {
+  height: 30rem;
+}
+
+.container-carrousel-testimonios {
+  position: relative;
+  width: 98%;
+}
+
+.fila-carousel-testimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-testimonios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card-testimonios img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.iconos-testimonios {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.iconos-testimonios i {
+  color: #ff9f0d;
+}
+
+.nombre-testimonios {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.icono-quote {
+  color: #ff9f0d;
+  padding: 1rem;
+}
+
+/*Sección Banner*/
+
+.container-banner {
+  background-image: url(../assets/img_home/fondo5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 0;
+  position: absolute;
+}
+
+.container-texto-banner {
+  position: relative;
+  color: white;
+  height: 10rem;
+  width: 100%;
+  top: 6rem;
+}
+
+.columna-texto-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: end;
+}
+
+.parrafo-uno-banner {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.parrafo-dos-banner {
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/*Sección Nuestros platos */
+
+
+
+.container-platos {
+  width: 95%;
+  height: 100vh;
+  position: relative;
+  top: 350px;
+  color: #ff9f0d !important;
+
+}
+
+.fila-card-texto {
+  text-align: center;
+}
+
+.fila-card-platos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-platos {
+  color: #ff9f0d;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.parrafo-platos {
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.texto-destacado-platos {
+  color: #ff9f0d;
+}
+
+.card-body-platos {
+  background-color: black;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.img-platos {
+  height: 100%;
+}
+
+.img-platos img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-uno-platos {
+  color: #ff9f0d;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/*Media queries*/
+@media screen and (max-width: 576px) {
+  /*Seccion principal*/
+  .container-columnas {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+
+  .container-iconos-principal {
+    display: none;
+  }
+  .container-texto-principal {
+    width: 50%;
+  }
+
+  .texto_uno {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .parrafo_uno {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .parrafo_dos {
+    font-size: 0.7rem;
+    word-spacing: 0.3rem;
+  }
+
+  .imagen-principal-plato {
+    width: 60%;
+    margin-left: 3rem;
+  }
+
+  /*Seccion elegirnos*/
+
+  .imagen-grupo-elegirnos {
+    width: 10%;
+    padding-left: 0;
+  }
+
+  .imagen-grupo-elegirnos img {
+    width: 20rem;
+  }
+
+  /*Seccion Info*/
+
+  .container-info {
+    display: none;
+  }
+
+  /*Seccion Chefs*/
+}
