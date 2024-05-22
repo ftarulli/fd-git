@@ -236,7 +236,7 @@ const HomePage = () => {
         </div>
 
         <div className="container-boton-chefs">
-          <button className="btn btn-outline-primary boton-chefs">
+          <button className="btn btn-outline-warning boton-chefs">
             Ver mas
           </button>
         </div>
@@ -473,8 +473,8 @@ const HomePage = () => {
                 </span>
                 <h5 className="card-title">Fuego Infernal Burger</h5>
                 <p>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the content.
+                  Hamburguesa con carne a la parrilla argentina, queso
+                  provolone, chimichurri, cebollas caramelizadas y ají.
                 </p>
               </div>
             </div>

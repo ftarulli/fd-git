@@ -250,6 +250,7 @@
 .container-chefs {
   margin-top: 1.5rem;
 }
+
 .container-chefs-detalle {
   padding-top: 3rem;
   position: relative;
@@ -280,6 +281,7 @@
 .destacado-chefs {
   color: #ff9f0d;
 }
+
 .container-boton-chefs {
   margin: 4rem;
   text-align: center;
@@ -420,6 +422,7 @@
   position: relative;
   top: 350px;
   color: #ff9f0d !important;
+  margin-bottom: 30rem;
 }
 
 .fila-card-texto {
