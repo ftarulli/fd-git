@@ -40,7 +40,7 @@ export const Login = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="src\img-registro\chef-taking-pizza-out-woodburning-oven-old-cafe-city-center-small-local-business.jpg"
+            src="src\assets\img-registro\chef-taking-pizza-out-woodburning-oven-old-cafe-city-center-small-local-business.jpg"
             alt="First slide"
           />
           <Carousel.Caption className="caption-right"></Carousel.Caption>
@@ -48,7 +48,7 @@ export const Login = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="src\img-registro\chef-working-together-professional-kitchen.jpg"
+            src="src\assets\img-registro\chef-working-together-professional-kitchen.jpg"
             alt="Second slide"
           />
           <Carousel.Caption className="caption-right"></Carousel.Caption>
@@ -57,7 +57,7 @@ export const Login = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="src\img-registro\group-friends-eating-restaurant.jpg"
+            src="src\assets\img-registro\group-friends-eating-restaurant.jpg"
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
@@ -67,7 +67,7 @@ export const Login = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="src\img-registro\medium-shot-woman-working-luxury-restaurant.jpg"
+            src="src\assets\img-registro\medium-shot-woman-working-luxury-restaurant.jpg"
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
@@ -77,7 +77,7 @@ export const Login = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="src\img-registro\woman-eating-pasta-italian-restaurant.jpg"
+            src="src\assets\img-registro\woman-eating-pasta-italian-restaurant.jpg"
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
