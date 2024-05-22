@@ -1,0 +1,12 @@
+.imagenFondo {
+	background-image: url(../assets/imgContacto/fondo.jpeg);
+	height: 100vh;
+	background-image: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoDiv1 {
+	position: absolute;
+	left: 370px;
+	top: 250px;
+}
