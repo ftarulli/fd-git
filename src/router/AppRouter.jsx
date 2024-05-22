@@ -16,9 +16,9 @@ export const AppRouter = () => {
 
 				<Route path="/" element={<HomePage />} />
 				<Route path="/contacto" element={<Contacto />} />
-				<Route path="/Galeria" element={<Galeria />} />
-				<Route path="/Login" element={<Login />} />
-				<Route path="/Registro" element={<Registro />} />
+				<Route path="/galeria" element={<Galeria />} />
+				<Route path="/login" element={<Login />} />
+				<Route path="/registro" element={<Registro />} />
 
 			</Routes>
 		</BrowserRouter>

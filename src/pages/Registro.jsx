@@ -57,6 +57,7 @@ navigate('/login');
         apellido: apellido.trim(),
         email: email.trim(),
         password: password.trim(),
+        confirmpassword: password.trim(),
       });
 
       console.log('Respuesta del servidor:', response.data);
