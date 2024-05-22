@@ -21,3 +21,9 @@
     font-size: 15px;
     color: #C4C4C4;
 }
+
+@media (max-width: 600px) {
+    .Panel {
+        margin-top: 200px;
+    }
+}
