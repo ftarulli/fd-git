@@ -24,6 +24,7 @@
     "axios": "^1.7.2",
     "sweetalert2": "^11.11.0"
 
+
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
