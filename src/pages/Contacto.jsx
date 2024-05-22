@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '../css/Contacto.css';
 export const Contacto = () => {
 	return (

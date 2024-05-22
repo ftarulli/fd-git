@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow: hidden; /* Evita el scroll vertical y horizontal */
+    overflow: auto;
     font-family: "Inter";
   }
   
@@ -11,7 +11,7 @@ body {
   }
   
   .carrousel {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw; /* Ancho de la ventana del navegador */
@@ -151,6 +151,16 @@ body {
   .registro-divider {
     border-top: 1px dashed #303030; /* Cambia el estilo del borde a entrecortado */
     margin: 20px 0; /* Ajusta el margen superior e inferior según sea necesario */
+  }
+  
+  .registro {
+    color: #E65300; /* Cambia el color del enlace a naranja */
+    font-weight: 600;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+  
+  .registro:hover {
+    color: #E65300; /* Cambia el color del enlace al pasar el mouse */
   }
   
   

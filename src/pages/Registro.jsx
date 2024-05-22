@@ -57,7 +57,6 @@ navigate('/login');
         apellido: apellido.trim(),
         email: email.trim(),
         password: password.trim(),
-        confirmpassword: password.trim(),
       });
 
       console.log('Respuesta del servidor:', response.data);
@@ -107,7 +106,7 @@ navigate('/login');
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
-            <p>...</p>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -117,7 +116,7 @@ navigate('/login');
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
-            <p>...</p>
+            
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -127,7 +126,7 @@ navigate('/login');
             alt="Third slide"
           />
           <Carousel.Caption className="caption-right">
-            <p>...</p>
+            
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

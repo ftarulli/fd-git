@@ -1,7 +1,7 @@
 
 
-// import { Footer } from "./components/Footer";
-// import { Navegador } from "./components/Navegador";
+import { Footer } from "./components/Footer";
+import { Navegador } from "./components/Navegador";
 import { AppRouter } from "./router/AppRouter";
 
 
@@ -13,11 +13,11 @@ function App() {
 	return (
 		<>
 
-			{/* <Navegador /> */}
+			<Navegador/>
 		
 			<AppRouter />
 		
-			{/* <Footer /> */}
+			<Footer/>
 		</>
 	);
 

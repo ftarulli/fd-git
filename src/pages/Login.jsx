@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 
 // import axios from 'axios';
 import '../css/login.css'; // Asegúrate de tener un archivo CSS adecuado para estilos de login
@@ -88,8 +89,7 @@ export const Login = () => {
         <div className="info-contenedor">
           <div>
             <h1>Iniciar Sesión</h1>
-            <p>¿No tienes una cuenta? <a href="/registro" className="registro">Regístrate</a></p>
-
+            <p>¿No tienes una cuenta? <Link to="/registro" className="registro">Regístrate</Link></p> {/* Utiliza Link para redirigir a /registro */}
           </div>
           <br />
           <Form onSubmit={handleSubmit}>
@@ -113,9 +113,11 @@ export const Login = () => {
               />
             </Form.Group>
 
-            <Button className="custom-btn" type="submit">
-              Iniciar Sesión
-            </Button>
+            <Link to="/"> {/* Utiliza Link para redirigir a / */}
+              <Button className="custom-btn" type="submit">
+                Iniciar Sesión
+              </Button>
+            </Link>
           </Form>
         </div>
         <hr />

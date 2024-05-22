@@ -1,5 +1,5 @@
 body {
-	background-image: url('src/assets/img-galeria/sunrise-1014712 8 copy.png');
+	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -7,7 +7,7 @@ body {
 }
 body::after {
 	content: '';
-	background-color: rgba(0, 0, 0, 0.8); /* Opacidad del 26% (0.26) */
+	
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -18,7 +18,7 @@ body::after {
 
 .slider-container {
 	width: 1349px;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .slider {
@@ -34,7 +34,7 @@ body::after {
 .slider-container {
 	position: relative;
 	width: 100%;
-	overflow: hidden; /* Oculta las imágenes que se salen del contenedor */
+	overflow:hidden;
 }
 
 .slider {
