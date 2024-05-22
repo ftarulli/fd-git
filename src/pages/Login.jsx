@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 
 // import axios from 'axios';
-// import '../css/login.css'; // Asegúrate de tener un archivo CSS adecuado para estilos de login
+import "../css/login.css"; // Asegúrate de tener un archivo CSS adecuado para estilos de login
 import testApi from "../api/testApi";
 
 export const Login = () => {
@@ -35,7 +35,7 @@ export const Login = () => {
   };
 
   return (
-    <div className="contenedor">
+    <div className="contenedor-carrousel">
       <Carousel className="carrousel">
         <Carousel.Item>
           <img

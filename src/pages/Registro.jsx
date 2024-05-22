@@ -85,7 +85,7 @@ export const Registro = () => {
   };
 
   return (
-    <div className="contenedor">
+    <div className="contenedor-registro">
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}

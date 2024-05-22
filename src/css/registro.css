@@ -4,7 +4,7 @@ body {
   font-family: "Inter";
 }
 
-.contenedor {
+.contenedor-registro {
   position: relative;
   width: 100vw; /* Ancho de la ventana del navegador */
   height: 100vh; /* Alto de la ventana del navegador */
@@ -24,7 +24,9 @@ body {
   top: 200px; /* Ajusta el margen superior según sea necesario */
   left: 0;
   width: 100vw;
-  height: calc(100vh - 200px); /* Ajusta la altura restando el margen superior */
+  height: calc(
+    100vh - 200px
+  ); /* Ajusta la altura restando el margen superior */
   overflow: hidden;
 }
 
@@ -39,7 +41,6 @@ body {
   height: auto;
   object-fit: cover;
 }
-
 
 /* Estilos para el cuadrado blanco */
 .cuadrado-blanco {
@@ -60,9 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #222222;
-  
 }
-
 
 /* Estilos para el título "Regístrate" dentro del cuadrado blanco */
 .cuadrado-blanco h1 {
@@ -138,7 +137,6 @@ body {
   margin-right: 20px; /* Ajusta el espacio entre el checkbox y el botón */
 }
 
-
 .registro-terms label {
   margin-left: 5px;
 }
@@ -151,18 +149,16 @@ body {
   margin-left: auto; /* Mueve el botón hacia la derecha */
 }
 
-
-
 .iniciar-sesion {
   text-decoration: none;
-  color: #E65300;
+  color: #e65300;
   font-weight: bold;
 }
 
 .registrarse {
   width: 102px;
   height: 48px;
-  background-color: #E65300;
+  background-color: #e65300;
   color: white;
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -170,33 +166,27 @@ body {
   border: none; /* Elimina el borde */
 }
 
-
 .registro-divider {
   border-top: 1px dashed #303030; /* Cambia el estilo del borde a entrecortado */
   margin: 20px 0; /* Ajusta el margen superior e inferior según sea necesario */
 }
 
-
-
 .custom-btn {
-  background-color: #E65300 !important; /* Color naranja */
-  border-color: #E65300 !important; /* Color del borde igual al color de fondo */
+  background-color: #e65300 !important; /* Color naranja */
+  border-color: #e65300 !important; /* Color del borde igual al color de fondo */
   color: white !important; /* Texto en color blanco */
   font-size: 14px !important; /* Tamaño de fuente */
   font-weight: 400 !important; /* Peso de la fuente */
   padding: 8px 16px !important; /* Espaciado interno */
   border-radius: 0 !important; /* Elimina los bordes redondeados */
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease; /* Transición suave */
 }
 
 .custom-btn:hover {
-  background-color: #FF7F00 !important; /* Color naranja más claro al pasar el mouse */
-  border-color: #FF7F00 !important; /* Color del borde al pasar el mouse */
+  background-color: #ff7f00 !important; /* Color naranja más claro al pasar el mouse */
+  border-color: #ff7f00 !important; /* Color del borde al pasar el mouse */
 }
-
-
-
-
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
@@ -218,7 +208,9 @@ body {
   }
 
   .input-wrapper input {
-    width: calc(100% - 20px); /* Calcula el ancho del input para que ocupe todo el espacio disponible */
+    width: calc(
+      100% - 20px
+    ); /* Calcula el ancho del input para que ocupe todo el espacio disponible */
     margin-right: 0; /* Elimina el margen derecho */
     margin-bottom: 10px; /* Agrega un margen inferior para separar los inputs */
     color: white; /* Cambia el color del texto a blanco */
@@ -243,5 +235,4 @@ body {
   .cuadrado-blanco h1 {
     color: white; /* Cambia el color del texto a blanco */
   }
-  
 }
