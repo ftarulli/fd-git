@@ -8,7 +8,7 @@ export const Navegador = () => {
   return (
     <div>
       <>
-        <Navbar expand="lg" className="color">
+        <Navbar expand="lg" className="color" sticky="top">
           <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
