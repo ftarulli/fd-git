@@ -23,7 +23,7 @@ export const TableRow = ({ reserva, visibleMenu, toggleMenu, onEdit, onDelete })
 						isVisible={isVisible}
 						toggleMenu={() => toggleMenu(reserva.id)}
 						onEdit={() => onEdit(reserva)}
-						onDelete={() => onDelete(reserva.id)}
+						onDelete={() => onDelete(reserva._id)}
 					/>
 				</div>
 			</td>

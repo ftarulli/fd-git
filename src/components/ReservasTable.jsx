@@ -93,7 +93,7 @@ export const ReservasTable = () => {
 
 	const deleteReservas = async (_id) => {
 		try {
-			await apiTest.delete(`/deleteReservas/${_id}`);
+			await apiTest.delete(`/admin/deleteReservas/${_id}`);
 			listReservas();
 		} catch (error) {
 			console.error('Error al eliminar la reserva:', error);
