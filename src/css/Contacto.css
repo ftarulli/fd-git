@@ -1,15 +1,13 @@
-
 .imagenFondo {
-    background-image: url('src/assets/imgContacto/fondo.jpeg'); /* Ruta relativa de la imagen de fondo */
-    min-height: 100vh; /* Cambiado de height a min-height */
-    background-size: cover; /* Ajustar tamaño de la imagen para cubrir el contenedor */
-    background-repeat: no-repeat;
+  background-image: url("src/assets/imgContacto/fondo.jpeg"); /* Ruta relativa de la imagen de fondo */
+  min-height: 100vh; /* Cambiado de height a min-height */
+  background-size: cover; /* Ajustar tamaño de la imagen para cubrir el contenedor */
+  background-repeat: no-repeat;
 }
 
-
 .fondoDiv1 {
-    position: absolute;
-    left: 370px;
-    top: 250px;
-    color:#000000;
+  position: absolute;
+  left: 370px;
+  top: 250px;
+  color: #000000;
 }

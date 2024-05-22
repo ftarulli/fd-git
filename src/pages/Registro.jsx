@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import '../css/registro.css';
+import { useState } from "react";
+import { Form, Button } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+// import '../css/registro.css';
 
 export const Registro = () => {
   const navigate = useNavigate();
@@ -14,74 +14,83 @@ export const Registro = () => {
     setIndex(selectedIndex);
   };
 
-  const [nombre, setNombre] = useState('');
-  const [apellido, setApellido] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [nombre, setNombre] = useState("");
+  const [apellido, setApellido] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [aceptaTerminos, setAceptaTerminos] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Logging field values
-console.log('Nombre:', nombre);
-console.log('Apellido:', apellido);
-console.log('Email:', email);
-console.log('Password:', password);
-console.log('Confirm Password:', confirmPassword);
-console.log('Acepta Términos:', aceptaTerminos);
+    console.log("Nombre:", nombre);
+    console.log("Apellido:", apellido);
+    console.log("Email:", email);
+    console.log("Password:", password);
+    console.log("Confirm Password:", confirmPassword);
+    console.log("Acepta Términos:", aceptaTerminos);
 
-if (!nombre.trim() || !apellido.trim() || !email.trim() || !password.trim()) {
-  alert('Todos los campos deben estar completos.');
-  return;
-}
+    if (
+      !nombre.trim() ||
+      !apellido.trim() ||
+      !email.trim() ||
+      !password.trim()
+    ) {
+      alert("Todos los campos deben estar completos.");
+      return;
+    }
 
-if (password !== confirmPassword) {
-  alert('Las contraseñas no coinciden.');
-  return;
-}
+    if (password !== confirmPassword) {
+      alert("Las contraseñas no coinciden.");
+      return;
+    }
 
-if (!aceptaTerminos) {
-  alert('Debes aceptar los términos y condiciones.');
-  return;
-}
+    if (!aceptaTerminos) {
+      alert("Debes aceptar los términos y condiciones.");
+      return;
+    }
 
-// Redirigir a login si todos los campos están completos
-navigate('/login');
-
+    // Redirigir a login si todos los campos están completos
+    navigate("/login");
 
     try {
-      const response = await axios.post('http://localhost:9099/user/register', {
+      const response = await axios.post("http://localhost:9099/user/register", {
         nombre: nombre.trim(),
         apellido: apellido.trim(),
         email: email.trim(),
         password: password.trim(),
       });
 
-      console.log('Respuesta del servidor:', response.data);
-      alert('Registro Correcto');
+      console.log("Respuesta del servidor:", response.data);
+      alert("Registro Correcto");
 
       // Limpiar campos después del registro exitoso
-      setNombre('');
-      setApellido('');
-      setEmail('');
-      setPassword('');
-      setConfirmPassword('');
+      setNombre("");
+      setApellido("");
+      setEmail("");
+      setPassword("");
+      setConfirmPassword("");
       setAceptaTerminos(false);
 
       // Redirigir al login
-      navigate('/login');
+      navigate("/login");
     } catch (error) {
-      console.log('Error en el registro:', error.response);
-      const errorMsg = error.response.data.msg || 'Error en el registro. Intenta nuevamente.';
+      console.log("Error en el registro:", error.response);
+      const errorMsg =
+        error.response.data.msg || "Error en el registro. Intenta nuevamente.";
       alert(errorMsg);
     }
   };
 
   return (
     <div className="contenedor">
-       <Carousel activeIndex={index} onSelect={handleSelect} className="carrousel">
+      <Carousel
+        activeIndex={index}
+        onSelect={handleSelect}
+        className="carrousel"
+      >
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -105,9 +114,7 @@ navigate('/login');
             src="src\img-registro\group-friends-eating-restaurant.jpg"
             alt="Third slide"
           />
-          <Carousel.Caption className="caption-right">
-            
-          </Carousel.Caption>
+          <Carousel.Caption className="caption-right"></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -115,9 +122,7 @@ navigate('/login');
             src="src\img-registro\medium-shot-woman-working-luxury-restaurant.jpg"
             alt="Third slide"
           />
-          <Carousel.Caption className="caption-right">
-            
-          </Carousel.Caption>
+          <Carousel.Caption className="caption-right"></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -125,16 +130,20 @@ navigate('/login');
             src="src\img-registro\woman-eating-pasta-italian-restaurant.jpg"
             alt="Third slide"
           />
-          <Carousel.Caption className="caption-right">
-            
-          </Carousel.Caption>
+          <Carousel.Caption className="caption-right"></Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       <div className="cuadrado-blanco">
         <div className="info-contenedor">
           <div>
             <h1>Regístrate</h1>
-            <p>¿Ya estás registrado? <a href="/login" className="iniciar-sesion">Iniciar Sesión</a> <img src="src/img-registro/Vector.png" alt="Icono de Usuario" /></p>
+            <p>
+              ¿Ya estás registrado?{" "}
+              <a href="/login" className="iniciar-sesion">
+                Iniciar Sesión
+              </a>{" "}
+              <img src="src/img-registro/Vector.png" alt="Icono de Usuario" />
+            </p>
           </div>
           <br />
           <Form onSubmit={handleSubmit}>

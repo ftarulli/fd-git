@@ -414,15 +414,12 @@
 
 /*Sección Nuestros platos */
 
-
-
 .container-platos {
   width: 95%;
   height: 100vh;
   position: relative;
   top: 350px;
   color: #ff9f0d !important;
-
 }
 
 .fila-card-texto {

@@ -1,4 +1,4 @@
-import  { useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import "../css/home.css";
 import principal from "../assets/img_home/principal.png";
 import grupo from "../assets/img_home/grupo.png";

@@ -1,24 +1,24 @@
-import { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
-import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
+import { useState } from "react";
+import { Form, Button } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 
 // import axios from 'axios';
-import '../css/login.css'; // Asegúrate de tener un archivo CSS adecuado para estilos de login
-import testApi from '../api/testApi';
+// import '../css/login.css'; // Asegúrate de tener un archivo CSS adecuado para estilos de login
+import testApi from "../api/testApi";
 
 export const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const loginBackend = async (email, password) => {
     try {
-        const resp = await testApi.post("/user/login", {
-            mail:email,
-            password,
-        })
-        console.log(resp.data.token);
-        localStorage.setItem('token',resp.data.token);
+      const resp = await testApi.post("/user/login", {
+        mail: email,
+        password,
+      });
+      console.log(resp.data.token);
+      localStorage.setItem("token", resp.data.token);
     } catch (error) {
       console.log(error);
     }
@@ -36,7 +36,7 @@ export const Login = () => {
 
   return (
     <div className="contenedor">
-       <Carousel className="carrousel">
+      <Carousel className="carrousel">
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -89,7 +89,13 @@ export const Login = () => {
         <div className="info-contenedor">
           <div>
             <h1>Iniciar Sesión</h1>
-            <p>¿No tienes una cuenta? <Link to="/registro" className="registro">Regístrate</Link></p> {/* Utiliza Link para redirigir a /registro */}
+            <p>
+              ¿No tienes una cuenta?{" "}
+              <Link to="/registro" className="registro">
+                Regístrate
+              </Link>
+            </p>{" "}
+            {/* Utiliza Link para redirigir a /registro */}
           </div>
           <br />
           <Form onSubmit={handleSubmit}>
@@ -113,7 +119,9 @@ export const Login = () => {
               />
             </Form.Group>
 
-            <Link to="/"> {/* Utiliza Link para redirigir a / */}
+            <Link to="/">
+              {" "}
+              {/* Utiliza Link para redirigir a / */}
               <Button className="custom-btn" type="submit">
                 Iniciar Sesión
               </Button>
