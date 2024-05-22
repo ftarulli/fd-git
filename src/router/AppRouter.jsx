@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Galeria from '../pages/Galeria';
@@ -10,4 +11,7 @@ export const AppRouter = () => {
 			</Routes>
 		</BrowserRouter>
 	);
+
 };
+
+export default AppRouter;
