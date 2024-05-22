@@ -104,7 +104,7 @@ export const ReservasTable = () => {
 			<Table bordered hover className="Tabla_Reservas">
 				<thead>
 					<tr>
-						<th className="TablaRes_Id">Id</th>
+						<th className="TablaRes_Id">ID</th>
 						<th className="TablaRes_User">Usuario</th>
 						<th className="TablaRes_Cel">Numero de telefono</th>
 						<th className="TablaRes_Email">Email</th>

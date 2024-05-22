@@ -53,35 +53,11 @@ export const UsersTable = () => {
 		setUserEditarSeleccionado(user);
 	};
 
-	const handleChangeEditUser = (propiedad, valor) => {
-		setUserEditarSeleccionado((prevUser) => ({
-			...prevUser,
-			[propiedad]: valor,
-		}));
-	};
 
 	const handleSubmitEditarUser = (e) => {
 		e.preventDefault();
-
-		//Validaciones
-
-		editarUserDB(userEditarSeleccionado);
 	};
 
-	const editarUserDB = async ({ _id, username, phone, mail }) => {
-		try {
-			await apiTest.put('./admin/editUsers', {
-				_id,
-				username,
-				phone,
-				mail,
-			});
-			listaUsersBack();
-			setShow(false);
-		} catch (error) {
-			console.log(error);
-		}
-	};
 
 	const deleteUser = async (_id) => {
 		try {
@@ -97,7 +73,7 @@ export const UsersTable = () => {
 			<Table bordered hover className="Tabla_Usuarios">
 				<thead>
 					<tr>
-						<th className="Tabla_Id">Id</th>
+						<th className="Tabla_Id">ID</th>
 						<th className="Tabla_User">Usuario</th>
 						<th className="Tabla_Cel">Numero de telefono</th>
 						<th className="Tabla_Email">Email</th>
@@ -123,7 +99,6 @@ export const UsersTable = () => {
 				show={show}
 				handleClose={handleClose}
 				user={userEditarSeleccionado}
-				handleChangeEditUser={handleChangeEditUser}
 				handleSubmitEditarUser={handleSubmitEditarUser}
 			/>
 		</>

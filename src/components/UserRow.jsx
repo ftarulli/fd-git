@@ -1,7 +1,13 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-export const UserRow = ({ user, visibleMenu, toggleMenu, editarUser, deleteUser }) => (
+export const UserRow = ({
+	user,
+	visibleMenu,
+	toggleMenu,
+	editarUser,
+	deleteUser,
+}) => (
 	<tr>
 		<td data-label="Id">...{user._id.slice(19, 24)}</td>
 		<td data-label="Usuario" id="UserTable">
@@ -20,7 +26,7 @@ export const UserRow = ({ user, visibleMenu, toggleMenu, editarUser, deleteUser 
 							Eliminar
 						</Button>
 						<Button className="menu-item my-1" onClick={() => editarUser(user)}>
-							Editar
+							Detalles
 						</Button>
 					</div>
 				)}

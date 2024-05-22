@@ -5,7 +5,7 @@ export const TableRow = ({ reserva, visibleMenu, toggleMenu, onEdit, onDelete })
 	const isVisible = visibleMenu === reserva._id;
 	return (
 		<tr>
-			<td data-label="Id">...{reserva._id.slice(19, 24)}</td>
+			<td data-label="ID">...{reserva._id.slice(19, 24)}</td>
 			<td data-label="Usuario" id="UserTableReservas">
 				{reserva.name}
 			</td>
