@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../css/registro.css';
 
-const Registro = () => {
+export const Registro = () => {
   const navigate = useNavigate();
 
   const [index, setIndex] = useState(0);
@@ -207,5 +207,3 @@ navigate('/login');
     </div>
   );
 };
-
-export default Registro;

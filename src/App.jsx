@@ -1,6 +1,8 @@
 
+
+// import { Footer } from "./components/Footer";
+// import { Navegador } from "./components/Navegador";
 import { AppRouter } from "./router/AppRouter";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -11,11 +13,11 @@ function App() {
 	return (
 		<>
 
-
-		<Navegador/>
-			{<AppRouter />}
-    <Footer />
-
+			{/* <Navegador /> */}
+		
+			<AppRouter />
+		
+			{/* <Footer /> */}
 		</>
 	);
 

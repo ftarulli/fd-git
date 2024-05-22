@@ -3,7 +3,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 import '../css/footer.css';
 
 
-export const Footer = () => {
+ export const Footer = () => {
   return (
     <MDBFooter className='text-center text-lg-start text-white' style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
 

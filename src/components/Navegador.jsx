@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../css/nav.css'
 // import React from 'react'
 
-const Navegador = () => {
+export const Navegador = () => {
   return (
     <div>
       <>
@@ -31,12 +31,4 @@ const Navegador = () => {
   )
 }
 
-export default Navegador
 
-
-
-// export const Navegador = () => {
-//   return (
-//     
-//   )
-// }

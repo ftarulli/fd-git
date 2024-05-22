@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import axios from 'axios';
 import '../css/login.css'; // Asegúrate de tener un archivo CSS adecuado para estilos de login
 import testApi from '../api/testApi';
 
-const Login = () => {
+export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -123,5 +123,3 @@ const Login = () => {
     </div>
   );
 };
-
-export default Login;

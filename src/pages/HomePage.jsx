@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import  { useLayoutEffect } from "react";
 import "../css/home.css";
 import principal from "../assets/img_home/principal.png";
 import grupo from "../assets/img_home/grupo.png";
@@ -474,7 +474,7 @@ const HomePage = () => {
                 <h5 className="card-title">Fuego Infernal Burger</h5>
                 <p>
                   Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  the bulk of the content.
                 </p>
               </div>
             </div>

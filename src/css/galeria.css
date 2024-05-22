@@ -54,7 +54,7 @@ body::after {
 .slider-container-wrapper {
 	display: flex;
 	justify-content: center;
-	margin-top: 100px; /* Ajusta la distancia desde la parte superior según sea necesario */
+	margin-top: 0px; /* Ajusta la distancia desde la parte superior según sea necesario */
 }
 
 .slider-container {
@@ -77,11 +77,11 @@ body::after {
 	color: orange; /* Color del texto */
 	font-size: 1.5rem; /* Tamaño de la fuente */
 	margin-bottom: 20px; /* Margen inferior */
-	margin-top: 20px; /* Margen superior */
+	
 	font-family: 'Great Vibes';
 	font-weight: 200;
 	font-size: 50px;
-	margin-top: 200px;
+	margin-top: 50px;
 }
 
 .orange-text {
