@@ -1,10 +1,10 @@
-// import '../css/sobrenosotros.css';
+import "../css/sobrenosotros.css";
 
 export const SobreNosotros = () => {
   return (
     <div className="contenedor">
       {/* Banner */}
-      <div className="row">
+      <div className="row filas">
         <div className="col-12">
           <div className="banner">
             <img
@@ -19,9 +19,9 @@ export const SobreNosotros = () => {
       {/* Contenedor de todas las secciones */}
       <div className="secciones">
         {/* Sección 1: Texto e Imagen */}
-        <div className="row align-items-center">
+        <div className="row filas align-items-center">
           {/* Texto */}
-          <div className="col-10 col-md-6 align-self-center">
+          <div className="col-10 col-md-6 align-self-center columna">
             <div className="texto">
               <div className="seccion1">
                 <h3 className="seccion1-title">Sobre nosotros</h3>
@@ -44,7 +44,7 @@ export const SobreNosotros = () => {
             </div>
           </div>
           {/* Imagen */}
-          <div className="col-10 col-md-6 align-self-center">
+          <div className="col-10 col-md-6 align-self-center columna">
             <div className="imagen">
               <img
                 src="src\assets\img-sobrenosotros\Group 1000002274.png"
@@ -56,8 +56,8 @@ export const SobreNosotros = () => {
         </div>
 
         {/* Sección 2: Texto e Imagen */}
-        <div className="row ">
-          <div className="col-10 col-md-6 order-md-0 align-self-center">
+        <div className="row filas">
+          <div className="col-10 col-md-6 order-md-0 align-self-center columna">
             <div className="imagen">
               <img
                 src="src\assets\img-sobrenosotros\Group 1000002276.png"
@@ -68,7 +68,7 @@ export const SobreNosotros = () => {
           </div>
 
           {/* Texto */}
-          <div className="col-10 col-md-6 order-md-1 align-self-center">
+          <div className="col-10 col-md-6 order-md-1 align-self-center columna">
             <div className="texto">
               <div className="seccion2">
                 <h1 className="seccion2-subtitle">
@@ -90,9 +90,9 @@ export const SobreNosotros = () => {
         </div>
 
         {/* Sección 3: Texto e Imagen */}
-        <div className="row">
+        <div className="row filas">
           {/* Texto */}
-          <div className="col-10 col-md-6 align-self-center">
+          <div className="col-10 col-md-6 align-self-center columna">
             <div className="texto">
               <div className="seccion3">
                 <h1 className="seccion3-subtitle">
@@ -112,7 +112,7 @@ export const SobreNosotros = () => {
             </div>
           </div>
           {/* Imagen */}
-          <div className="col-10 col-md-6 align-self-center">
+          <div className="col-10 col-md-6 align-self-center columna">
             <div className="imagen">
               <img
                 src="src\assets\img-sobrenosotros\Group 1000002277.png"
@@ -124,8 +124,8 @@ export const SobreNosotros = () => {
         </div>
 
         {/* Sección 4: Texto e Imagen */}
-        <div className="row">
-          <div className="col-10 col-md-6 order-md-0 align-self-center">
+        <div className="row filas">
+          <div className="col-10 col-md-6 order-md-0 align-self-center columna">
             <div className="imagen">
               <img
                 src="src\assets\img-sobrenosotros\Group 1000002278.png"
@@ -135,7 +135,7 @@ export const SobreNosotros = () => {
             </div>
           </div>
           {/* Texto */}
-          <div className="col-10 col-md-6 order-md-1 align-self-center ">
+          <div className="col-10 col-md-6 order-md-1 align-self-center columna">
             <div className="texto">
               <div className="seccion4">
                 <h1 className="seccion4-subtitle">

@@ -5,7 +5,6 @@ body {
   padding: 0;
 }
 
-
 .contenedor {
   position: relative;
   overflow: auto;
@@ -43,11 +42,10 @@ body {
   .imagen {
     text-align: right;
   }
-  
 }
 .contenedor {
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
   padding-top: 0px; /* Agrega espacio superior */
 }
 
@@ -93,7 +91,7 @@ body {
 /* Mover todo hacia arriba */
 .contenedor {
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
   padding-top: 0; /* Eliminar el espacio superior */
 }
 
@@ -122,19 +120,16 @@ body {
   top: -800px; /* Mueve todo el contenido hacia arriba */
 }
 
-
 @media only screen and (max-width: 768px) {
   /* Ocultar el banner en dispositivos móviles */
   .banner {
     display: none;
   }
 
-
-  
   /* Alinear el texto a la izquierda en dispositivos móviles */
   .texto {
     text-align: center;
-   
+
     margin-top: 100px;
   }
 
@@ -142,17 +137,13 @@ body {
   .imagen {
     text-align: center;
     margin-top: 35px;
-    
   }
 
-  .seccion1 p{
+  .seccion1 p {
     margin-top: 400px;
     text-align: center !important;
     margin-left: auto !important;
-
   }
-
-  
 }
 
 .final {
@@ -177,14 +168,7 @@ body {
   color: aliceblue;
   font-weight: 200;
   line-height: 1.5; /* Espaciado entre líneas */
-  
 }
-
-
-
-
-
-
 
 /* Estilos para la Sección 1 */
 .seccion1 h1 {
@@ -214,8 +198,6 @@ body {
   max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
 }
 
-
-
 /* Estilos para la Sección 2 */
 .seccion2 h1 {
   /* Estilos para el título h1 */
@@ -225,10 +207,7 @@ body {
   font-family: "Inter";
   font-weight: bold;
   max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
-  
 }
-
-
 
 .seccion2 p {
   /* Estilos para el párrafo p */
@@ -249,10 +228,7 @@ body {
   font-family: "Inter";
   font-weight: bold;
   max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
-  
 }
-
-
 
 .seccion3 p {
   /* Estilos para el párrafo p */
@@ -273,10 +249,7 @@ body {
   font-family: "Inter";
   font-weight: bold;
   max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
-  
 }
-
-
 
 .seccion4 p {
   /* Estilos para el párrafo p */
@@ -287,7 +260,6 @@ body {
   font-weight: 150;
   max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
 }
-
 
 /* Estilos para la Sección 1 */
 .seccion1 h1,
@@ -326,23 +298,24 @@ body {
   margin: auto;
   text-align: justify;
   margin-top: 80px;
-  
 }
 /* Para dispositivos de escritorio */
 @media only screen and (min-width: 768px) {
   /* Estilos para las secciones */
-  .row {
+  .filas {
     display: flex; /* Utilizar Flexbox */
     flex-wrap: wrap; /* Permitir el ajuste automático de las columnas */
   }
 
-  .col-10 {
-    width: calc(50% - 20px); /* Ancho del 50% con un pequeño espacio entre las columnas */
+  .columna {
+    width: calc(
+      50% - 20px
+    ); /* Ancho del 50% con un pequeño espacio entre las columnas */
     margin-right: 20px; /* Espacio entre las columnas */
   }
 
   /* Ajustar el margen derecho de la última columna */
-  .col-10:last-child {
+  .columna:last-child {
     margin-right: 0;
   }
 
@@ -350,6 +323,5 @@ body {
   .seccion2,
   .seccion4 {
     flex-direction: row-reverse; /* Invertir la dirección de los elementos */
-
   }
 }
