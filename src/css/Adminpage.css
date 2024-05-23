@@ -1,0 +1,16 @@
+.AdminPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContenedorAdmin {
+    margin-left: 18vw;
+}
+
+@media (max-width: 600px) {
+    .ContenedorAdmin {
+        margin-left: 0vw;
+    }
+}
