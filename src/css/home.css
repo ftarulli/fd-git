@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* 
 
 /*Sección principal*/
 
@@ -51,10 +50,18 @@
   height: 5rem;
 }
 
+.iconos-redes-principal :hover {
+  color: #ff9f0d;
+}
+
 .linea-vertical-principal {
   height: 10rem;
   width: 0.8px;
   background-color: #ffffff;
+}
+
+.link {
+  color: #ffffff;
 }
 
 /* Columna texto */
@@ -287,16 +294,6 @@
   text-align: center;
 }
 
-.btn .boton-chefs {
-  border-radius: 5rem;
-  border-color: #ff9f0d;
-  width: 10rem;
-}
-
-.btn .boton-chefs:hover {
-  border-color: #ff9f0d;
-}
-
 /*Sección Testimonios Clientes */
 
 .container-testimonios {
@@ -433,6 +430,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .titulo-platos {
@@ -522,17 +521,116 @@
   .imagen-grupo-elegirnos {
     width: 10%;
     padding-left: 0;
+    padding-right: 1rem;
   }
 
   .imagen-grupo-elegirnos img {
     width: 20rem;
   }
 
+  .parrafo_uno-elegirnos {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .container-elegirnos {
+    margin-bottom: 0.5rem;
+  }
+
+  .container-iconos-elegirnos {
+    margin-left: -1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .cajita-experiencia {
+    margin-left: 0.2rem;
+  }
   /*Seccion Info*/
 
   .container-info {
     display: none;
   }
 
+  .container-iconos-info {
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .imagen-info {
+    width: 3.8rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .texto-info {
+    font-size: 1rem;
+  }
+
+  .texto-info-destacado {
+    font-size: 1.9rem;
+  }
   /*Seccion Chefs*/
+
+  .container-chefs-detalle {
+    padding-top: 2rem;
+    height: 100%;
+  }
+
+  .texto_dos-chefs {
+    font-size: 1.5rem;
+    width: 100%;
+    padding-left: 2.5rem;
+  }
+
+  .columnas-chefs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    padding-right: 1rem;
+  }
+
+  /*Sección testimonios*/
+
+  .container-testimonios {
+    display: none;
+  }
+
+  .container-carrousel-testimonios {
+    display: none;
+  }
+
+  .container-banner {
+    background-size: cover;
+    margin: 0;
+    filter: brightness(10%);
+  }
+
+  .columna-texto-banner {
+    text-align: start;
+  }
+
+  .btn-reservas {
+    padding-top: 1rem;
+  }
+
+  .parrafo-uno-banner {
+    font-size: 1.5rem;
+  }
+
+  /*Sección platos*/
+
+  .container-platos {
+    margin-top: 12rem;
+  }
+
+  .parrafo-platos {
+    font-size: 1.5rem;
+  }
+
+  .container-platos {
+    margin-bottom: 75rem;
+  }
 }
