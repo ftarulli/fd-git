@@ -1,3 +1,4 @@
+
 import { createRoot } from 'react-dom/client';
 import App from './App'; // Asegúrate de que esta ruta es correcta
 import './index.css'; // Opcional, si tienes un archivo CSS global
