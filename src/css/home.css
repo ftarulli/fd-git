@@ -294,6 +294,20 @@
   text-align: center;
 }
 
+.boton-chefs {
+  background-color: transparent;
+  border: 1px solid #FFA500; /* Color del borde */
+  color: #FFA500; /* Color del texto */
+  transition: background-color 0.3s ease; /* Transición suave */
+
+  /* Estilos para cuando el cursor está sobre el botón */
+  &:hover {
+    background-color: #FFA500; /* Color de fondo naranja */
+    color: #fff; /* Cambia el color del texto a blanco */
+  }
+}
+
+
 /*Sección Testimonios Clientes */
 
 .container-testimonios {
@@ -417,7 +431,7 @@
   width: 95%;
   height: 100vh;
   position: relative;
-  top: 350px;
+  top: 500px;
   color: #ff9f0d !important;
   margin-bottom: 30rem;
 }
@@ -432,6 +446,7 @@
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
 }
 
 .titulo-platos {
@@ -450,6 +465,7 @@
 
 .texto-destacado-platos {
   color: #ff9f0d;
+
 }
 
 .card-body-platos {
@@ -461,6 +477,7 @@
   align-items: start;
   font-family: Helvetica, sans-serif;
   font-size: 0.9rem;
+  color: #ffffff !important;
 }
 
 .img-platos {
