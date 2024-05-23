@@ -20,7 +20,8 @@ export const AppRouter = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
         <Route path="/404" element={<ErrorPage />} />
-        <Route path="/adminpage" element={<AdminPage />} />
+        <Route path="/adminpage" element={<AdminPage/>} />
+      
       </Routes>
     </BrowserRouter>
   );
