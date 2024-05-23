@@ -1,0 +1,129 @@
+/* Estilos para la tabla de usuarios */
+.Tabla_Usuarios {
+    max-width: 80vw;
+    min-width: 80vw;
+}
+
+.Tabla_Usuarios th,
+.Tabla_Usuarios td {
+    text-align: center;
+    vertical-align: middle;
+    color: #7D7D7D !important;
+}
+
+.Tabla_Usuarios th {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.Tabla_Usuarios td {
+    font-size: 13px;
+}
+
+#UserTable {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222222 !important;
+}
+
+.Tabla_Usuarios tr {
+    height: 102px;
+}
+
+.Tabla_Id {
+    width: 10%;
+}
+
+.Tabla_User {
+    width: 20%;
+}
+
+.Tabla_Cel {
+    width: 25%;
+}
+
+.Tabla_Email {
+    width: 40%;
+}
+
+.Tabla_Botons {
+    width: 5%;
+}
+
+/* Estilos para el desplegable que aparece al clickear los tres puntos */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-item {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none !important;
+    background: none !important;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-item:hover {
+    background-color: #ddd !important;
+}
+
+@media (max-width: 600px) {
+    .Tabla_Usuarios thead {
+        display: none;
+    }
+
+    .Tabla_Usuarios {
+        z-index: -5;
+    }
+
+    .Tabla_Usuarios,
+    .Tabla_Usuarios tbody,
+    .Tabla_Usuarios tr,
+    .Tabla_Usuarios td {
+        display: block;
+        width: 100%;
+    }
+
+    .Tabla_Usuarios tr {
+        margin-bottom: 15px;
+        height: max-content;
+    }
+
+    .Tabla_Usuarios td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        height: 40px;
+    }
+
+    .Tabla_Usuarios td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1000px) {}
