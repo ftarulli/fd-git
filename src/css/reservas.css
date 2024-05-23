@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+strong {
+	font-size: 35px;
+}
+
+.img-reservas {
+	background-image: url(../assets/img-reservas/plato.jpeg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	filter: brightness(10%);
+}
+
+.str {
+	color: #e98c00;
+}
+
+.div-str {
+	padding: 50px;
+	text-align: center;
+}
+
+.from-fst {
+	/* display: grid;
+	grid-template-columns: 1fr 1fr; 
+	gap: 10px; 
+	width: 80%; */
+	max-width: 800px;
+}
+
+/*Media queries*/
+@media screen and (max-width: 576px) {
+	.from-fst {
+		padding: 40px;
+		border-radius: 8px;
+	}
+
+	.fromGroup {
+		padding: 60px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		color: white;
+	}
+
+	.fromLabel {
+		color: gray;
+		font-size: 12px;
+	}
+}

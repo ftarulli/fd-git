@@ -1,0 +1,98 @@
+/* body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.26); Opacidad del 50% (0.5)
+} */
+body::after {
+  content: "";
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Asegura que el fondo no esté sobre los demás elementos */
+}
+
+.slider-container {
+  width: 1349px;
+  overflow: auto;
+}
+
+.slider {
+  display: flex;
+  gap: 43px; /* Espacio entre cada imagen */
+}
+
+.slider img {
+  width: 305px;
+  height: 328px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.slider-image {
+  flex: 0 0 auto; /* Evita que las imágenes se redimensionen automáticamente */
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px; /* Ajusta el margen entre imágenes según sea necesario */
+}
+
+/* galeria.css */
+
+.slider-container-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* Ajusta la distancia desde la parte superior según sea necesario */
+}
+
+.slider-container {
+  width: 1349px;
+  height: 328px;
+}
+
+.title {
+  text-align: center; /* Centra el texto horizontalmente */
+  color: rgb(255, 255, 255); /* Color del texto */
+  font-size: 2rem; /* Tamaño de la fuente */
+  margin-bottom: 10px; /* Margen inferior */
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.subtitle {
+  text-align: center; /* Centra el texto horizontalmente */
+  color: orange; /* Color del texto */
+  font-size: 1.5rem; /* Tamaño de la fuente */
+  margin-bottom: 20px; /* Margen inferior */
+
+  font-family: "Great Vibes";
+  font-weight: 200;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.orange-text {
+  color: orange; /* Color naranja */
+}
+
+/* Agrega más estilos según sea necesario */
+
+/* @media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .slider-container .slick-slide {
+    padding: 0; /* Elimina el espacio entre las imágenes en dispositivos móviles */
+    margin-left: 5px;
+  }
+}
