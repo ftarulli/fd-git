@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* 
 
 /*Sección principal*/
 
@@ -51,10 +50,18 @@
   height: 5rem;
 }
 
+.iconos-redes-principal :hover {
+  color: #ff9f0d;
+}
+
 .linea-vertical-principal {
   height: 10rem;
   width: 0.8px;
   background-color: #ffffff;
+}
+
+.link {
+  color: #ffffff;
 }
 
 /* Columna texto */

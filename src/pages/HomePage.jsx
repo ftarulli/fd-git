@@ -1,5 +1,6 @@
 import { useLayoutEffect } from "react";
 import "../css/home.css";
+import { Link } from "react-router-dom";
 import principal from "../assets/img_home/principal.png";
 import grupo from "../assets/img_home/grupo.png";
 import Hamburger from "../assets/img_home/Iconos/Hamburger.png";
@@ -36,9 +37,29 @@ const HomePage = () => {
           <div className="col-10 col-md-2 container-iconos-principal">
             <div className="linea-vertical-principal my-3"></div>
             <div className="iconos-redes-principal">
-              <i className="fa fa-facebook" aria-hidden="true"></i>
-              <i className="fa fa-twitter" aria-hidden="true"></i>
-              <i className="fa fa-pinterest-p" aria-hidden="true"></i>
+              <Link
+                to="https://www.facebook.com"
+                className="link"
+                target="_blank"
+              >
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+              </Link>
+
+              <Link
+                to="https://www.twitter.com"
+                className="link"
+                target="_blank"
+              >
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+              </Link>
+
+              <Link
+                to="https://www.pinterest.com"
+                className="link"
+                target="_blank"
+              >
+                <i className="fa fa-pinterest-p" aria-hidden="true"></i>
+              </Link>
             </div>
             <div className="linea-vertical-principal my-3"></div>
           </div>
