@@ -622,4 +622,8 @@
   .parrafo-platos {
     font-size: 1.5rem;
   }
+
+  .container-platos {
+    margin-bottom: 75rem;
+  }
 }
