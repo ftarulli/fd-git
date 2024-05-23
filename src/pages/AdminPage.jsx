@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../css/Adminpage.css';
-import { ContadorAdmin } from './ContadorAdmin';
-import { SidebarAdmin } from './SidebarAdmin';
-import { UsersTable } from './UsersTable';
-import { ReservasTable } from './ReservasTable';
+import { ContadorAdmin } from '../components/ContadorAdmin';
+import { SidebarAdmin } from '../components/SidebarAdmin';
+import { UsersTable } from '../components/UsersTable';
+import { ReservasTable } from '../components/ReservasTable';
 
 export const AdminPage = () => {
 	const [activeTable, setActiveTable] = useState('reservas');

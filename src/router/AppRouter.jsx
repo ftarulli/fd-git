@@ -1,7 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-
-import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Contacto } from "../pages/Contacto";
 import HomePage from "../pages/HomePage";
@@ -10,6 +7,7 @@ import { Login } from "../pages/Login";
 import { Registro } from "../pages/Registro";
 import { SobreNosotros } from "../pages/SobreNosotros";
 import { ErrorPage } from '../pages/ErrorPage';
+import { AdminPage } from "../pages/AdminPage";
 
 export const AppRouter = () => {
   return (
@@ -22,6 +20,7 @@ export const AppRouter = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
         <Route path="/404" element={<ErrorPage />} />
+        <Route path="/adminpage" element={<AdminPage />} />
       </Routes>
     </BrowserRouter>
   );

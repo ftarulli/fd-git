@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 const apiTest = axios.create({
-<<<<<<< HEAD
-	baseURL: 'http://localhost:4000',
-=======
-	baseURL: 'http://localhost:4002',
->>>>>>> develop
+
+	baseURL: 'https://proyectofinalg2-back.onrender.com',
+
+
+
 });
 
 export default apiTest;
