@@ -11,3 +11,11 @@
   top: 250px;
   color: #000000;
 }
+
+.icono-social {
+  width: 30px; /* Ancho deseado */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 20px; /* Espacio entre los iconos */
+  align-items: center;
+  margin-top: 10px;
+}

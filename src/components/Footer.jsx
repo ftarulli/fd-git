@@ -111,7 +111,7 @@ info@rincongourmet.com
         <a href='juanmanuel237@gmail.com' className='text-white footer-link'>Juan Manuel Maturana</a>,{' '}
         <a href='pablocantos051099@gmail.com' className='text-white footer-link'>Pablo Cantos</a>,{' '}
         <a href='https://www.linkedin.com/in/franco-tarulli-14937b21b/' className='text-white footer-link'>Franco Tarulli</a>.{' '}
-        <span className='project-name'>Proyecto Final Rolling Code.</span> <span className='rights-reserved'>Todos los derechos reservados.</span>
+        <span className='project-name'>Proyecto Final Rolling Code.</span>
       </p>
     </MDBCol>
   </MDBRow>
