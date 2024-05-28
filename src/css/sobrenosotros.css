@@ -120,31 +120,6 @@ body {
   top: -800px; /* Mueve todo el contenido hacia arriba */
 }
 
-@media only screen and (max-width: 768px) {
-  /* Ocultar el banner en dispositivos móviles */
-  .banner {
-    display: none;
-  }
-
-  /* Alinear el texto a la izquierda en dispositivos móviles */
-  .texto {
-    text-align: center;
-
-    margin-top: 100px;
-  }
-
-  /* Alinear la imagen a la izquierda en dispositivos móviles */
-  .imagen {
-    text-align: center;
-    margin-top: 35px;
-  }
-
-  .seccion1 p {
-    margin-top: 400px;
-    text-align: center !important;
-    margin-left: auto !important;
-  }
-}
 
 .final {
   text-align: center; /* Centra el contenido */
@@ -300,28 +275,37 @@ body {
   margin-top: 80px;
 }
 /* Para dispositivos de escritorio */
-@media only screen and (min-width: 768px) {
-  /* Estilos para las secciones */
-  .filas {
-    display: flex; /* Utilizar Flexbox */
-    flex-wrap: wrap; /* Permitir el ajuste automático de las columnas */
+
+@media only screen and (max-width: 768px) {
+  /* Ocultar el banner en dispositivos móviles */
+  .banner {
+    display: none;
   }
 
-  .columna {
-    width: calc(
-      50% - 20px
-    ); /* Ancho del 50% con un pequeño espacio entre las columnas */
-    margin-right: 20px; /* Espacio entre las columnas */
+  /* Centrar todo el contenido en dispositivos móviles */
+  .contenido {
+    text-align: center;
   }
 
-  /* Ajustar el margen derecho de la última columna */
-  .columna:last-child {
-    margin-right: 0;
+  /* Alinear el texto al centro en dispositivos móviles */
+  .texto {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 60px !important;
   }
 
-  /* Cambiar el orden de las secciones 2 y 4 */
-  .seccion2,
-  .seccion4 {
-    flex-direction: row-reverse; /* Invertir la dirección de los elementos */
+  /* Alinear la imagen al centro en dispositivos móviles */
+  .imagen {
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+
+  /* Centrar el contenido de la sección 1 en dispositivos móviles */
+  .seccion1 p {
+    margin-top: 400px;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important; /* Centra el texto horizontalmente */
   }
 }

@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-// import '../css/registro.css';
+import '../css/registro.css';
 
 export const Registro = () => {
   const navigate = useNavigate();

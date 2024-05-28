@@ -18,6 +18,7 @@ body::after {
 .slider-container {
   width: 1349px;
   overflow: auto;
+  
 }
 
 .slider {
@@ -53,13 +54,18 @@ body::after {
 .slider-container-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 0px; /* Ajusta la distancia desde la parte superior según sea necesario */
+  
+  margin-top: 50px;
 }
 
 .slider-container {
   width: 1349px;
   height: 328px;
+  margin: 0 auto;
+  border-radius: 5px; /* Borde redondeado */
+  overflow: hidden; /* Evita que las imágenes se desborden del contenedor */
 }
+
 
 .title {
   text-align: center; /* Centra el texto horizontalmente */
@@ -95,4 +101,57 @@ body::after {
     padding: 0; /* Elimina el espacio entre las imágenes en dispositivos móviles */
     margin-left: 5px;
   }
+}
+/* galeria.css */
+.galeria-container {
+  position: relative;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que el modal esté en la parte superior */
+}
+
+.modal-content {
+  position: relative;
+  width: 90%; /* Ajusta el ancho del modal según sea necesario */
+  max-height: 90%; /* Ajusta la altura máxima del modal según sea necesario */
+  overflow: auto;
+}
+
+.modal-content img {
+  display: block;
+  margin: 0 auto;
+  width: 30%; /* Hace que la imagen ocupe todo el ancho disponible en el modal */
+  height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.slider-image {
+  width: 305px;
+  height: 328px;
+  border-radius: 20px;
+  object-fit: cover; 
+}
+/* galeria.css */
+.modal-content img {
+ 
+  border-radius: 20px; /* Agrega un borde redondeado a la imagen */
 }

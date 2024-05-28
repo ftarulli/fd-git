@@ -1,17 +1,22 @@
-import { Footer } from './components/Footer';
-import { Navegador } from './components/Navegador';
-import { AppRouter } from './router/AppRouter';
+import { Footer } from "./components/Footer";
+import { Navegador } from "./components/Navegador";
+
+import { AppRouter } from "./router/AppRouter";
 
 function App() {
-	return (
-		<>
-			<Navegador />
+  return (
+    <>
+      <Navegador />
+  
+
 
 			<AppRouter />
 
-			<Footer />
-		</>
-	);
+
+    <Footer />
+    </>
+  );
+
 }
 
 export default App;

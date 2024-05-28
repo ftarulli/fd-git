@@ -10,7 +10,7 @@
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   filter: brightness(10%);
   position: absolute;
@@ -294,19 +294,6 @@
   text-align: center;
 }
 
-.boton-chefs {
-  background-color: transparent;
-  border: 1px solid #FFA500; /* Color del borde */
-  color: #FFA500; /* Color del texto */
-  transition: background-color 0.3s ease; /* Transición suave */
-
-  /* Estilos para cuando el cursor está sobre el botón */
-  &:hover {
-    background-color: #FFA500; /* Color de fondo naranja */
-    color: #fff; /* Cambia el color del texto a blanco */
-  }
-}
-
 
 /*Sección Testimonios Clientes */
 
@@ -434,6 +421,7 @@
   top: 500px;
   color: #ff9f0d !important;
   margin-bottom: 30rem;
+  margin-top: 200px;
 }
 
 .fila-card-texto {
@@ -458,7 +446,7 @@
 
 .parrafo-platos {
   font-family: Helvetica, sans-serif;
-  color: #ffffff;
+  color: #ffffff ;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -470,6 +458,7 @@
 
 .card-body-platos {
   background-color: black;
+  border-radius: 5px;
   height: 12rem;
   display: flex;
   flex-direction: column;
@@ -478,6 +467,7 @@
   font-family: Helvetica, sans-serif;
   font-size: 0.9rem;
   color: #ffffff !important;
+
 }
 
 .img-platos {
@@ -650,4 +640,4 @@
   .container-platos {
     margin-bottom: 75rem;
   }
-}
+
