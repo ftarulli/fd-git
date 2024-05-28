@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Swal from 'sweetalert2';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../css/reservas.css';
 import DatePicker from 'react-datepicker';
+import apiTest from '../api/apiTest';
 
 export const Reservas = () => {
 	const [name, setName] = useState('');
 	const [date, setDate] = useState('');
-	const [time, setTime] = useState('');
 	const [cant, setCant] = useState('');
 	const [phone, setPhone] = useState('');
 	const [email, setEmail] = useState('');
@@ -21,26 +21,22 @@ export const Reservas = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		if (name === '' || time === '' || cant === '') {
+		if (name === '' || date === '' || cant === '') {
 			return console.log('Campos Obligatorios');
 		} else if (!isValidEmail) {
 			console.log('No es un email valido');
 		}
 
-		registrarReserva(name, time, cant, phone, email, comment);
+		registrarReserva(name, date, cant, phone, email, comment);
 	};
 
-	const cargarReservasDB = async () => {
-		try {
-			const resp = await apiTest.get('/reg/sendReservas');
-		} catch (error) {}
-	};
+	
 
-	const registrarReserva = async (name, time, cant, phone, email, comment) => {
+	const registrarReserva = async (name, date, cant, phone, email, comment) => {
 		try {
 			const resp = await apiTest.post('/auth/saveReservas', {
 				name,
-				time,
+				date,
 				cant,
 				phone,
 				email,
@@ -58,7 +54,7 @@ export const Reservas = () => {
 			}
 
 			console.log(resp);
-		} catch (error) {}
+		} catch (error) {console.log (error)}
 	};
 	return (
 		<>
