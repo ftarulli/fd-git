@@ -1,5 +1,5 @@
 body {
-	overflow: hidden; /* Evita el desplazamiento */
+	overflow: auto; /* Evita el desplazamiento */
 	margin: 0; /* Elimina cualquier margen por defecto */
 	padding: 0; /* Elimina cualquier padding por defecto */
   }
