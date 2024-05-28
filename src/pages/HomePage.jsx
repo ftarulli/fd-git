@@ -79,7 +79,10 @@ const HomePage = () => {
               mejor de nuestra cocina!
             </p>
 
-            <button className="btn btn-warning boton-reserva ">Reservar</button>
+            <Link to="/reservas">
+  <button className="btn btn-warning boton-reserva">Reservar</button>
+</Link>
+            
           </div>
           {/* Columna imagen principal */}
           <div className="col-10 offset-1 col-md-4 offset-md-0 container-imagen-plato">
@@ -247,9 +250,14 @@ const HomePage = () => {
         </div>
 
         <div className="container-boton-chefs">
-          <button className="btn btn-outline-warning boton-chefs">
-            Ver mas
-          </button>
+          
+        <Link to='/error404'>
+  <button className="btn btn-outline-warning boton-chefs">
+    Ver más
+  </button>
+</Link>
+
+
         </div>
       </div>
       {/*Sección Testimonios Clientes */}

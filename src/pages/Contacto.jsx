@@ -1,5 +1,5 @@
-
 import "../css/contacto.css";
+
 import { useLayoutEffect } from "react";
 
 export const Contacto = () => {

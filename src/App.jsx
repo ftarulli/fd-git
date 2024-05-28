@@ -1,5 +1,3 @@
-
-
 import { Footer } from "./components/Footer";
 import { Navegador } from "./components/Navegador";
 
@@ -11,11 +9,14 @@ function App() {
       <Navegador />
   
 
-      <AppRouter />
+
+			<AppRouter />
+
 
     <Footer />
     </>
   );
+
 }
 
 export default App;

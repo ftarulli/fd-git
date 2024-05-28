@@ -1,3 +1,4 @@
+
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/ErrorPage.css';
@@ -29,5 +30,6 @@ export const ErrorPage = () => {
     </Container>
   );
 };
+
 
 export default ErrorPage;
