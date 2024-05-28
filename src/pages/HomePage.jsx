@@ -1,5 +1,6 @@
 import { useLayoutEffect } from "react";
 import "../css/home.css";
+import { Link } from "react-router-dom";
 import principal from "../assets/img_home/principal.png";
 import grupo from "../assets/img_home/grupo.png";
 import Hamburger from "../assets/img_home/Iconos/Hamburger.png";
@@ -27,7 +28,6 @@ const HomePage = () => {
   return (
     <div className="container-general">
       {/*Sección principal */}
-
       {/* Container Imagen fondo principal */}
       <div className="container-imagen-principal"></div>
       {/* Container principal */}
@@ -37,13 +37,32 @@ const HomePage = () => {
           <div className="col-10 col-md-2 container-iconos-principal">
             <div className="linea-vertical-principal my-3"></div>
             <div className="iconos-redes-principal">
-              <i className="fa fa-facebook" aria-hidden="true"></i>
-              <i className="fa fa-twitter" aria-hidden="true"></i>
-              <i className="fa fa-pinterest-p" aria-hidden="true"></i>
+              <Link
+                to="https://www.facebook.com"
+                className="link"
+                target="_blank"
+              >
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+              </Link>
+
+              <Link
+                to="https://www.twitter.com"
+                className="link"
+                target="_blank"
+              >
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+              </Link>
+
+              <Link
+                to="https://www.pinterest.com"
+                className="link"
+                target="_blank"
+              >
+                <i className="fa fa-pinterest-p" aria-hidden="true"></i>
+              </Link>
             </div>
             <div className="linea-vertical-principal my-3"></div>
           </div>
-
           {/* Columna texto principal */}
           <div className="col-10 col-md-6 container-texto-principal">
             <h1 className="texto_uno">¡Es rápido y divertido!</h1>
@@ -62,25 +81,22 @@ const HomePage = () => {
 
             <button className="btn btn-warning boton-reserva ">Reservar</button>
           </div>
-
           {/* Columna imagen principal */}
           <div className="col-10 offset-1 col-md-4 offset-md-0 container-imagen-plato">
             <img src={principal} alt="" className="imagen-principal-plato" />
           </div>
         </div>
       </div>
-
       {/*Sección elegirnos */}
-
       <div className="container-fluid container-elegirnos">
         <div className="row container-filas-elegirnos">
-          {/*Columna grupo de imágenes*/}
-          <div className="col-10 col-md-5">
+          {/* Columna grupo de imágenes */}
+          <div className="col-11 col-md-5">
             <div className="imagen-grupo-elegirnos">
               <img src={grupo} alt="" />
             </div>
           </div>
-          {/*Columna texto e iconos*/}
+          {/* Columna texto e iconos */}
           <div className="col-10 col-md-5">
             <div>
               <p className="texto_uno">¿Por qué elegirnos?</p>
@@ -145,11 +161,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       {/*Sección info */}
-
       <div className="container-info"></div>
-
       <div className="container container-iconos-info">
         <div className="row filas-iconos-info">
           <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-iconos-info">
@@ -198,9 +211,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       {/*Sección Chefs */}
-
       <div className="container-chefs-fondo"></div>
 
       <div className="container-chefs">
@@ -211,23 +222,23 @@ const HomePage = () => {
           </p>
         </div>
         <div className="container-chefs-detalle">
-          <div className="row">
-            <div className="col columnas-chefs">
+          <div className="row columnas-chefs">
+            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs">
               <div>
                 <img src={chef1} alt="" className="imagen-chefs" />
               </div>
             </div>
-            <div className="col columnas-chefs">
+            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs">
               <div>
                 <img src={chef2} alt="" className="imagen-chefs" />
               </div>
             </div>
-            <div className="col columnas-chefs">
+            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs">
               <div>
                 <img src={chef3} alt="" className="imagen-chefs" />
               </div>
             </div>
-            <div className="col columnas-chefs">
+            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs">
               <div>
                 <img src={chef4} alt="" className="imagen-chefs" />
               </div>
@@ -241,7 +252,6 @@ const HomePage = () => {
           </button>
         </div>
       </div>
-
       {/*Sección Testimonios Clientes */}
 
       <div className="container-testimonios"></div>
@@ -416,9 +426,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       {/*Sección Banner */}
-
       <div className="container-banner"></div>
 
       <div className="container container-texto-banner">
@@ -436,17 +444,15 @@ const HomePage = () => {
               menú exquisito!
             </p>
 
-            <div>
-              <button className="btn btn-outline-warning">
+            <div className="btn-reservas">
+              <button className="btn btn-outline-warning ">
                 Reservar Online
               </button>
             </div>
           </div>
         </div>
       </div>
-
       {/*Sección Nuestros platos */}
-
       <div className="container-platos">
         <div className="row fila-card-texto">
           <div className="col">
@@ -460,7 +466,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="row fila-card-platos ms-4 my-3">
+        <div className="row fila-card-platos ">
           <div className="col-10 offset-1 col-md-6 offset-md-0 col-lg-3 offset-lg-0 mb-3 ">
             <div className="card card-platos">
               <div className="img-platos">
