@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import '../css/registro.css';
-import apiTest from '../api/apiTest';
+import testApi from '../api/testApi';
 
 export const Registro = () => {
 	const navigate = useNavigate();
@@ -23,7 +23,7 @@ export const Registro = () => {
 
 	const registroComplete = async (nombre, apellido, mail, password) => {
 		try {
-			const response = await apiTest.post('/user/register', {
+			const response = await testApi.post('/user/register', {
 				nombre: nombre.trim(),
 				apellido: apellido.trim(),
 				mail: mail.trim(),
