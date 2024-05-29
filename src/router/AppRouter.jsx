@@ -7,6 +7,7 @@ import { Registro } from "../pages/Registro";
 import { SobreNosotros } from "../pages/SobreNosotros";
 import ErrorPage from "../pages/ErrorPage";
 import { Reservas } from "../pages/Reservas";
+import { AdminPage } from "../pages/AdminPage";
 
 
 export const AppRouter = () => {
@@ -17,6 +18,7 @@ export const AppRouter = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/reservas" element={<Reservas/>} />
+        <Route path="/admin" element={<AdminPage/>} />
         
         <Route path="/sobrenosotros" element={<SobreNosotros />} />
         <Route path="/contacto" element={<Contacto />} />

@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import Table from 'react-bootstrap/Table';
 import '../css/ReservasTable.css';
-import apiTest from '../api/api';
+import apiTest from '../api/testApi';
 import { EditModal } from './EditReservasModal';
 import { TableRow } from './ReservasRow';
 

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const testApi = axios.create({
-    baseURL: 'http://localhost:9099'
+    baseURL: 'https://proyectofinalg2-back.onrender.com/'
 });
 
 

@@ -4,11 +4,13 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../css/reservas.css';
 import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 import apiTest from '../api/apiTest';
 
 export const Reservas = () => {
 	const [name, setName] = useState('');
 	const [date, setDate] = useState('');
+	const [time, setTime] = useState('');
 	const [cant, setCant] = useState('');
 	const [phone, setPhone] = useState('');
 	const [email, setEmail] = useState('');
@@ -27,17 +29,18 @@ export const Reservas = () => {
 			console.log('No es un email valido');
 		}
 
-		registrarReserva(name, date, cant, phone, email, comment);
+		registrarReserva(name, date,time, cant, phone, email, comment);
 	};
 
 	
 
-	const registrarReserva = async (name, date, cant, phone, email, comment) => {
+	const registrarReserva = async (name, date,time, cant, phone, email, comment) => {
 		try {
 			const resp = await apiTest.post('/auth/saveReservas', {
 				name,
 				date,
 				cant,
+				time,
 				phone,
 				email,
 				comment,
@@ -98,8 +101,10 @@ export const Reservas = () => {
 
 					<Form.Group className="mt-2" controlid="time">
 						<Form.Label className="fromLabel">Hora de la reserva *</Form.Label>
-						<DatePicker selected={date} onChange={(e) => setDate(e.target.value)} />
+						<DatePicker selected={time} onChange={(e) => setTime(e.target.value)} />
 					</Form.Group>
+
+					
 
 					<Form.Group className="mt-2" controlid="cant">
 						<Form.Label className="fromLabel">Numero de comensales *</Form.Label>

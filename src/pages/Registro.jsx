@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import axios from "axios";
+// import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import '../css/registro.css';
+import { testApi } from "./testApi";
 
 export const Registro = () => {
   const navigate = useNavigate();
@@ -56,7 +57,7 @@ export const Registro = () => {
     navigate("/login");
 
     try {
-      const response = await axios.post("http://localhost:9099/user/register", {
+      const response = await testApi.post("https://proyectofinalg2-back.onrender.com/", {
         nombre: nombre.trim(),
         apellido: apellido.trim(),
         email: email.trim(),

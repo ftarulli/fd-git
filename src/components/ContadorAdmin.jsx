@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../css/ContadorAdmin.css';
-import apiTest from '../api/api';
+import apiTest from '../api/testApi';
 
 export const ContadorAdmin = () => {
 	const [cargarReservasContador, setCargarReservasContador] = useState([]);
@@ -11,7 +11,7 @@ export const ContadorAdmin = () => {
 			const resp = await apiTest.get('/admin/sendReservas');
 
 			setCargarReservasContador(resp.data.listReservas);
-		} catch (error) {}
+		} catch (error) {console.log(error)}
 	};
 
 	const listaUsersBack = async () => {
