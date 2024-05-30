@@ -154,3 +154,21 @@ select.form-select.text-white option {
 	margin-bottom: 0.5rem; /* Espaciado inferior */
   }
   
+
+  .orange-calendar {
+	.react-datepicker__day:hover {
+	  background-color: #FF9800 !important; /* Cambia el color de fondo en hover */
+	  color: #fff !important; /* Cambia el color del texto en hover */
+	}
+  
+	.react-datepicker__day--selected {
+	  background-color: #FF9800 !important; /* Cambia el color de fondo al seleccionar */
+	  color: #fff !important; /* Cambia el color del texto al seleccionar */
+	}
+  
+	.react-datepicker__day--keyboard-selected {
+	  background-color: #FF9800 !important; /* Cambia el color de fondo al seleccionar con el teclado */
+	  color: #fff !important; /* Cambia el color del texto al seleccionar con el teclado */
+	}
+  }
+  

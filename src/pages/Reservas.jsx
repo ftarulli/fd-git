@@ -126,12 +126,14 @@ export const Reservas = () => {
               <MDBCol md="6">
                 <label className="form-label text-white">Fecha de la reserva *</label>
                 <DatePicker
-                  selected={date}
-                  onChange={(date) => setDate(date)}
-                  className="form-control text-white date-picker"
-                  dateFormat="dd/MM/yyyy"
-                  autoComplete="off"
-                />
+  selected={date}
+  onChange={(date) => setDate(date)}
+  className="form-control text-white date-picker"
+  dateFormat="dd/MM/yyyy"
+  autoComplete="off"
+  calendarClassName="orange-calendar" // Aplica la clase CSS al calendario
+/>
+
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-4">
@@ -147,6 +149,7 @@ export const Reservas = () => {
                   dateFormat="h:mm aa"
                   className="form-control text-white date-picker"
                   style={{ backgroundColor: '#FFF', borderColor: '#555' }}
+                  
                 />
               </MDBCol>
               <MDBCol md="6">
