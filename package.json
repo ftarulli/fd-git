@@ -28,6 +28,8 @@
 
     "bootstrap": "^5.3.3",
 
+    "date-fns": "^3.6.0",
+
     "mdb-react-ui-kit": "^8.0.0",
 
     "react": "^18.2.0",
@@ -39,6 +41,8 @@
     "react-datetime": "^3.2.0",
 
     "react-dom": "^18.2.0",
+
+    "react-phone-input-2": "^2.15.1",
 
     "react-router-dom": "^6.23.0",
 
