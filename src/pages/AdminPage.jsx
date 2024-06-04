@@ -6,18 +6,21 @@ import { UsersTable } from '../components/UsersTable';
 import { ReservasTable } from '../components/ReservasTable';
 
 export const AdminPage = () => {
-	const [activeTable, setActiveTable] = useState('reservas');
+    const [activeTable, setActiveTable] = useState('reservas');
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
-	return (
-		<>
-			<section className="AdminPage">
-				<SidebarAdmin setActiveTable={setActiveTable} />
-				<div className="ContenedorAdmin">
-					<ContadorAdmin />
-					{activeTable === 'usuarios' && <UsersTable />}
-					{activeTable === 'reservas' && <ReservasTable />}
-				</div>
-			</section>
-		</>
-	);
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+
+    return (
+        <section className={`AdminPage ${sidebarOpen ? 'sidebarOpen' : ''}`}>
+            <SidebarAdmin setActiveTable={setActiveTable} toggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
+            <div className="ContenedorAdmin">
+                <ContadorAdmin />
+                {activeTable === 'usuarios' && <UsersTable />}
+                {activeTable === 'reservas' && <ReservasTable />}
+            </div>
+        </section>
+    );
 };

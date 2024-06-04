@@ -44,7 +44,9 @@
 
     "react-phone-input-2": "^2.15.1",
 
-    "react-router-dom": "^6.23.0",
+    "react-pro-sidebar": "^1.1.0",
+
+    "react-router-dom": "^6.23.1",
 
     "react-slick": "^0.30.2",
 
