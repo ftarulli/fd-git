@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Contacto } from '../pages/Contacto';
 import HomePage from '../pages/HomePage';
@@ -25,6 +26,7 @@ export const AppRouter = () => {
 			</Routes>
 		</BrowserRouter>
 	);
+
 };
 
 export default AppRouter;

@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
@@ -203,4 +204,5 @@ export const Registro = () => {
 			</div>
 		</div>
 	);
+
 };

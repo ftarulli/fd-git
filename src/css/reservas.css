@@ -8,15 +8,9 @@ strong {
 	font-size: 35px;
 }
 
-.img-reservas {
-	background-image: url(../assets/img-reservas/plato.jpeg);
-	background-position: center;
-	background-size: cover;
-	height: 100vh;
-	width: 100%;
-	position: absolute;
-	
-}
+
+  
+
 
 .str {
 	color: #e98c00;
@@ -28,14 +22,10 @@ strong {
 }
 
 .from-fst {
-	/* display: grid;
-	grid-template-columns: 1fr 1fr; 
-	gap: 10px; 
-	width: 80%; */
 	max-width: 800px;
 }
 
-/*Media queries*/
+/* Media queries
 @media screen and (max-width: 576px) {
 	.from-fst {
 		padding: 40px;
@@ -50,7 +40,135 @@ strong {
 	}
 
 	.fromLabel {
-		color: gray;
+		color: rgb(255, 255, 255);
 		font-size: 12px;
 	}
+} */
+
+/* reservas.css */
+
+.form-label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
 }
+
+.form-control {
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #ccc; /* Cambiado a gris claro */
+	background-color: #3f3f3f; /* Match background color */
+	background-clip: padding-box;
+	border: 1px solid #555; /* Match border color */
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-end {
+	text-align: end;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.date-picker {
+	background-color: #ffffff !important; /* Ensure consistency */
+	border-color: #555 !important;     /* Ensure consistency */
+	color: #333 !important;            /* Cambiado a gris oscuro */
+	width: 340px;
+	z-index: 9999; /* Aumentado el z-index */
+}
+
+.text-warning {
+	color: #FF9800 !important;
+}
+
+/* Estilos adicionales para el selector de número de comensales */
+select.form-select.text-white {
+  color: #ccc; /* Color del texto gris claro */
+  background-color: #3f3f3f; /* Color de fondo */
+  border: 1px solid #555; /* Borde */
+}
+
+select.form-select.text-white option {
+  color: #666; /* Color del texto de las opciones */
+}
+
+.select-container {
+	position: relative;
+  }
+  
+  .select-container::after {
+	/* content: '\25BC'; flecha hacia abajo */
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	pointer-events: none; /* Evitar interacción con el pseudo-elemento */
+	/* color: #ccc; Color de la flecha */
+  }
+  
+  .select-container select {
+	appearance: none; /* Oculta el estilo nativo del selector */
+	width: 100%;
+	padding-right: 20px; /* Espacio para la flecha */
+	color: #000000 !important; /* Color del texto */
+	
+	border: 1px solid #555; /* Borde */
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+
+  @media screen and (max-width: 576px) {
+	.date-picker,
+	.textarea-control {
+		width: calc(100% ) !important; /* Ajustar el ancho para dispositivos móviles */
+		padding: 0.375rem 0.75rem; /* Espaciado */
+		font-size: 1rem; /* Tamaño de fuente */
+		line-height: 1.5; /* Altura de línea */
+		color: #ccc; /* Color del texto */
+		background-color: #ffffff; /* Color de fondo */
+		background-clip: padding-box;
+		border: 1px solid #555; /* Borde */
+		border-radius: 0.25rem; /* Radio de borde */
+		transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+
+
+}
+
+
+.text-warning {
+	color: #FF9800 !important;
+  }
+  
+
+  
+  h3.text-warning {
+	font-family: "Great Vibes";
+	font-size: 32px; /* Tamaño de fuente para h3 */
+	margin-bottom: 0.5rem; /* Espaciado inferior */
+  }
+  
+
+  .orange-calendar {
+	.react-datepicker__day:hover {
+	  background-color: #FF9800 !important; /* Cambia el color de fondo en hover */
+	  color: #fff !important; /* Cambia el color del texto en hover */
+	}
+  
+	.react-datepicker__day--selected {
+	  background-color: #FF9800 !important; /* Cambia el color de fondo al seleccionar */
+	  color: #fff !important; /* Cambia el color del texto al seleccionar */
+	}
+  
+	.react-datepicker__day--keyboard-selected {
+	  background-color: #FF9800 !important; /* Cambia el color de fondo al seleccionar con el teclado */
+	  color: #fff !important; /* Cambia el color del texto al seleccionar con el teclado */
+	}
+  }
+  

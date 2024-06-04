@@ -1,6 +1,18 @@
+/* ReservasTable.css */
+/* ReservasTable.css */
+
+
+
+
+
 .Tabla_Reservas {
     max-width: 80vw;
     min-width: 80vw;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .Tabla_Reservas th,
@@ -13,6 +25,7 @@
 .Tabla_Reservas th {
     font-weight: 400;
     font-size: 14px;
+    background-color: #f8f8f8;
 }
 
 .Tabla_Reservas td {
@@ -61,6 +74,72 @@
     width: 5%;
 }
 
+.Tbl_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.Tbl_Header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.Tbl_Header button {
+    background-color: #ff7300;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Tbl_Header button:hover {
+    background-color: #ff8800;
+}
+
+.Tbl img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.Tbl .menu-container {
+    position: relative;
+}
+
+.Tbl .menu {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.Tbl .menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.Tbl .menu button:hover {
+    background-color: #f1f1f1;
+}
+
+.Tbl .menu i {
+    margin-right: 10px;
+}
+
 @media (max-width: 768px) {
     .Tabla_Reservas thead {
         display: none;
@@ -98,5 +177,18 @@
         padding-left: 15px;
         font-weight: bold;
         text-align: left;
+    }
+}
+.shifted {
+    /* Ajusta el margen izquierdo cuando el sidebar está abierto */
+    margin-left: 250px; /* Ajusta este valor según el ancho de tu sidebar */
+    transition: margin-left 0.3s ease; /* Agrega una transición suave */
+}
+
+@media (max-width: 768px) {
+    .shifted {
+        /* Centra el contenido cuando el sidebar está abierto en dispositivos móviles */
+        margin-left: auto;
+        margin-right: auto;
     }
 }
