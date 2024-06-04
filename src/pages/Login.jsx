@@ -128,14 +128,10 @@ export const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
-
-            <Link to="/">
-              {" "}
               {/* Utiliza Link para redirigir a / */}
               <Button className="custom-btn" type="submit">
                 Iniciar Sesión
               </Button>
-            </Link>
           </Form>
         </div>
         <hr />
