@@ -5,12 +5,23 @@
     justify-content: center;
 }
 
-.ContenedorAdmin {
-    margin-left: 18vw;
-}
+
 
 @media (max-width: 600px) {
     .ContenedorAdmin {
         margin-left: 0vw;
     }
+}
+
+
+
+
+.ContenedorAdmin {
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+}
+
+.shifted {
+    /* Ajusta el margen izquierdo cuando el sidebar está abierto */
+    margin-left: 250px; /* Ajusta este valor según el ancho de tu sidebar */
 }

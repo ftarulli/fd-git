@@ -8,32 +8,28 @@ import { SobreNosotros } from "../pages/SobreNosotros";
 import ErrorPage from "../pages/ErrorPage";
 import { Reservas } from "../pages/Reservas";
 import { AdminPage } from "../pages/AdminPage";
-
+import { Navegador } from "../components/Navegador"; // Importa el componente Navegador
 
 export const AppRouter = () => {
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/galeria" element={<Galeria />} />
-        <Route path="/reservas" element={<Reservas/>} />
-        <Route path="/admin" element={<AdminPage/>} />
-        
-        <Route path="/sobrenosotros" element={<SobreNosotros />} />
-        <Route path="/contacto" element={<Contacto />} />
+        {/* Rutas con el componente Navegador */}
+        <Route path="/" element={<><Navegador /><HomePage /></>} />
+<Route path="/galeria" element={<><Navegador /><Galeria /></>} />
+<Route path="/reservas" element={<><Navegador /><Reservas /></>} />
+<Route path="/sobrenosotros" element={<><Navegador /><SobreNosotros /></>} />
+<Route path="/contacto" element={<><Navegador /><Contacto /></>} />
+<Route path="/404" element={<><Navegador /><ErrorPage /></>} />
+
+
+        {/* Rutas sin el componente Navegador */}
+        <Route path="/admin/*" element={<AdminPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
-        <Route path="/404" element={<ErrorPage />} />
-
-
       </Routes>
     </BrowserRouter>
   );
-
-
-
-
 };
 
 export default AppRouter;

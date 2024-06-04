@@ -14,12 +14,12 @@ export const AdminPage = () => {
     };
 
     return (
-        <section className={`AdminPage ${sidebarOpen ? 'sidebarOpen' : ''}`}>
+        <section className="AdminPage">
             <SidebarAdmin setActiveTable={setActiveTable} toggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
-            <div className="ContenedorAdmin">
+            <div className={`ContenedorAdmin ${sidebarOpen ? 'shifted' : ''}`}>
                 <ContadorAdmin />
                 {activeTable === 'usuarios' && <UsersTable />}
-                {activeTable === 'reservas' && <ReservasTable />}
+                {activeTable === 'reservas' && <ReservasTable sidebarOpen={sidebarOpen} />}
             </div>
         </section>
     );

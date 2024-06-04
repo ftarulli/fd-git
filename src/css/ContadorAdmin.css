@@ -14,13 +14,16 @@
 
 .bloquesdatos h2 {
     font-size: 40px;
-    color: #343434;
+    color: white; /* Cambiar el color del número a blanco */
+    margin-top: 20px;
 }
 
 .bloquesdatos h3 {
     font-size: 15px;
-    color: #C4C4C4;
+    color: #ffffff; /* Color blanco para el texto "Usuarios" */
+    margin-top: 20px;
 }
+
 
 @media (max-width: 600px) {
     .Panel {

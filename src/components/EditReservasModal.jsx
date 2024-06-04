@@ -1,7 +1,9 @@
-import React from 'react';
+
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import PropTypes from 'prop-types'; // Importa PropTypes
+import '../css/modalreservas.css';
 
 export const EditModal = ({
 	show,
@@ -23,16 +25,14 @@ export const EditModal = ({
 							type="text"
 							value={reserva.user || ''}
 							onChange={(e) => handleChange('user', e.target.value)}
-							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
-						<Form.Label>Numero de Telefono</Form.Label>
+						<Form.Label>Número de Teléfono</Form.Label>
 						<Form.Control
-							type="number"
+							type="tel"
 							value={reserva.phone || ''}
 							onChange={(e) => handleChange('phone', e.target.value)}
-							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
@@ -41,7 +41,6 @@ export const EditModal = ({
 							type="email"
 							value={reserva.email || ''}
 							onChange={(e) => handleChange('email', e.target.value)}
-							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
@@ -55,7 +54,7 @@ export const EditModal = ({
 					<Form.Group className="mb-3">
 						<Form.Label>Fecha</Form.Label>
 						<Form.Control
-							type="text"
+							type="date"
 							value={reserva.fecha || ''}
 							onChange={(e) => handleChange('fecha', e.target.value)}
 						/>
@@ -63,7 +62,7 @@ export const EditModal = ({
 					<Form.Group className="mb-3">
 						<Form.Label>Hora</Form.Label>
 						<Form.Control
-							type="text"
+							type="time"
 							value={reserva.hora || ''}
 							onChange={(e) => handleChange('hora', e.target.value)}
 						/>
@@ -75,4 +74,13 @@ export const EditModal = ({
 			</Modal.Body>
 		</Modal>
 	);
+};
+
+// Validación de tipo para la propiedad 'show'
+EditModal.propTypes = {
+    show: PropTypes.bool.isRequired,
+    handleClose: PropTypes.func.isRequired,
+    reserva: PropTypes.object.isRequired,
+    handleChange: PropTypes.func.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
 };
