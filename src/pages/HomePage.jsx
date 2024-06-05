@@ -26,20 +26,20 @@ const HomePage = () => {
     document.body.style.backgroundColor = "black";
   });
   return (
-    <div className="container-general_home">
+    <div className="container-general">
       {/*Sección principal */}
       {/* Container Imagen fondo principal */}
-      <div className="container-imagen-principal_home"></div>
+      <div className="container-imagen-principal"></div>
       {/* Container principal */}
-      <div className="container-fluid container-principal_home">
-        <div className="row container-columnas_home">
+      <div className="container-fluid container-principal">
+        <div className="row container-columnas">
           {/* Columna íconos principal */}
-          <div className="col-10 col-md-2 container-iconos-principal_home ">
+          <div className="col-10 col-md-2 container-iconos-principal ">
             <div className="linea-vertical-principal_home my-3"></div>
-            <div className="iconos-redes-principal_home">
+            <div className="iconos-redes-principal">
               <Link
                 to="https://www.facebook.com"
-                className="link_home"
+                className="link"
                 target="_blank"
               >
                 <i className="fa fa-facebook" aria-hidden="true"></i>
@@ -47,7 +47,7 @@ const HomePage = () => {
 
               <Link
                 to="https://www.twitter.com"
-                className="link_home"
+                className="link"
                 target="_blank"
               >
                 <i className="fa fa-twitter" aria-hidden="true"></i>
@@ -55,23 +55,23 @@ const HomePage = () => {
 
               <Link
                 to="https://www.pinterest.com"
-                className="link_home"
+                className="link"
                 target="_blank"
               >
                 <i className="fa fa-pinterest-p" aria-hidden="true"></i>
               </Link>
             </div>
-            <div className="linea-vertical-principal_home my-3"></div>
+            <div className="linea-vertical-principal my-3"></div>
           </div>
           {/* Columna texto principal */}
-          <div className="col-10 col-md-6 container-texto-principal_home">
-            <h1 className="texto_uno_home">¡Es rápido y divertido!</h1>
-            <p className="parrafo_uno_home">
-              <span className="texto_destacado_home">Rápido y delicioso</span>{" "}
-              <br /> la calidad en cada <br /> plato, sin esperas.
+          <div className="col-10 col-md-6 container-texto-principal">
+            <h1 className="texto_uno">¡Es rápido y divertido!</h1>
+            <p className="parrafo_uno">
+              <span className="texto_destacado">Rápido y delicioso</span> <br />{" "}
+              la calidad en cada <br /> plato, sin esperas.
             </p>
 
-            <p className="parrafo_dos_home">
+            <p className="parrafo_dos">
               ¡Reserva tu mesa hoy mismo y prepárate para una experiencia
               gourmet inolvidable! Desde platos exquisitos hasta un servicio
               excepcional, te garantizamos una velada que estimulará todos tus
@@ -80,40 +80,36 @@ const HomePage = () => {
             </p>
 
             <Link to="/reservas">
-              <button className="btn btn-warning boton-reserva_home">
+              <button className="btn btn-warning boton-reserva">
                 Reservar
               </button>
             </Link>
           </div>
           {/* Columna imagen principal */}
-          <div className="col-10 offset-1 col-md-4 offset-md-0 container-imagen-plato_home">
-            <img
-              src={principal}
-              alt=""
-              className="imagen-principal-plato_home"
-            />
+          <div className="col-10 offset-1 col-md-4 offset-md-0 container-imagen-plato">
+            <img src={principal} alt="" className="imagen-principal-plato" />
           </div>
         </div>
       </div>
       {/*Sección elegirnos */}
-      <div className="container-fluid container-elegirnos_home">
-        <div className="row container-filas-elegirnos_home">
+      <div className="container-fluid container-elegirnos">
+        <div className="row container-filas-elegirnos">
           {/* Columna grupo de imágenes */}
           <div className="col-11 col-md-5">
-            <div className="imagen-grupo-elegirnos_home">
+            <div className="imagen-grupo-elegirnos">
               <img src={grupo} alt="" />
             </div>
           </div>
           {/* Columna texto e iconos */}
           <div className="col-10 col-md-5">
             <div>
-              <p className="texto_uno_home">¿Por qué elegirnos?</p>
-              <p className="parrafo_uno-elegirnos_home">
-                <span className="texto_destacado_home">Sabor </span>{" "}
-                extraordinario y experiencia.
+              <p className="texto_uno">¿Por qué elegirnos?</p>
+              <p className="parrafo_uno-elegirnos">
+                <span className="texto_destacado">Sabor </span> extraordinario y
+                experiencia.
               </p>
 
-              <p className="parrafo_dos_home">
+              <p className="parrafo_dos">
                 Sumérgete en una experiencia culinaria sin igual, donde cada
                 bocado es una obra maestra de sabores extraordinarios y cada
                 visita es un viaje inolvidable a través de la excelencia
@@ -124,9 +120,9 @@ const HomePage = () => {
               </p>
             </div>
 
-            <div className="container-iconos-elegirnos_home">
-              <div className="iconos-texto-elegirnos_home">
-                <div className="iconos-elegirnos_home">
+            <div className="container-iconos-elegirnos">
+              <div className="iconos-texto-elegirnos">
+                <div className="iconos-elegirnos">
                   <img src={Hamburger} alt="" />
                 </div>
 
@@ -135,8 +131,8 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <div className="iconos-texto-elegirnos_home">
-                <div className="iconos-elegirnos_home">
+              <div className="iconos-texto-elegirnos">
+                <div className="iconos-elegirnos">
                   <img src={Cookie} alt="" />
                 </div>
 
@@ -145,8 +141,8 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <div className="iconos-texto-elegirnos_home">
-                <div className="iconos-elegirnos_home">
+              <div className="iconos-texto-elegirnos">
+                <div className="iconos-elegirnos">
                   <img src={Wine} alt="" />
                 </div>
 
@@ -157,14 +153,12 @@ const HomePage = () => {
             </div>
 
             <div className="container">
-              <div className="cajita-experiencia_home">
-                <span className="numero-experiencia_home">30+</span>
-                <div className="experiencia-texto_home">
+              <div className="cajita-experiencia">
+                <span className="numero-experiencia">30+</span>
+                <div className="experiencia-texto">
                   <span>Años de</span>
                   <br />
-                  <span className="experiencia-destacado_home">
-                    Experiencia
-                  </span>
+                  <span className="experiencia-destacado">Experiencia</span>
                 </div>
               </div>
             </div>
@@ -172,94 +166,93 @@ const HomePage = () => {
         </div>
       </div>
       {/*Sección info */}
-      <div className="container-info_home"></div>
-      <div className="container container-iconos-info_home">
+      <div className="container-info"></div>
+      <div className="container container-iconos-info">
         <div className="row filas-iconos-info">
-          <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-iconos-info_home">
+          <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-iconos-info">
             <div>
-              <img src={chefs} alt="" className="imagen-info_home" />
+              <img src={chefs} alt="" className="imagen-info" />
             </div>
             <div>
-              <span className="texto-info_home">Chefs profesionales</span>
+              <span className="texto-info">Chefs profesionales</span>
             </div>
             <div>
-              <span className="texto-info-destacado_home">20</span>
-            </div>
-          </div>
-          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info_home">
-            <div>
-              <img src={combo} alt="" className="imagen-info_home" />
-            </div>
-            <div>
-              <span className="texto-info_home">Platos de comida</span>
-            </div>
-            <div>
-              <span className="texto-info-destacado_home">150</span>
+              <span className="texto-info-destacado">20</span>
             </div>
           </div>
-          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info_home">
+          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info">
             <div>
-              <img src={utensilios} alt="" className="imagen-info_home" />
+              <img src={combo} alt="" className="imagen-info" />
             </div>
             <div>
-              <span className="texto-info_home">Años de experiencia</span>
+              <span className="texto-info">Platos de comida</span>
             </div>
             <div>
-              <span className="texto-info-destacado_home">30+</span>
+              <span className="texto-info-destacado">150</span>
             </div>
           </div>
-          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info_home">
+          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info">
             <div>
-              <img src={pizzaPorcion} alt="" className="imagen-info_home" />
+              <img src={utensilios} alt="" className="imagen-info" />
             </div>
             <div>
-              <span className="texto-info_home">Clientes felices</span>
+              <span className="texto-info">Años de experiencia</span>
             </div>
             <div>
-              <span className="texto-info-destacado_home">550</span>
+              <span className="texto-info-destacado">30+</span>
+            </div>
+          </div>
+          <div className="col-10 offset-1  col-md-3 offset-md-0 columnas-iconos-info">
+            <div>
+              <img src={pizzaPorcion} alt="" className="imagen-info" />
+            </div>
+            <div>
+              <span className="texto-info">Clientes felices</span>
+            </div>
+            <div>
+              <span className="texto-info-destacado">550</span>
             </div>
           </div>
         </div>
       </div>
       {/*Sección Chefs */}
-      <div className="container-chefs-fondo_home"></div>
+      <div className="container-chefs-fondo"></div>
 
-      <div className="container-chefs_home">
-        <div className="texto-chefs_home">
-          <h3 className="texto_uno_home">Chefs</h3>
-          <p className="texto_dos-chefs_home">
-            <span className="destacado-chefs_home">Conoce</span> a nuestros
-            Chefs
+      <div className="container-chefs">
+        <div className="texto-chefs">
+          <h3 className="texto_uno">Chefs</h3>
+          <p className="texto_dos-chefs">
+            <span className="destacado-chefs">Conoce</span> a nuestros Chefs
           </p>
         </div>
-        <div className="container-chefs-detalle_home">
-          <div className="row columnas-chefs_home">
-            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs_home">
+        <div className="container-chefs-detalle">
+          <div className="row columnas-chefs">
+            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs">
               <div>
-                <img src={chef1} alt="" className="imagen-chefs_home" />
+                <img src={chef1} alt="" className="imagen-chefs" />
               </div>
             </div>
-            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs_home">
+            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs">
               <div>
-                <img src={chef2} alt="" className="imagen-chefs_home" />
+                <img src={chef2} alt="" className="imagen-chefs" />
               </div>
             </div>
-            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs_home">
+            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs">
               <div>
-                <img src={chef3} alt="" className="imagen-chefs_home" />
+                <img src={chef3} alt="" className="imagen-chefs" />
               </div>
             </div>
-            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs_home">
+            <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-chefs">
               <div>
-                <img src={chef4} alt="" className="imagen-chefs_home" />
+                <img src={chef4} alt="" className="imagen-chefs" />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container-boton-chefs_home">
+        <div className="container-boton-chefs">
           <Link to="/error404">
-            <button className="btn btn-outline-warning boton-chefs_home">
+            <button className="btn btn-outline-warning boton-chefs">
               Ver más
             </button>
           </Link>
@@ -267,10 +260,10 @@ const HomePage = () => {
       </div>
       {/*Sección Testimonios Clientes */}
 
-      <div className="container-testimonios_home"></div>
+      <div className="container-testimonios"></div>
 
-      <div className="container-carrousel-testimonios_home">
-        <div className="row fila-carousel-testimonios_home">
+      <div className="container-carrousel-testimonios">
+        <div className="row fila-carousel-testimonios">
           <div className="col-10 offset-1 col-md-6 offset-md-0">
             <div
               id="carouselExampleIndicators"
@@ -321,7 +314,7 @@ const HomePage = () => {
                         lugar favorito.
                       </p>
 
-                      <div className="iconos-testimonios_home">
+                      <div className="iconos-testimonios">
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
@@ -330,7 +323,7 @@ const HomePage = () => {
                       </div>
 
                       <div>
-                        <span className="nombre-testimonios_home">
+                        <span className="nombre-testimonios">
                           Maximiliano Cruz
                         </span>
                       </div>
@@ -338,7 +331,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <div className="card card-testimonios_home">
+                  <div className="card card-testimonios">
                     <img
                       src={testimonios2}
                       className="card-img-top"
@@ -358,7 +351,7 @@ const HomePage = () => {
                         deliciosas creaciones culinarias.
                       </p>
 
-                      <div className="iconos-testimonios_home">
+                      <div className="iconos-testimonios">
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
@@ -367,7 +360,7 @@ const HomePage = () => {
                       </div>
 
                       <div>
-                        <span className="nombre-testimonios_home">
+                        <span className="nombre-testimonios">
                           Valentina Reyes
                         </span>
                       </div>
@@ -375,7 +368,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <div className="card card-testimonios_home">
+                  <div className="card card-testimonios">
                     <img
                       src={testimonios3}
                       className="card-img-top"
@@ -383,7 +376,7 @@ const HomePage = () => {
                     />
                     <div className="card-body">
                       <i
-                        className="fa fa-quote-right icono-quote_home"
+                        className="fa fa-quote-right icono-quote"
                         aria-hidden="true"
                       ></i>
                       <p className="card-text">
@@ -394,7 +387,7 @@ const HomePage = () => {
                         cada plato me dejaron impresionado.
                       </p>
 
-                      <div className="iconos-testimonios_home">
+                      <div className="iconos-testimonios">
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
@@ -403,7 +396,7 @@ const HomePage = () => {
                       </div>
 
                       <div>
-                        <span className="nombre-testimonios_home">
+                        <span className="nombre-testimonios">
                           Esteban Sanchez
                         </span>
                       </div>
@@ -440,24 +433,24 @@ const HomePage = () => {
         </div>
       </div>
       {/*Sección Banner */}
-      <div className="container-banner_home"></div>
+      <div className="container-banner"></div>
 
-      <div className="container container-texto-banner_home">
+      <div className="container container-texto-banner">
         <div className="row h-100">
-          <div className="col-10 offset-1 col-md-6 offset-md-6 align-self-end columna-texto-banner_home">
-            <span className="texto_uno_home">Reservas online </span>
-            <p className="parrafo-uno-banne_home">
-              <span className="texto_destacado_home">¡Reserva </span>Ahora y
+          <div className="col-10 offset-1 col-md-6 offset-md-6 align-self-end columna-texto-banner">
+            <span className="texto_uno">Reservas online </span>
+            <p className="parrafo-uno-banne">
+              <span className="texto_destacado">¡Reserva </span>Ahora y
               Garantiza tu Lugar en Nuestro Festín Gastronómico!
             </p>
-            <p className="parrafo-dos-banner_home">
+            <p className="parrafo-dos-banner">
               Con nuestra conveniente plataforma de reservas en línea, puedes
               planificar tu próxima comida con facilidad y tranquilidad ¡No
               esperes más, reserva tu lugar hoy y déjanos deleitarte con nuestro
               menú exquisito!
             </p>
 
-            <div className="btn-reservas_home">
+            <div className="btn-reservas">
               <button className="btn btn-outline-warning ">
                 Reservar Online
               </button>
@@ -466,28 +459,28 @@ const HomePage = () => {
         </div>
       </div>
       {/*Sección Nuestros platos */}
-      <div className="container-platos_home">
-        <div className="row fila-card-texto_home">
+      <div className="container-platos">
+        <div className="row fila-card-texto">
           <div className="col">
             <div>
-              <h6 className="titulo-platos_home">Nuestros platos</h6>
-              <p className="parrafo-platos_home">
-                <span className="texto-destacado-platos_home">Nuestros</span>{" "}
-                platos estrellas
+              <h6 className="titulo-platos">Nuestros platos</h6>
+              <p className="parrafo-platos">
+                <span className="texto-destacado-platos">Nuestros</span> platos
+                estrellas
               </p>
             </div>
           </div>
         </div>
 
-        <div className="row fila-card-platos_home ">
+        <div className="row fila-card-platos ">
           <div className="col-10 offset-1 col-md-6 offset-md-0 col-lg-3 offset-lg-0 mb-3 ">
-            <div className="card card-platos_home">
-              <div className="img-platos_home">
+            <div className="card card-platos">
+              <div className="img-platos">
                 <img src={hamburguesa} className="card-img-top " alt="..." />
               </div>
 
-              <div className="card-body card-body-platos_home">
-                <span className="texto-uno-platos_home">
+              <div className="card-body card-body-platos">
+                <span className="texto-uno-platos">
                   Nuestra hamburgesa estrella
                 </span>
                 <h5 className="card-title">Fuego Infernal Burger</h5>
@@ -500,12 +493,12 @@ const HomePage = () => {
           </div>
 
           <div className="col-10 offset-1 col-md-6 offset-md-0 col-lg-3 offset-lg-0 mb-3 ">
-            <div className="card card-platos_home">
-              <div className="img-platos_home">
+            <div className="card card-platos">
+              <div className="img-platos">
                 <img src={pizza} className="card-img-top " alt="..." />
               </div>
-              <div className="card-body card-body-platos_home">
-                <span className="texto-uno-platos_home">
+              <div className="card-body card-body-platos">
+                <span className="texto-uno-platos">
                   Nuestra pizza más pedida
                 </span>
                 <h5 className="card-title">Volcán de Queso Pizza</h5>
@@ -518,12 +511,12 @@ const HomePage = () => {
           </div>
 
           <div className="col-10 offset-1 col-md-6 offset-md-0 col-lg-3 offset-lg-0 mb-3 ">
-            <div className="card card-platos_home">
-              <div className="img-platos_home">
+            <div className="card card-platos">
+              <div className="img-platos">
                 <img src={tacos} className="card-img-top " alt="..." />
               </div>
-              <div className="card-body card-body-platos_home">
-                <span className="texto-uno-platos_home">
+              <div className="card-body card-body-platos">
+                <span className="texto-uno-platos">
                   El favorito de platos internacionales
                 </span>
                 <h5 className="card-title">Tornado de Sabor Tacos</h5>

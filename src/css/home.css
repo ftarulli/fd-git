@@ -6,7 +6,7 @@
 
 /*Sección principal*/
 
-.container-imagen-principal_home {
+.container-imagen-principal {
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
   background-size: cover;
@@ -16,13 +16,13 @@
   position: absolute;
 }
 
-.container-principal_home {
+.container-principal {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-.container-columnas_home {
+.container-columnas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -33,7 +33,7 @@
 }
 
 /* Columna íconos */
-.container-iconos-principal_home {
+.container-iconos-principal {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -42,7 +42,7 @@
   width: 5rem;
 }
 
-.iconos-redes-principal_home {
+.iconos-redes-principal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,33 +50,33 @@
   height: 5rem;
 }
 
-.iconos-redes-principal_home :hover {
+.iconos-redes-principal :hover {
   color: #ff9f0d;
 }
 
-.linea-vertical-principal_home {
+.linea-vertical-principal {
   height: 10rem;
   width: 0.8px;
   background-color: #ffffff;
 }
 
-.link_home {
+.link {
   color: #ffffff;
 }
 
 /* Columna texto */
 
-.container-texto-principal_home {
+.container-texto-principal {
   color: #ffffff;
   width: 40rem;
 }
 
-.boton-reserva_home {
+.boton-reserva {
   background-color: #ff9f0d;
   width: 10rem;
 }
 
-.texto_uno_home {
+.texto_uno {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
@@ -84,82 +84,82 @@
   font-size: 2rem;
 }
 
-.parrafo_uno_home {
+.parrafo_uno {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
   font-size: 3rem;
 }
 
-.parrafo_dos_home {
+.parrafo_dos {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
 }
 
-.texto_destacado_home {
+.texto_destacado {
   color: #ff9f0d;
 }
 
 /* Columna imagen plato */
 
-.imagen-principal-plato_home {
+.imagen-principal-plato {
   width: 100%;
 }
 
 /*Sección elegirnos*/
-.container-elegirnos_home {
+.container-elegirnos {
   color: #ffffff;
   margin: 5rem;
 }
 
-.container-filas-elegirnos_home {
+.container-filas-elegirnos {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.imagen-grupo-elegirnos_home {
+.imagen-grupo-elegirnos {
   width: 50%;
   padding-left: 7.5rem;
 }
 
-.imagen-grupo-elegirnos_home img {
+.imagen-grupo-elegirnos img {
   width: 30rem;
   padding: 1rem;
 }
 
-.parrafo_uno-elegirnos_home {
+.parrafo_uno-elegirnos {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
 }
 
-.container-iconos-elegirnos_home {
+.container-iconos-elegirnos {
   display: flex;
   justify-content: flex-start;
   margin-left: -2rem;
 }
 
-.iconos-elegirnos_home {
+.iconos-elegirnos {
   background-color: #ff9f0d;
   margin-left: 2rem;
   border-radius: 0.3rem;
 }
 
-.iconos-elegirnos_home img {
+.iconos-elegirnos img {
   width: 4rem;
   padding: 1rem;
 }
 
-.iconos-texto-elegirnos_home {
+.iconos-texto-elegirnos {
   text-align: center;
 }
 
-.iconos-texto-elegirnos_home div span {
+.iconos-texto-elegirnos div span {
   margin-left: 2rem;
   font-size: 0.9rem;
 }
 
-.cajita-experiencia_home {
+.cajita-experiencia {
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: black;
@@ -175,7 +175,7 @@
   margin-left: -0.9rem;
 }
 
-.numero-experiencia_home {
+.numero-experiencia {
   font-size: 2.8rem;
   font-family: Helvetica, sans-serif;
   font-weight: 700;
@@ -183,18 +183,18 @@
   padding-right: 0.5rem;
 }
 
-.experiencia-texto_home {
+.experiencia-texto {
   font-family: Helvetica, sans-serif;
 }
 
-.experiencia-destacado_home {
+.experiencia-destacado {
   font-weight: 700;
   font-size: 1.2rem;
 }
 
 /*Sección Info*/
 
-.container-info_home {
+.container-info {
   background-image: url(../assets/img_home/fondo4.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,17 +204,17 @@
   width: 100%;
 }
 
-.container-iconos-info_home {
+.container-iconos-info {
   height: 50vh;
   position: relative;
 }
 
-.filas-iconos-info_home {
+.filas-iconos-info {
   margin: 0;
   height: 100%;
 }
 
-.columnas-iconos-info_home {
+.columnas-iconos-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,18 +222,18 @@
   color: #ffffff;
 }
 
-.imagen-info_home {
+.imagen-info {
   width: 5rem;
   padding-bottom: 1rem;
 }
 
-.texto-info_home {
+.texto-info {
   font-family: Helvetica, sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-.texto-info-destacado_home {
+.texto-info-destacado {
   font-family: Helvetica, sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
@@ -241,7 +241,7 @@
 
 /*Sección Chefs*/
 
-.container-chefs-fondo_home {
+.container-chefs-fondo {
   background-image: url(../assets/img_home/fondo1.png);
   background-repeat: no-repeat;
   background-position: start;
@@ -254,11 +254,11 @@
   margin-bottom: 5rem;
 }
 
-.container-chefs_home {
+.container-chefs {
   margin-top: 1.5rem;
 }
 
-.container-chefs-detalle_home {
+.container-chefs-detalle {
   padding-top: 3rem;
   position: relative;
   height: 50vh;
@@ -267,36 +267,36 @@
   align-items: center;
 }
 
-.imagen-chefs_home {
+.imagen-chefs {
   width: 13rem;
 }
 
-.texto-chefs_home {
+.texto-chefs {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.texto_dos-chefs_home {
+.texto_dos-chefs {
   font-family: Helvetica, sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #ffffff;
 }
 
-.destacado-chefs_home {
+.destacado-chefs {
   color: #ff9f0d;
 }
 
-.container-boton-chefs_home {
+.container-boton-chefs {
   margin: 4rem;
   text-align: center;
 }
 
 /*Sección Testimonios Clientes */
 
-.container-testimonios_home {
+.container-testimonios {
   background-image: url(../assets/img_home/fondo2.png);
   background-position-x: 50rem;
   background-size: contain;
@@ -307,73 +307,73 @@
   position: absolute;
 }
 
-.carousel-item_home {
+.carousel-item {
   height: 30rem;
 }
 
-.container-carrousel-testimonios_home {
+.container-carrousel-testimonios {
   position: relative;
   width: 98%;
 }
 
-.fila-carousel-testimonios_home {
+.fila-carousel-testimonios {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card-testimonios_home {
+.card-testimonios {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
 }
 
-.card-testimonios_home img {
+.card-testimonios img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
   object-fit: cover;
 }
 
-.card-body_home {
+.card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.card-text_home {
+.card-text {
   text-align: center;
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
 
-.iconos-testimonios_home {
+.iconos-testimonios {
   padding: 1rem;
   display: flex;
   justify-content: center;
 }
 
-.iconos-testimonios_home i {
+.iconos-testimonios i {
   color: #ff9f0d;
 }
 
-.nombre-testimonios_home {
+.nombre-testimonios {
   font-family: Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.icono-quote_home {
+.icono-quote {
   color: #ff9f0d;
   padding: 1rem;
 }
 
 /*Sección Banner*/
 
-.container-banner_home {
+.container-banner {
   background-image: url(../assets/img_home/fondo5.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -384,7 +384,7 @@
   position: absolute;
 }
 
-.container-texto-banner_home {
+.container-texto-banner {
   position: relative;
   color: white;
   height: 10rem;
@@ -392,20 +392,20 @@
   top: 6rem;
 }
 
-.columna-texto-banner_home {
+.columna-texto-banner {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: end;
 }
 
-.parrafo-uno-banner_home {
+.parrafo-uno-banner {
   font-family: Helvetica, sans-serif;
   font-weight: 700;
   font-size: 2rem;
 }
 
-.parrafo-dos-banner_home {
+.parrafo-dos-banner {
   color: #ffffff;
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
@@ -413,7 +413,7 @@
 
 /*Sección Nuestros platos */
 
-.container-platos_home {
+.container-platos {
   width: 95%;
   height: 100vh;
   position: relative;
@@ -423,11 +423,11 @@
   margin-top: 200px;
 }
 
-.fila-card-texto_home {
+.fila-card-texto {
   text-align: center;
 }
 
-.fila-card-platos_home {
+.fila-card-platos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,25 +435,25 @@
   margin-bottom: 2rem;
 }
 
-.titulo-platos_home {
+.titulo-platos {
   color: #ff9f0d;
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-size: 2rem;
 }
 
-.parrafo-platos_home {
+.parrafo-platos {
   font-family: Helvetica, sans-serif;
   color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
 }
 
-.texto-destacado-platos_home {
+.texto-destacado-platos {
   color: #ff9f0d;
 }
 
-.card-body-platos_home {
+.card-body-platos {
   background-color: black;
   border-radius: 5px;
   height: 12rem;
@@ -466,16 +466,16 @@
   color: #ffffff !important;
 }
 
-.img-platos_home {
+.img-platos {
   height: 100%;
 }
 
-.img-platos_home img {
+.img-platos img {
   height: 100%;
   object-fit: cover;
 }
 
-.texto-uno-platos_home {
+.texto-uno-platos {
   color: #ff9f0d;
   font-family: Helvetica, sans-serif;
   font-weight: 400;
@@ -485,7 +485,7 @@
 /*Media queries*/
 @media screen and (max-width: 576px) {
   /*Seccion principal*/
-  .container-columnas_home {
+  .container-columnas {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 0;
@@ -493,100 +493,100 @@
     gap: 3rem;
   }
 
-  .container-iconos-principal_home {
+  .container-iconos-principal {
     display: none;
   }
-  .container-texto-principal_home {
+  .container-texto-principal {
     width: 50%;
   }
 
-  .texto_uno_home {
+  .texto_uno {
     text-align: center;
     padding-bottom: 1rem;
   }
-  .parrafo_uno_home {
+  .parrafo_uno {
     font-size: 1.5rem;
     padding-bottom: 2rem;
   }
 
-  .parrafo_dos_home {
+  .parrafo_dos {
     font-size: 0.7rem;
     word-spacing: 0.3rem;
   }
 
-  .imagen-principal-plato_home {
+  .imagen-principal-plato {
     width: 60%;
     margin-left: 3rem;
   }
 
   /*Seccion elegirnos*/
 
-  .imagen-grupo-elegirnos_home {
+  .imagen-grupo-elegirnos {
     width: 10%;
     padding-left: 0;
     padding-right: 1rem;
   }
 
-  .imagen-grupo-elegirnos_home img {
+  .imagen-grupo-elegirnos img {
     width: 20rem;
   }
 
-  .parrafo_uno-elegirnos_home {
+  .parrafo_uno-elegirnos {
     font-size: 1.5rem;
     padding-bottom: 2rem;
   }
 
-  .container-elegirnos_home {
+  .container-elegirnos {
     margin-bottom: 0.5rem;
   }
 
-  .container-iconos-elegirnos_home {
+  .container-iconos-elegirnos {
     margin-left: -1rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
 
-  .cajita-experiencia_home {
+  .cajita-experiencia {
     margin-left: 0.2rem;
   }
   /*Seccion Info*/
 
-  .container-info_home {
+  .container-info {
     display: none;
   }
 
-  .container-iconos-info_home {
+  .container-iconos-info {
     height: 100%;
     margin-bottom: 3rem;
   }
 
-  .imagen-info_home {
+  .imagen-info {
     width: 3.8rem;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
   }
 
-  .texto-info_home {
+  .texto-info {
     font-size: 1rem;
   }
 
-  .texto-info-destacado_home {
+  .texto-info-destacado {
     font-size: 1.9rem;
   }
   /*Seccion Chefs*/
 
-  .container-chefs-detalle_home {
+  .container-chefs-detalle {
     padding-top: 2rem;
     height: 100%;
   }
 
-  .texto_dos-chefs_home {
+  .texto_dos-chefs {
     font-size: 1.5rem;
     width: 100%;
     padding-left: 2.5rem;
   }
 
-  .columnas-chefs_home {
+  .columnas-chefs {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -597,43 +597,43 @@
 
   /*Sección testimonios*/
 
-  .container-testimonios_home {
+  .container-testimonios {
     display: none;
   }
 
-  .container-carrousel-testimonios_home {
+  .container-carrousel-testimonios {
     display: none;
   }
 
-  .container-banner_home {
+  .container-banner {
     background-size: cover;
     margin: 0;
     filter: brightness(10%);
   }
 
-  .columna-texto-banner_home {
+  .columna-texto-banner {
     text-align: start;
   }
 
-  .btn-reservas_home {
+  .btn-reservas {
     padding-top: 1rem;
   }
 
-  .parrafo-uno-banner_home {
+  .parrafo-uno-banner {
     font-size: 1.5rem;
   }
 
   /*Sección platos*/
 
-  .container-platos_home {
+  .container-platos {
     margin-top: 12rem;
   }
 
-  .parrafo-platos_home {
+  .parrafo-platos {
     font-size: 1.5rem;
   }
 
-  .container-platos_home {
+  .container-platos {
     margin-bottom: 75rem;
   }
 }
