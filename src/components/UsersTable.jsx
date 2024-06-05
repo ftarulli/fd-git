@@ -4,6 +4,7 @@ import apiTest from '../api/apiTest';
 import { UserRow } from './UserRow';
 import { EditUserModal } from './EditUserModal';
 import '../css/UsersTable.css';
+import testApi from '../api/testApi';
 
 export const UsersTable = () => {
 	const [visibleMenu, setVisibleMenu] = useState(null);
@@ -37,7 +38,7 @@ export const UsersTable = () => {
 
 	const listaUsersBack = async () => {
 		try {
-			const resp = await apiTest.get('/admin/sendUsers');
+			const resp = await testApi.get('/admin/sendUsers');
 			setCargarUsers(resp.data.listUsers);
 		} catch (error) {
 			console.log(error);
@@ -53,15 +54,14 @@ export const UsersTable = () => {
 		setUserEditarSeleccionado(user);
 	};
 
-
 	const handleSubmitEditarUser = (e) => {
 		e.preventDefault();
 	};
 
-
 	const deleteUser = async (_id) => {
+		console.log(_id);
 		try {
-			await apiTest.delete(`/admin/deleteUsers/${_id}`);
+			await testApi.delete(`/admin/deleteUsers/${_id}`);
 			listaUsersBack();
 		} catch (error) {
 			console.log(error);
@@ -74,8 +74,7 @@ export const UsersTable = () => {
 				<thead>
 					<tr>
 						<th className="Tabla_Id">ID</th>
-						<th className="Tabla_User">Usuario</th>
-						<th className="Tabla_Cel">Numero de telefono</th>
+						<th className="Tabla_User">Nombre</th>
 						<th className="Tabla_Email">Email</th>
 						<th className="Tabla_Botons">
 							<i className="fa-solid fa-ellipsis-vertical"></i>

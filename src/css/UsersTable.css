@@ -31,15 +31,11 @@
 }
 
 .Tabla_Id {
-    width: 10%;
+    width: 13%;
 }
 
 .Tabla_User {
-    width: 20%;
-}
-
-.Tabla_Cel {
-    width: 25%;
+    width: 40%;
 }
 
 .Tabla_Email {
@@ -47,7 +43,7 @@
 }
 
 .Tabla_Botons {
-    width: 5%;
+    width: 7%;
 }
 
 /* Estilos para el desplegable que aparece al clickear los tres puntos */
@@ -125,5 +121,3 @@
         text-align: left;
     }
 }
-
-@media (max-width: 1000px) {}

@@ -1,9 +1,9 @@
 /* Estilos para el modal */
 .modal-content {
     border-radius: 10px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     color: rgb(51, 51, 51);
-    
+
 }
 
 .modal-header {
@@ -50,4 +50,8 @@
 
 .modal-body button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.form-control {
+    color: black;
 }

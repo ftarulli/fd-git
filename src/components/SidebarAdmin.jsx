@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../css/SidebarAdmin.css';
 
 export const SidebarAdmin = ({ setActiveTable }) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [userName, setUserName] = useState('Admin');
