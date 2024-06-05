@@ -158,7 +158,7 @@ export const Galeria = () => {
       </div>
       {modalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content">
+          <div className="modal-galeria-content">
             <span className="close" onClick={closeModal}>
               &times;
             </span>

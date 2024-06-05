@@ -189,7 +189,7 @@ export const Reservas = () => {
                     onChange={(time) => setTime(time)}
                     showTimeSelect
                     showTimeSelectOnly
-                    timeIntervals={30} 
+                    timeIntervals={30}
                     timeCaption="Hora"
                     dateFormat="h:mm aa"
                     className="form-control text-white date-picker"
