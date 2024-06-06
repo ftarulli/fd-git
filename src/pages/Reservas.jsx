@@ -70,13 +70,13 @@ export const Reservas = () => {
 				});
 
 				// Limpiar los campos después de enviar la información al backend solo si la solicitud fue exitosa
-				// setName('');
-				// setDate(null);
-				// setTime(null);
-				// setCant('');
-				// setPhone('');
-				// setEmail('');
-				// setComment('');
+				setName('');
+				setDate(null);
+				setTime(null);
+				setCant('');
+				setPhone('');
+				setEmail('');
+				setComment('');
 			}
 
 			console.log(resp);
