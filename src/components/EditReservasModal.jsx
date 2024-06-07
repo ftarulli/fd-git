@@ -54,6 +54,7 @@ export const EditModal = ({ show, handleClose, reserva }) => {
 			</Modal.Body>
 		</Modal>
 	);
+
 };
 
 EditModal.propTypes = {

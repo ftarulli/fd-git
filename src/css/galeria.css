@@ -18,7 +18,6 @@ body::after {
 .slider-container {
   width: 1349px;
   overflow: auto;
-  
 }
 
 .slider {
@@ -54,7 +53,7 @@ body::after {
 .slider-container-wrapper {
   display: flex;
   justify-content: center;
-  
+
   margin-top: 50px;
 }
 
@@ -65,7 +64,6 @@ body::after {
   border-radius: 5px; /* Borde redondeado */
   overflow: hidden; /* Evita que las imágenes se desborden del contenedor */
 }
-
 
 .title {
   text-align: center; /* Centra el texto horizontalmente */
@@ -113,21 +111,21 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  background-color: transparent !important; /* Fondo oscuro con opacidad */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999; /* Asegura que el modal esté en la parte superior */
 }
 
-.modal-content {
+.modal-galeria-content {
   position: relative;
   width: 90%; /* Ajusta el ancho del modal según sea necesario */
   max-height: 90%; /* Ajusta la altura máxima del modal según sea necesario */
   overflow: auto;
 }
 
-.modal-content img {
+.modal-galeria-content img {
   display: block;
   margin: 0 auto;
   width: 30%; /* Hace que la imagen ocupe todo el ancho disponible en el modal */
@@ -148,10 +146,9 @@ body::after {
   width: 305px;
   height: 328px;
   border-radius: 20px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 /* galeria.css */
-.modal-content img {
- 
+.modal-galeria-contentt img {
   border-radius: 20px; /* Agrega un borde redondeado a la imagen */
 }

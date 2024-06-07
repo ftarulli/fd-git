@@ -34,8 +34,8 @@ const HomePage = () => {
       <div className="container-fluid container-principal">
         <div className="row container-columnas">
           {/* Columna íconos principal */}
-          <div className="col-10 col-md-2 container-iconos-principal">
-            <div className="linea-vertical-principal my-3"></div>
+          <div className="col-10 col-md-2 container-iconos-principal ">
+            <div className="linea-vertical-principal_home my-3"></div>
             <div className="iconos-redes-principal">
               <Link
                 to="https://www.facebook.com"
@@ -80,9 +80,10 @@ const HomePage = () => {
             </p>
 
             <Link to="/reservas">
-  <button className="btn btn-warning boton-reserva">Reservar</button>
-</Link>
-            
+              <button className="btn btn-warning boton-reserva">
+                Reservar
+              </button>
+            </Link>
           </div>
           {/* Columna imagen principal */}
           <div className="col-10 offset-1 col-md-4 offset-md-0 container-imagen-plato">
@@ -250,14 +251,11 @@ const HomePage = () => {
         </div>
 
         <div className="container-boton-chefs">
-          
-        <Link to='/error404'>
-  <button className="btn btn-outline-warning boton-chefs">
-    Ver más
-  </button>
-</Link>
-
-
+          <Link to="/error404">
+            <button className="btn btn-outline-warning boton-chefs">
+              Ver más
+            </button>
+          </Link>
         </div>
       </div>
       {/*Sección Testimonios Clientes */}
@@ -441,7 +439,7 @@ const HomePage = () => {
         <div className="row h-100">
           <div className="col-10 offset-1 col-md-6 offset-md-6 align-self-end columna-texto-banner">
             <span className="texto_uno">Reservas online </span>
-            <p className="parrafo-uno-banner">
+            <p className="parrafo-uno-banne">
               <span className="texto_destacado">¡Reserva </span>Ahora y
               Garantiza tu Lugar en Nuestro Festín Gastronómico!
             </p>
