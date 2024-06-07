@@ -55,44 +55,6 @@ export const ReservasTable = ({ sidebarOpen }) => {
 		setReservaEditarSeleccionado(reserva);
 	};
 
-	const handleChangeEditar = (propiedad, valor) => {
-		setReservaEditarSeleccionado((prev) => ({
-			...prev,
-			[propiedad]: valor,
-		}));
-	};
-
-	const handleSubmitEditar = async (e) => {
-		e.preventDefault();
-		await editarReservaDB(reservaEditarSeleccionado);
-		setShow(false);
-	};
-
-	const editarReservaDB = async ({
-		_id,
-		user,
-		phone,
-		email,
-		comensales,
-		fecha,
-		hora,
-	}) => {
-		try {
-			const resp = await apiTest.put('/admin/editReservas', {
-				_id,
-				user,
-				phone,
-				email,
-				comensales,
-				fecha,
-				hora,
-			});
-			setCargarReservas(resp.data.listReservas);
-		} catch (error) {
-			console.error('Error al actualizar la reserva:', error);
-		}
-	};
-
 	const deleteReservas = async (_id) => {
 		try {
 			await apiTest.delete(`/admin/deleteReservas/${_id}`);
@@ -140,8 +102,6 @@ export const ReservasTable = ({ sidebarOpen }) => {
 				show={show}
 				handleClose={handleClose}
 				reserva={reservaEditarSeleccionado}
-				handleChange={handleChangeEditar}
-				handleSubmit={handleSubmitEditar}
 			/>
 		</>
 	);

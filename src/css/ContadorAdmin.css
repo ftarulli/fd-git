@@ -27,6 +27,7 @@
 
 @media (max-width: 600px) {
     .Panel {
-        margin-top: 200px;
+        margin-top: 0px;
+        margin-left: 80px;
     }
 }

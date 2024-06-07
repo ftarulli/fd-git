@@ -54,4 +54,10 @@
 
 .form-control {
     color: black;
+    resize: none;
+}
+
+.ta-comentarios {
+    font-weight: bold;
+    margin-bottom: 10px;
 }

@@ -9,11 +9,10 @@ export const TableRow = ({ reserva, visibleMenu, toggleMenu, onEdit, onDelete })
 			<td data-label="Usuario" id="UserTableReservas">
 				{reserva.name}
 			</td>
-			<td data-label="Numero de telefono">{reserva.phone}</td>
-			<td data-label="Email">{reserva.email}</td>
+			<td data-label="Fecha">{reserva.tiempo.slice(0, 10)}</td>
+			<td data-label="Hora">{reserva.tiempo.slice(11, 19)}</td>
 			<td data-label="Comensales">{reserva.cant}</td>
-			<td data-label="Fecha">{reserva.fecha}</td>
-			<td data-label="Hora">{reserva.hora}</td>
+			<td data-label="Comentario">{reserva.comment.slice(0, 25)}...</td>
 			<td data-label="Acciones">
 				<div className="menu-container">
 					<button className="menu-btn" onClick={() => toggleMenu(reserva._id)}>

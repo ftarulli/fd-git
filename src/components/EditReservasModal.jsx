@@ -3,74 +3,52 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types'; // Importa PropTypes
 import '../css/modalreservas.css';
+import { InputGroup } from 'react-bootstrap';
 
-export const EditModal = ({
-	show,
-	handleClose,
-	reserva,
-	handleChange,
-	handleSubmit,
-}) => {
+export const EditModal = ({ show, handleClose, reserva }) => {
 	return (
 		<Modal show={show} onHide={handleClose}>
 			<Modal.Header closeButton>
-				<Modal.Title>Editar Reserva</Modal.Title>
+				<Modal.Title>Detalles Reserva</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				<Form onSubmit={handleSubmit}>
+				<Form>
 					<Form.Group className="mb-3">
-						<Form.Label>Usuario</Form.Label>
-						<Form.Control
-							type="text"
-							value={reserva.name || ''}
-							onChange={(e) => handleChange('user', e.target.value)}
-							disabled
-						/>
+						<Form.Label>Nombre</Form.Label>
+						<Form.Control type="text" value={reserva.name} disabled />
 					</Form.Group>
 					<Form.Group className="mb-3">
 						<Form.Label>Número de Teléfono</Form.Label>
-						<Form.Control
-							type="tel"
-							value={reserva.phone || ''}
-							onChange={(e) => handleChange('phone', e.target.value)}
-							disabled
-						/>
+						<Form.Control type="tel" value={reserva.phone || ''} disabled />
 					</Form.Group>
 					<Form.Group className="mb-3">
 						<Form.Label>Email</Form.Label>
-						<Form.Control
-							type="email"
-							value={reserva.email || ''}
-							onChange={(e) => handleChange('email', e.target.value)}
-							disabled
-						/>
+						<Form.Control type="email" value={reserva.email || ''} disabled />
 					</Form.Group>
 					<Form.Group className="mb-3">
 						<Form.Label>Comensales</Form.Label>
-						<Form.Control
-							type="number"
-							value={reserva.cant || ''}
-							onChange={(e) => handleChange('comensales', e.target.value)}
-						/>
+						<Form.Control type="number" value={reserva.cant || ''} disabled />
 					</Form.Group>
 					<Form.Group className="mb-3">
-						<Form.Label>Fecha</Form.Label>
-						<Form.Control
-							type="date"
-							value={reserva.fecha || ''}
-							onChange={(e) => handleChange('fecha', e.target.value)}
-						/>
+						<Form.Label>Fecha y Hora</Form.Label>
+						<Form.Control type="text" value={reserva.tiempo} disabled />
 					</Form.Group>
 					<Form.Group className="mb-3">
-						<Form.Label>Hora</Form.Label>
-						<Form.Control
-							type="time"
-							value={reserva.hora || ''}
-							onChange={(e) => handleChange('hora', e.target.value)}
-						/>
+						<Form.Label>Comensales</Form.Label>
+						<Form.Control type="number" value={reserva.cant || ''} disabled />
 					</Form.Group>
+					<Form.Group className="mb-3">
+						<Form.Label>Comensales</Form.Label>
+						<Form.Control type="number" value={reserva.cant || ''} disabled />
+					</Form.Group>
+
+					<InputGroup>
+						<InputGroup className="ta-comentarios">Comentario</InputGroup>
+						<Form.Control as="textarea" value={reserva.comment} disabled />
+					</InputGroup>
+
 					<Button type="submit" className="menu-item mt-4">
-						Confirmar cambios
+						Cerrar Detalles
 					</Button>
 				</Form>
 			</Modal.Body>
@@ -78,11 +56,8 @@ export const EditModal = ({
 	);
 };
 
-// Validación de tipo para la propiedad 'show'
 EditModal.propTypes = {
 	show: PropTypes.bool.isRequired,
 	handleClose: PropTypes.func.isRequired,
 	reserva: PropTypes.object.isRequired,
-	handleChange: PropTypes.func.isRequired,
-	handleSubmit: PropTypes.func.isRequired,
 };
