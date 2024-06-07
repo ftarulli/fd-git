@@ -1,4 +1,3 @@
-
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -23,8 +22,9 @@ export const EditModal = ({
 						<Form.Label>Usuario</Form.Label>
 						<Form.Control
 							type="text"
-							value={reserva.user || ''}
+							value={reserva.name || ''}
 							onChange={(e) => handleChange('user', e.target.value)}
+							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
@@ -33,6 +33,7 @@ export const EditModal = ({
 							type="tel"
 							value={reserva.phone || ''}
 							onChange={(e) => handleChange('phone', e.target.value)}
+							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
@@ -41,13 +42,14 @@ export const EditModal = ({
 							type="email"
 							value={reserva.email || ''}
 							onChange={(e) => handleChange('email', e.target.value)}
+							disabled
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
 						<Form.Label>Comensales</Form.Label>
 						<Form.Control
 							type="number"
-							value={reserva.comensales || ''}
+							value={reserva.cant || ''}
 							onChange={(e) => handleChange('comensales', e.target.value)}
 						/>
 					</Form.Group>
@@ -78,9 +80,9 @@ export const EditModal = ({
 
 // Validación de tipo para la propiedad 'show'
 EditModal.propTypes = {
-    show: PropTypes.bool.isRequired,
-    handleClose: PropTypes.func.isRequired,
-    reserva: PropTypes.object.isRequired,
-    handleChange: PropTypes.func.isRequired,
-    handleSubmit: PropTypes.func.isRequired,
+	show: PropTypes.bool.isRequired,
+	handleClose: PropTypes.func.isRequired,
+	reserva: PropTypes.object.isRequired,
+	handleChange: PropTypes.func.isRequired,
+	handleSubmit: PropTypes.func.isRequired,
 };

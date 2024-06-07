@@ -70,6 +70,9 @@ export const UsersTable = () => {
 
 	return (
 		<>
+			<div className="Tbl_Header">
+				<h2>Usuarios</h2>
+			</div>
 			<Table bordered hover className="Tabla_Usuarios">
 				<thead>
 					<tr>
