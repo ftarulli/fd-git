@@ -1,19 +1,19 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 200px;
+  padding: 200px;
   box-sizing: border-box;
 }
 
 /*Sección principal*/
 
 .container-imagen-principal {
-  background-image: url(../assets/img_home/fideos-carne.png);
+  /* background-image: url(../assets/img_home/fideos-carne.png); */
   background-position: center;
   background-size: cover;
   height: 70vh;
   width: 100%;
   filter: brightness(10%);
-  position: absolute;
+  position: fixed;
 }
 
 .container-principal {
@@ -194,7 +194,7 @@
 
 /*Sección Info*/
 
-.container-info {
+/* .container-info {
   background-image: url(../assets/img_home/fondo4.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -202,11 +202,12 @@
   position: absolute;
   height: 50vh;
   width: 100%;
-}
+} */
 
 .container-iconos-info {
   height: 50vh;
   position: relative;
+  margin-left: 400px;
 }
 
 .filas-iconos-info {
@@ -241,18 +242,18 @@
 
 /*Sección Chefs*/
 
-.container-chefs-fondo {
+/* .container-chefs-fondo {
   background-image: url(../assets/img_home/fondo1.png);
   background-repeat: no-repeat;
   background-position: start;
   background-size: contain;
   filter: brightness(15%);
-  position: absolute;
+  position: relative;
   height: 70vh;
   width: 100%;
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
+} */
 
 .container-chefs {
   margin-top: 1.5rem;
@@ -297,7 +298,7 @@
 
 /*Sección Testimonios Clientes */
 
-.container-testimonios {
+/* .container-testimonios {
   background-image: url(../assets/img_home/fondo2.png);
   background-position-x: 50rem;
   background-size: contain;
@@ -306,7 +307,7 @@
   width: 100%;
   filter: brightness(10%);
   position: absolute;
-}
+} */
 
 .carousel-item {
   height: 30rem;
@@ -374,7 +375,7 @@
 
 /*Sección Banner*/
 
-.container-banner {
+/* .container-banner {
   background-image: url(../assets/img_home/fondo5.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -383,7 +384,7 @@
   margin-top: 5rem;
   padding: 0;
   position: absolute;
-}
+} */
 
 .container-texto-banner {
   position: relative;

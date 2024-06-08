@@ -168,7 +168,7 @@ const HomePage = () => {
       <div className="container-info"></div>
       <div className="container container-iconos-info">
         <div className="row filas-iconos-info">
-          <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-iconos-info">
+          <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-iconos-info ">
             <div>
               <img src={chefs} alt="" className="imagen-info" />
             </div>
