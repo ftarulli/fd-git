@@ -249,17 +249,11 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="container-boton-chefs">
-          
-        <Link to='/error404'>
-  <button className="btn btn-outline-warning boton-chefs">
-    Ver más
-  </button>
-</Link>
+      
 
-
-        </div>
       </div>
+
+      
       {/*Sección Testimonios Clientes */}
 
       <div className="container-testimonios"></div>

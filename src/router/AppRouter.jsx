@@ -8,11 +8,14 @@ import { Registro } from '../pages/Registro';
 import { SobreNosotros } from '../pages/SobreNosotros';
 import ErrorPage from '../pages/ErrorPage';
 import { Reservas } from '../pages/Reservas';
+import { Navegador } from '../components/Navegador';
+import { Footer } from '../components/Footer';
 import { AdminPage } from '../pages/AdminPage';
 
 export const AppRouter = () => {
 	return (
 		<BrowserRouter>
+		<Navegador />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/galeria" element={<Galeria />} />
@@ -24,6 +27,7 @@ export const AppRouter = () => {
 				<Route path="/registro" element={<Registro />} />
 				<Route path="/404" element={<ErrorPage />} />
 			</Routes>
+			<Footer />
 		</BrowserRouter>
 	);
 
