@@ -447,9 +447,11 @@ const HomePage = () => {
             </p>
 
             <div className="btn-reservas">
-              <button className="btn btn-outline-warning ">
-                Reservar Online
-              </button>
+            <Link to="/reservas">
+      <button className="btn btn-outline-warning">
+        Reservar Online
+      </button>
+    </Link>
             </div>
           </div>
         </div>
