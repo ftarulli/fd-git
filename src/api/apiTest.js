@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiTest = axios.create({
-	baseURL: 'https://proyectofinalg2-back.onrender.com',
+	baseURL: 'http://localhost:4000/',
 });
 
 export default apiTest;

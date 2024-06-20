@@ -10,10 +10,9 @@ export const UserRow = ({
 }) => (
 	<tr>
 		<td data-label="Id">...{user._id.slice(19, 24)}</td>
-		<td data-label="Usuario" id="UserTable">
-			{user.username}
+		<td data-label="Nombre" id="UserTable">
+			{user.nombre}
 		</td>
-		<td data-label="Numero de telefono">{user.phone}</td>
 		<td data-label="Email">{user.mail}</td>
 		<td data-label="Acciones">
 			<div className="menu-container">

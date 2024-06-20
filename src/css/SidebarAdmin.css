@@ -1,4 +1,6 @@
-/* Ensure the body and html take full height to position the sidebar correctly */
+
+html,
+
 body {
   height: 100%;
   margin: 0;
@@ -6,12 +8,16 @@ body {
   overflow-x: hidden;
 }
 
-.admin-container {
+
+.container {
+
   display: flex;
   height: 100%;
 }
 
-.admin-sidebar {
+
+.Sidebar {
+
   width: 250px;
   height: 100vh;
   background-color: #333;
@@ -19,36 +25,44 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed; /* Make sure the sidebar is fixed to the left */
+
+  position: fixed;
+
   left: 0;
   top: 0;
   transition: width 0.3s;
   z-index: 2;
 }
 
-.admin-sidebar.collapsed {
+
+.Sidebar.collapsed {
   width: 80px;
 }
 
-.admin-sidebar-user {
+.SidebarUser {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
-.admin-sidebar-user img {
+
+.SidebarUser img {
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
   cursor: pointer;
 }
 
-.admin-sidebar-user p {
+
+.SidebarUser p {
   margin-top: 10px;
 }
 
-.admin-profile-menu {
+.profileMenu {
+
   display: flex;
   flex-direction: column;
   background-color: #444;
@@ -60,7 +74,9 @@ body {
   z-index: 1;
 }
 
-.admin-profile-menu button {
+
+.profileMenu button {
+
   background: none;
   border: none;
   color: #fff;
@@ -70,14 +86,18 @@ body {
   cursor: pointer;
 }
 
-.admin-sidebar-controls {
+
+.SidebarControls {
+
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.admin-option-sidebar {
+
+.OptionSidebar {
+
   width: 100%;
   padding: 15px;
   margin: 5px 0;
@@ -91,23 +111,24 @@ body {
   transition: background 0.3s;
 }
 
-.admin-option-sidebar.collapsed {
+.OptionSidebar.collapsed {
   justify-content: center;
 }
 
-.admin-option-sidebar i {
+.OptionSidebar i {
   margin-right: 10px;
 }
 
-.admin-option-sidebar:hover {
+.OptionSidebar:hover {
   background-color: rgba(255, 165, 0, 0.7);
 }
 
-.admin-option-sidebar:active {
+.OptionSidebar:active {
   background-color: #ffa500;
 }
 
-.admin-sidebar-toggle {
+.SidebarToggle {
+
   background-color: #f90;
   border: none;
   color: #fff;
@@ -119,25 +140,32 @@ body {
   transform: translateY(-50%);
 }
 
-.admin-sidebar-footer {
+.SidebarFooter {
+
   margin-top: auto;
   width: 100%;
   padding-bottom: 20px;
 }
 
-.admin-main-content {
+
+.MainContent {
+
   margin-left: 250px;
   width: calc(100% - 250px);
   transition: margin-left 0.3s, width 0.3s;
 }
 
-.admin-main-content.collapsed {
+
+.MainContent.collapsed {
+
   margin-left: 80px;
   width: calc(100% - 80px);
 }
 
 /* Modal styles */
-.admin-modal {
+
+.modal {
+
   position: fixed;
   top: 0;
   left: 0;
@@ -149,7 +177,9 @@ body {
   align-items: center;
 }
 
-.admin-modal-content {
+
+.modalContent {
+
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -158,11 +188,13 @@ body {
   align-items: center;
 }
 
-.admin-modal-content h2 {
+
+.modalContent h2 {
   margin-bottom: 20px;
 }
 
-.admin-modal-content input {
+.modalContent input {
+
   margin: 10px 0;
   padding: 10px;
   width: 100%;
@@ -170,7 +202,9 @@ body {
   border-radius: 5px;
 }
 
-.admin-modal-content button {
+
+.modalContent button {
+
   margin: 10px 0;
   padding: 10px 20px;
   background-color: #f90;
@@ -179,3 +213,11 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
+
+
+@media (max-width: 768px) {
+    .Sidebar{
+      height: 102%;
+    }
+}
+

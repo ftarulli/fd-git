@@ -1,20 +1,22 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../css/SidebarAdmin.css';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../css/SidebarAdmin.css";
 
 export const SidebarAdmin = ({ setActiveTable }) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [userName, setUserName] = useState('Admin');
-  const [userImage, setUserImage] = useState('https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg');
+  const [userName, setUserName] = useState("Admin");
+  const [userImage, setUserImage] = useState(
+    "https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"
+  );
   const navigate = useNavigate();
 
   const handleProfile = (action) => {
-    if (action === 'changePhoto') {
+    if (action === "changePhoto") {
       setIsModalOpen(true);
-    } else if (action === 'logout') {
-      navigate('/login');
+    } else if (action === "logout") {
+      navigate("/login");
     }
   };
 
@@ -47,49 +49,59 @@ export const SidebarAdmin = ({ setActiveTable }) => {
   };
 
   return (
-    <div className="admin-container">
-      <div className={`admin-sidebar ${isCollapsed ? 'collapsed' : ''}`}>
-        <div className="admin-sidebar-user">
-          <img
-            src={userImage}
-            alt="Admin"
-            onClick={toggleProfileMenu}
-          />
+
+    <div className="container">
+      <div className={`Sidebar ${isCollapsed ? "collapsed" : ""}`}>
+        <div className="SidebarUser">
+          <img src={userImage} alt="Admin" onClick={toggleProfileMenu} />
           {!isCollapsed && <p>{userName}</p>}
           {isProfileOpen && (
-            <div className="admin-profile-menu">
-              <button onClick={() => handleProfile('changePhoto')}>Cambiar foto</button>
-              <button onClick={() => handleProfile('logout')}>Cerrar sesión</button>
+            <div className="profileMenu">
+              <button onClick={() => handleProfile("changePhoto")}>
+                Cambiar foto
+              </button>
+              <button onClick={() => handleProfile("logout")}>
+                Cerrar sesión
+              </button>
+
             </div>
           )}
         </div>
         <div className="admin-sidebar-controls">
           <button
-            className={`admin-option-sidebar ${isCollapsed ? 'collapsed' : ''}`}
-            onClick={() => setActiveTable('reservas')}
+
+            className={`OptionSidebar ${isCollapsed ? "collapsed" : ""}`}
+            onClick={() => setActiveTable("reservas")}
+
           >
             <i className="fas fa-calendar-alt"></i>
-            {!isCollapsed && 'Reservas'}
+            {!isCollapsed && "Reservas"}
           </button>
           <button
-            className={`admin-option-sidebar ${isCollapsed ? 'collapsed' : ''}`}
-            onClick={() => setActiveTable('usuarios')}
+
+            className={`OptionSidebar ${isCollapsed ? "collapsed" : ""}`}
+            onClick={() => setActiveTable("usuarios")}
+
           >
             <i className="fas fa-users"></i>
-            {!isCollapsed && 'Usuarios'}
+            {!isCollapsed && "Usuarios"}
           </button>
         </div>
-        <button className="admin-sidebar-toggle" onClick={toggleSidebar}>
-          {isCollapsed ? '>' : '<'}
+
+        <button className="SidebarToggle" onClick={toggleSidebar}>
+          {isCollapsed ? ">" : "<"}
         </button>
-        <div className="admin-sidebar-footer">
-          <button className="admin-option-sidebar" onClick={() => navigate('/')}>
+        <div className="SidebarFooter">
+          <button className="OptionSidebar" onClick={() => navigate("/")}>
+
             <i className="fas fa-home"></i>
-            {!isCollapsed && 'Volver a la página'}
+            {!isCollapsed && "Volver a la página"}
           </button>
         </div>
       </div>
-      <div className={`admin-main-content ${isCollapsed ? 'collapsed' : ''}`}>
+
+      <div className={`MainContent ${isCollapsed ? "collapsed" : ""}`}>
+
         {/* The rest of your main content goes here */}
       </div>
       {isModalOpen && (

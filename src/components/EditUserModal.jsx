@@ -21,11 +21,6 @@ export const EditUserModal = ({
 				</Form.Group>
 
 				<Form.Group className="mb-3">
-					<Form.Label>Usuario</Form.Label>
-					<Form.Control type="text" value={user.user} disabled />
-				</Form.Group>
-
-				<Form.Group className="mb-3">
 					<Form.Label>Nombre</Form.Label>
 					<Form.Control type="text" value={user.nombre} disabled />
 				</Form.Group>
@@ -33,11 +28,6 @@ export const EditUserModal = ({
 				<Form.Group className="mb-3">
 					<Form.Label>Apellido</Form.Label>
 					<Form.Control type="text" value={user.apellido} disabled />
-				</Form.Group>
-
-				<Form.Group className="mb-3">
-					<Form.Label>Numero de Telefono</Form.Label>
-					<Form.Control type="number" value={user.phone} disabled />
 				</Form.Group>
 
 				<Form.Group className="mb-3">

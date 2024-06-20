@@ -10,7 +10,7 @@ export const Menu = ({ isVisible, toggleMenu, onEdit, onDelete }) => {
 				Eliminar
 			</Button>
 			<Button className="menu-item my-1" onClick={onEdit}>
-				Editar
+				Detalles
 			</Button>
 		</div>
 	);

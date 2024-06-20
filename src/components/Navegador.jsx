@@ -5,13 +5,11 @@ import "../css/nav.css";
 import { NavLink } from "react-router-dom";
 import React from "react";
 // import React from 'react'
-const isLoggedIn = localStorage.getItem('TokenJWT')
-const isAdmin = localStorage.getItem('isAdmin')
+const isLoggedIn = localStorage.getItem("TokenJWT");
+const isAdmin = localStorage.getItem("isAdmin");
 
 export const Navegador = () => {
-  const handleLogout = ()=>{
-
-  }
+  const handleLogout = () => {};
   return (
     <div>
       <>
@@ -27,26 +25,47 @@ export const Navegador = () => {
                 <Nav.Link href="/contacto">Contacto</Nav.Link>
               </Nav>
               <Nav>
-              {isLoggedIn &&
-						isAdmin&&( // Mostrar solo si el usuario está logeado y es administeador
-							<li>
-								<NavLink className='text-decoration-none text-white' to='/panel-admin'>ADMINISTRACION</NavLink>
-							</li>
-						)}
-					{isLoggedIn ? (
-						<li>
-							<NavLink className='text-decoration-none text-white' to='/' onClick={handleLogout}>CERRAR SESIÓN</NavLink>
-						</li>
-						) : (
-						<React.Fragment>
-							<li>
-								<NavLink className='text-decoration-none text-white' to='/registro'>REGISTRO</NavLink>
-							</li>
-							<li>
-								<NavLink className='text-decoration-none text-white' to='/login'>INICIAR SESIÓN</NavLink>
-							</li>
-						</React.Fragment>
-						)}
+                {isLoggedIn &&
+                  isAdmin && ( // Mostrar solo si el usuario está logeado y es administeador
+                    <li>
+                      <NavLink
+                        className="text-decoration-none text-white"
+                        to="/panel-admin"
+                      >
+                        ADMINISTRACION
+                      </NavLink>
+                    </li>
+                  )}
+                {isLoggedIn ? (
+                  <li>
+                    <NavLink
+                      className="text-decoration-none text-white"
+                      to="/"
+                      onClick={handleLogout}
+                    >
+                      CERRAR SESIÓN
+                    </NavLink>
+                  </li>
+                ) : (
+                  <React.Fragment>
+                    <li>
+                      <NavLink
+                        className="text-decoration-none text-white"
+                        to="/registro"
+                      >
+                        REGISTRO
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        className="text-decoration-none text-white"
+                        to="/login"
+                      >
+                        INICIAR SESIÓN
+                      </NavLink>
+                    </li>
+                  </React.Fragment>
+                )}
               </Nav>
             </Navbar.Collapse>
           </Container>

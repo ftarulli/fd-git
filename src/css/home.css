@@ -297,7 +297,6 @@
   text-align: center;
 }
 
-
 /*Sección Testimonios Clientes */
 
 .container-testimonios {
@@ -437,7 +436,6 @@
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-
 }
 
 .titulo-platos {
@@ -449,14 +447,13 @@
 
 .parrafo-platos {
   font-family: Helvetica, sans-serif;
-  color: #ffffff ;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
 }
 
 .texto-destacado-platos {
   color: #ff9f0d;
-
 }
 
 .card-body-platos {
@@ -470,7 +467,6 @@
   font-family: Helvetica, sans-serif;
   font-size: 0.9rem;
   color: #ffffff !important;
-
 }
 
 .img-platos {
@@ -646,5 +642,4 @@
   .container-platos {
     margin-bottom: 75rem;
   }
-
 }

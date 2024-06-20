@@ -1,7 +1,12 @@
 /* Estilos para la tabla de usuarios */
 .Tabla_Usuarios {
-    max-width: 80vw;
-    min-width: 80vw;
+    max-width: 85vw;
+    min-width: 85vw;
+    margin-left: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .Tabla_Usuarios th,
@@ -14,6 +19,7 @@
 .Tabla_Usuarios th {
     font-weight: 400;
     font-size: 14px;
+    background-color: #f8f8f8;
 }
 
 .Tabla_Usuarios td {
@@ -30,16 +36,13 @@
     height: 102px;
 }
 
+
 .Tabla_Id {
-    width: 10%;
+    width: 13%;
 }
 
 .Tabla_User {
-    width: 20%;
-}
-
-.Tabla_Cel {
-    width: 25%;
+    width: 40%;
 }
 
 .Tabla_Email {
@@ -47,7 +50,7 @@
 }
 
 .Tabla_Botons {
-    width: 5%;
+    width: 7%;
 }
 
 /* Estilos para el desplegable que aparece al clickear los tres puntos */
@@ -125,5 +128,3 @@
         text-align: left;
     }
 }
-
-@media (max-width: 1000px) {}
