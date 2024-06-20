@@ -153,11 +153,9 @@ export const Galeria = () => {
         </div>
       </div>
       {modalOpen && (
-
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-galeria-content">
-            <span className="close" onClick={closeModal}>
-
+        <div className="galeria-modal-overlay" onClick={closeModal}>
+          <div className="galeria-modal-content">
+            <span className="galeria-close" onClick={closeModal}>
               &times;
             </span>
             <img src={modalImage} alt="Modal" />

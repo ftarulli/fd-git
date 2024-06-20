@@ -1,26 +1,42 @@
-
 .color {
-    background-color: #00000000 ; /* Cambia el fondo a gris claro */
-    font-family: "Inter","Work Sans";
-    letter-spacing: 0.3px; /* Agrega espacio entre las letras */
-  }
-  
-  .color .nav-link {
-    /* background-color: #000; */
-    color: #ffffff; /* Cambia el color del texto a negro */
-    font-size: 16px; /* Establece el tamaño de la fuente a 16px */
-    font-weight: 300; /* Establece la regularidad del texto */
-    margin-right: 20px; /* Agrega espacio entre cada enlace */}
-  
-  .color .nav-link:hover {
-    color: orange; /* Cambia el color del texto a naranja al hacer hover */
-    font-weight: 500;
-  }
+  background-color: #00000000; /* Fondo transparente */
+  font-family: "Inter", "Work Sans";
+  letter-spacing: 0.3px; /* Espacio entre letras */
+}
 
-  .navbar-nav .nav-link.active,
-  .navbar-nav .nav-link:active,
-  .navbar-nav .show > .nav-link {
-    color: orange !important; /* Cambia el color del texto a naranja */
-    font-weight: 500;
-  }
-  
+.color .nav-link {
+  color: #ffffff; /* Color de texto blanco */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: 300; /* Grosor regular */
+  margin-right: 20px; /* Espacio entre enlaces */
+}
+
+.color .nav-link:hover {
+  color: orange; /* Color de texto naranja al hacer hover */
+  font-weight: 500; /* Grosor del texto al hacer hover */
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:active,
+.navbar-nav .show > .nav-link {
+  color: orange !important; /* Color de texto naranja para enlaces activos */
+  font-weight: 500; /* Grosor del texto para enlaces activos */
+}
+
+/* Estilos específicos para Iniciar Sesión, Registrarse y Cerrar Sesión */
+.color .nav-link.login-register {
+  margin-right: 10px; /* Ajuste de margen para separar los enlaces */
+}
+
+.color .nav-link.login-register:hover {
+  color: orange; /* Color de texto naranja al hacer hover */
+}
+
+/* Estilos para el enlace Cerrar Sesión */
+.color .nav-link.logout {
+  margin-left: 10px; /* Ajuste de margen para separar los enlaces */
+}
+
+.color .nav-link.logout:hover {
+  color: orange; /* Color de texto naranja al hacer hover */
+}

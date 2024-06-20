@@ -99,7 +99,8 @@ export const Login = () => {
       <div className="cuadrado-blanco">
         <div className="info-contenedor">
           <div>
-            <h1>Iniciar Sesión</h1>
+          <h1 style={{ marginTop: "-50px", marginBottom:"50px" }}>Iniciar Sesión</h1>
+
             <p>
               ¿No tienes una cuenta?{" "}
               <Link to="/registro" className="registro">
@@ -129,7 +130,7 @@ export const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
-            <Button className="custom-btn" type="submit">
+            <Button style={{ marginTop: "30px", marginBottom:"50px" }} className="custom-btn" type="submit">
               Iniciar Sesión
             </Button>
           </Form>

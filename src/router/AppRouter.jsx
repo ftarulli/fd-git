@@ -9,10 +9,14 @@ import { SobreNosotros } from "../pages/SobreNosotros";
 import ErrorPage from "../pages/ErrorPage";
 import { Reservas } from "../pages/Reservas";
 import { AdminPage } from "../pages/AdminPage";
+import { Footer } from "../components/Footer";
+import { Navegador } from "../components/Navegador";
+
 
 export const AppRouter = () => {
   return (
     <BrowserRouter>
+    <Navegador />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/galeria" element={<Galeria />} />
@@ -24,6 +28,7 @@ export const AppRouter = () => {
         <Route path="/registro" element={<Registro />} />
         <Route path="/404" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 

@@ -6,6 +6,8 @@
 
 /*Sección principal*/
 
+
+
 .container-imagen-principal {
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
@@ -392,7 +394,7 @@
   color: white;
   height: 10rem;
   width: 100%;
-  top: 6rem;
+  top: 12rem;
 }
 
 .columna-texto-banner {
