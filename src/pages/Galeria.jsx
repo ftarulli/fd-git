@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useLayoutEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css/galeria.css";
-import { useLayoutEffect } from "react";
 import imagen1 from "../assets/img-galeria/unsplash_-lHZUkiWM74 (1).jpg";
 import imagen2 from "../assets/img-galeria/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg";
 import imagen3 from "../assets/img-galeria/chad-montano--GFCYhoRe48-unsplash.jpg";
@@ -60,10 +59,7 @@ export const Galeria = () => {
         </h1>
       </div>
       <div className="slider-container-wrapper">
-        <div
-          className="slider-container"
-          style={{ width: "1349px", height: "328px", margin: "0 auto" }}
-        >
+        <div className="slider-container">
           <Slider {...settings}>
             <div>
               <img
@@ -157,9 +153,11 @@ export const Galeria = () => {
         </div>
       </div>
       {modalOpen && (
+
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-galeria-content">
             <span className="close" onClick={closeModal}>
+
               &times;
             </span>
             <img src={modalImage} alt="Modal" />

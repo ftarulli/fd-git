@@ -169,7 +169,7 @@ const HomePage = () => {
       <div className="container-info"></div>
       <div className="container container-iconos-info">
         <div className="row filas-iconos-info">
-          <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-iconos-info">
+          <div className="col-10 offset-1 col-md-3 offset-md-0 columnas-iconos-info ">
             <div>
               <img src={chefs} alt="" className="imagen-info" />
             </div>
@@ -250,6 +250,7 @@ const HomePage = () => {
           </div>
         </div>
 
+
         <div className="container-boton-chefs">
           <Link to="/error404">
             <button className="btn btn-outline-warning boton-chefs">
@@ -257,7 +258,10 @@ const HomePage = () => {
             </button>
           </Link>
         </div>
+
       </div>
+
+      
       {/*Sección Testimonios Clientes */}
 
       <div className="container-testimonios"></div>
@@ -451,9 +455,11 @@ const HomePage = () => {
             </p>
 
             <div className="btn-reservas">
-              <button className="btn btn-outline-warning ">
-                Reservar Online
-              </button>
+            <Link to="/reservas">
+      <button className="btn btn-outline-warning">
+        Reservar Online
+      </button>
+    </Link>
             </div>
           </div>
         </div>

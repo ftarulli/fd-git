@@ -1,5 +1,6 @@
-import "../css/Contacto.css";
+import "../css/contacto.css";
 import { useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const Contacto = () => {
   useLayoutEffect(() => {
@@ -17,9 +18,15 @@ export const Contacto = () => {
         
         {/* Iconos de redes sociales */}
 <div className="redes-sociales">
-  <a href="#" className="red-social"><img src="src\assets\imgContacto\Twitter.png" alt="Twitter" className="icono-social" /></a>
-  <a href="#" className="red-social"><img src="src\assets\imgContacto\Facebook.png" alt="Facebook" className="icono-social" /></a>
-  <a href="#" className="red-social"><img src="src\assets\imgContacto\Social.png" alt="Telegram" className="icono-social" /></a>
+<Link to="/404" className="red-social">
+  <img src="src\assets\imgContacto\Twitter.png" alt="Twitter" className="icono-social" />
+</Link>
+<Link to="/404" className="red-social">
+  <img src="src\assets\imgContacto\Facebook.png" alt="Facebook" className="icono-social" />
+</Link>
+<Link to="/404" className="red-social">
+  <img src="src\assets\imgContacto\Social.png" alt="Telegram" className="icono-social" />
+</Link>
 </div>
 
         

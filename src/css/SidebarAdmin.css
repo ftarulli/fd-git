@@ -1,4 +1,6 @@
+
 html,
+
 body {
   height: 100%;
   margin: 0;
@@ -6,12 +8,16 @@ body {
   overflow-x: hidden;
 }
 
+
 .container {
+
   display: flex;
   height: 100%;
 }
 
+
 .Sidebar {
+
   width: 250px;
   height: 100vh;
   background-color: #333;
@@ -19,36 +25,44 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   position: fixed;
+
   left: 0;
   top: 0;
   transition: width 0.3s;
   z-index: 2;
 }
 
+
 .Sidebar.collapsed {
   width: 80px;
 }
 
 .SidebarUser {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
 
+
 .SidebarUser img {
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
   cursor: pointer;
 }
 
+
 .SidebarUser p {
   margin-top: 10px;
 }
 
 .profileMenu {
+
   display: flex;
   flex-direction: column;
   background-color: #444;
@@ -60,7 +74,9 @@ body {
   z-index: 1;
 }
 
+
 .profileMenu button {
+
   background: none;
   border: none;
   color: #fff;
@@ -70,14 +86,18 @@ body {
   cursor: pointer;
 }
 
+
 .SidebarControls {
+
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
 .OptionSidebar {
+
   width: 100%;
   padding: 15px;
   margin: 5px 0;
@@ -108,6 +128,7 @@ body {
 }
 
 .SidebarToggle {
+
   background-color: #f90;
   border: none;
   color: #fff;
@@ -120,24 +141,31 @@ body {
 }
 
 .SidebarFooter {
+
   margin-top: auto;
   width: 100%;
   padding-bottom: 20px;
 }
 
+
 .MainContent {
+
   margin-left: 250px;
   width: calc(100% - 250px);
   transition: margin-left 0.3s, width 0.3s;
 }
 
+
 .MainContent.collapsed {
+
   margin-left: 80px;
   width: calc(100% - 80px);
 }
 
 /* Modal styles */
+
 .modal {
+
   position: fixed;
   top: 0;
   left: 0;
@@ -149,7 +177,9 @@ body {
   align-items: center;
 }
 
+
 .modalContent {
+
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -158,11 +188,13 @@ body {
   align-items: center;
 }
 
+
 .modalContent h2 {
   margin-bottom: 20px;
 }
 
 .modalContent input {
+
   margin: 10px 0;
   padding: 10px;
   width: 100%;
@@ -170,7 +202,9 @@ body {
   border-radius: 5px;
 }
 
+
 .modalContent button {
+
   margin: 10px 0;
   padding: 10px 20px;
   background-color: #f90;
@@ -180,8 +214,10 @@ body {
   border-radius: 5px;
 }
 
+
 @media (max-width: 768px) {
     .Sidebar{
       height: 102%;
     }
 }
+

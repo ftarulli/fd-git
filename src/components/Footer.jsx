@@ -31,32 +31,32 @@ info@rincongourmet.com
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
   <h6 className='text-uppercase fw-bold mb-4'>Enlaces Útiles</h6>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Sobre Nosotros
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Noticias
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Socios
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Equipo
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Menú
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Contacto
     </a>
   </p>
@@ -65,32 +65,32 @@ info@rincongourmet.com
 <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
   <h6 className='text-uppercase fw-bold mb-4'>Ayuda?</h6>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Preguntas Frecuentes (FAQ)
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Términos y Condiciones
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Reportes
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Documentación
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Política de Soporte
     </a>
   </p>
   <p>
-    <a href='#!' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
+    <a href='/404' className='text-reset footer-link' style={{ textDecoration: 'none' }}>
       Privacidad
     </a>
   </p>

@@ -49,6 +49,7 @@ export const SidebarAdmin = ({ setActiveTable }) => {
   };
 
   return (
+
     <div className="container">
       <div className={`Sidebar ${isCollapsed ? "collapsed" : ""}`}>
         <div className="SidebarUser">
@@ -62,41 +63,50 @@ export const SidebarAdmin = ({ setActiveTable }) => {
               <button onClick={() => handleProfile("logout")}>
                 Cerrar sesión
               </button>
+
             </div>
           )}
         </div>
-        <div className="SidebarControls">
+        <div className="admin-sidebar-controls">
           <button
+
             className={`OptionSidebar ${isCollapsed ? "collapsed" : ""}`}
             onClick={() => setActiveTable("reservas")}
+
           >
             <i className="fas fa-calendar-alt"></i>
             {!isCollapsed && "Reservas"}
           </button>
           <button
+
             className={`OptionSidebar ${isCollapsed ? "collapsed" : ""}`}
             onClick={() => setActiveTable("usuarios")}
+
           >
             <i className="fas fa-users"></i>
             {!isCollapsed && "Usuarios"}
           </button>
         </div>
+
         <button className="SidebarToggle" onClick={toggleSidebar}>
           {isCollapsed ? ">" : "<"}
         </button>
         <div className="SidebarFooter">
           <button className="OptionSidebar" onClick={() => navigate("/")}>
+
             <i className="fas fa-home"></i>
             {!isCollapsed && "Volver a la página"}
           </button>
         </div>
       </div>
+
       <div className={`MainContent ${isCollapsed ? "collapsed" : ""}`}>
+
         {/* The rest of your main content goes here */}
       </div>
       {isModalOpen && (
-        <div className="modal">
-          <div className="modalContent">
+        <div className="admin-modal">
+          <div className="admin-modal-content">
             <h2>Cambiar foto y nombre</h2>
             <input type="file" onChange={handleImageChange} />
             <input

@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 200px;
+  padding: 200px;
   box-sizing: border-box;
 }
 
@@ -10,11 +10,13 @@
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed; /* Fija la imagen de fondo */
   height: 70vh;
   width: 100%;
   filter: brightness(10%);
   position: absolute;
 }
+
 
 .container-principal {
   height: 100%;
@@ -207,6 +209,7 @@
 .container-iconos-info {
   height: 50vh;
   position: relative;
+  margin-left: 400px;
 }
 
 .filas-iconos-info {
@@ -481,6 +484,9 @@
   font-weight: 400;
   font-size: 1rem;
 }
+
+
+
 
 /*Media queries*/
 @media screen and (max-width: 576px) {

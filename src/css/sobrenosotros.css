@@ -274,6 +274,26 @@ body {
   text-align: justify;
   margin-top: 80px;
 }
+
+
+
+.seccion1 {
+  margin-top: -250px; /* Ajusta el espacio superior */
+}
+
+.seccion2 {
+  margin-top: -250px;
+}
+
+.seccion3 {
+  margin-top: -250px; /* Ajusta el espacio superior */
+}
+
+.seccion4 {
+  margin-top: -250px;
+}
+
+
 /* Para dispositivos de escritorio */
 
 @media only screen and (max-width: 768px) {
@@ -308,4 +328,23 @@ body {
     margin-left: auto !important;
     margin-right: auto !important; /* Centra el texto horizontalmente */
   }
+
+  .seccion1 {
+    margin-top: -50px; /* Ajusta el espacio superior */
+  }
+  
+  .seccion2 {
+    margin-top: -50px;
+  }
+  
+  .seccion3 {
+    margin-top: -50px; /* Ajusta el espacio superior */
+  }
+  
+  .seccion4 {
+    margin-top:-50px;
+  }
+
+  
+
 }
