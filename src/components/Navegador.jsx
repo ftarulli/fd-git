@@ -18,14 +18,15 @@ export const Navegador = () => {
 
     // Redirigir según el estado de autenticación y administrador
     if (token) {
-      if (admin) {
-        if (location.pathname === '/' || location.pathname === '/registro' || location.pathname === '/login') {
-          navigate('/admin');
-        }
-      } else {
-        if (location.pathname === '/admin') {
-          navigate('/');
-        }
+      if (admin && (location.pathname === '/' || location.pathname === '/registro' || location.pathname === '/login')) {
+        navigate('/admin');
+      } else if (!admin && location.pathname === '/admin') {
+        navigate('/');
+      }
+    } else {
+      // Permitir navegación libre en páginas públicas
+      if (location.pathname !== '/registro' && location.pathname !== '/login') {
+        navigate('/');
       }
     }
   }, [location.pathname, navigate]);
@@ -37,7 +38,6 @@ export const Navegador = () => {
     setIsAdmin(false);
     navigate('/');
   };
-
 
   return (
     <div>
