@@ -32,11 +32,20 @@
   color: orange; /* Color de texto naranja al hacer hover */
 }
 
-/* Estilos para el enlace Cerrar Sesión */
 .color .nav-link.logout {
+  color: #ffffff; /* Color de texto blanco */
   margin-left: 10px; /* Ajuste de margen para separar los enlaces */
 }
 
 .color .nav-link.logout:hover {
   color: orange; /* Color de texto naranja al hacer hover */
+}
+
+.admin-button {
+  background-color: orange;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 10px; /* Ajuste de margen para separar el botón */
 }

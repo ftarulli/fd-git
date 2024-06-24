@@ -17,11 +17,16 @@ export const Navegador = () => {
     setIsLoggedIn(!!token);
     setIsAdmin(admin);
 
-    // Redirigir automáticamente solo si no está en una página válida
-    if (token && !admin && location.pathname === '/') {
-      navigate('/');
-    } else if (token && admin && location.pathname === '/') {
-      navigate('/admin');
+    if (!token) {
+      // Si no hay token, redirige a la página de inicio de sesión
+      navigate('/login');
+    } else {
+      // Si hay token, determina la redirección basada en el rol
+      if (admin && location.pathname === '/') {
+        navigate('/admin');
+      } else if (!admin && location.pathname === '/admin') {
+        navigate('/');
+      }
     }
   }, [location.pathname, navigate]);
 
@@ -32,11 +37,6 @@ export const Navegador = () => {
     setIsAdmin(false);
     navigate('/login');
   };
-
-  // No mostrar el navbar en la página de administrador
-  if (location.pathname === '/admin') {
-    return null;
-  }
 
   return (
     <div>
@@ -62,9 +62,9 @@ export const Navegador = () => {
               </NavLink>
             </Nav>
             <Nav>
-              {isLoggedIn ? (
+              {isLoggedIn && (
                 <>
-                  {isAdmin ? (
+                  {isAdmin && (
                     <li>
                       <NavLink
                         className="text-decoration-none text-white me-3"
@@ -73,26 +73,26 @@ export const Navegador = () => {
                         <span className="text-orange">Panel de Administrador</span>
                       </NavLink>
                     </li>
-                  ) : (
-                    <li>
-                      <NavLink
-                        className="text-decoration-none text-white"
-                        to="/"
-                        onClick={handleLogout}
-                      >
-                        CERRAR SESIÓN
-                      </NavLink>
-                    </li>
                   )}
+                  <li>
+                    <NavLink
+                      className="text-decoration-none text-white"
+                      to="/"
+                      onClick={handleLogout}
+                    >
+                      Cerrar Sesión
+                    </NavLink>
+                  </li>
                 </>
-              ) : (
+              )}
+              {!isLoggedIn && (
                 <>
                   <li>
                     <NavLink
                       className="text-decoration-none text-white me-3"
                       to="/registro"
                     >
-                      REGISTRO
+                      Registro
                     </NavLink>
                   </li>
                   <li>
@@ -100,7 +100,7 @@ export const Navegador = () => {
                       className="text-decoration-none text-white"
                       to="/login"
                     >
-                      INICIAR SESIÓN
+                      Iniciar Sesión
                     </NavLink>
                   </li>
                 </>
@@ -113,7 +113,6 @@ export const Navegador = () => {
   );
 };
 
-// No necesitamos redirigir manualmente en handleLogin
 export const handleLogin = (token, isAdmin) => {
   localStorage.setItem('token', token);
   localStorage.setItem('isAdmin', isAdmin ? 'true' : 'false');

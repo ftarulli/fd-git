@@ -16,8 +16,9 @@ export const Login = () => {
         mail,
         password,
       });
-
+      console.log(resp.data)
       localStorage.setItem("token", resp.data.token);
+      localStorage.setItem("isAdmin",resp.data.isAdmin)
 
       if (resp.data.rol === false) {
         navigate("/");
