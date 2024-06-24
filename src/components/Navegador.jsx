@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import '../css/nav.css';
 
 export const Navegador = () => {
@@ -14,18 +12,20 @@ export const Navegador = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     const admin = localStorage.getItem('isAdmin') === 'true';
+
     setIsLoggedIn(!!token);
     setIsAdmin(admin);
 
-    if (!token) {
-      // Si no hay token, redirige a la página de inicio de sesión
-      navigate('/login');
-    } else {
-      // Si hay token, determina la redirección basada en el rol
-      if (admin && location.pathname === '/') {
-        navigate('/admin');
-      } else if (!admin && location.pathname === '/admin') {
-        navigate('/');
+    // Redirigir según el estado de autenticación y administrador
+    if (token) {
+      if (admin) {
+        if (location.pathname === '/' || location.pathname === '/registro' || location.pathname === '/login') {
+          navigate('/admin');
+        }
+      } else {
+        if (location.pathname === '/admin') {
+          navigate('/');
+        }
       }
     }
   }, [location.pathname, navigate]);
@@ -35,8 +35,9 @@ export const Navegador = () => {
     localStorage.removeItem('isAdmin');
     setIsLoggedIn(false);
     setIsAdmin(false);
-    navigate('/login');
+    navigate('/');
   };
+
 
   return (
     <div>
@@ -62,9 +63,9 @@ export const Navegador = () => {
               </NavLink>
             </Nav>
             <Nav>
-              {isLoggedIn && (
+              {isLoggedIn ? (
                 <>
-                  {isAdmin && (
+                  {isAdmin ? (
                     <li>
                       <NavLink
                         className="text-decoration-none text-white me-3"
@@ -73,19 +74,19 @@ export const Navegador = () => {
                         <span className="text-orange">Panel de Administrador</span>
                       </NavLink>
                     </li>
+                  ) : (
+                    <li>
+                      <NavLink
+                        className="text-decoration-none text-white"
+                        to="/"
+                        onClick={handleLogout}
+                      >
+                        Cerrar Sesión
+                      </NavLink>
+                    </li>
                   )}
-                  <li>
-                    <NavLink
-                      className="text-decoration-none text-white"
-                      to="/"
-                      onClick={handleLogout}
-                    >
-                      Cerrar Sesión
-                    </NavLink>
-                  </li>
                 </>
-              )}
-              {!isLoggedIn && (
+              ) : (
                 <>
                   <li>
                     <NavLink

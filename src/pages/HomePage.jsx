@@ -451,10 +451,10 @@ const HomePage = () => {
             </p>
 
             <div className="btn-reservas">
-              <button className="btn btn-outline-warning ">
-                Reservar Online
-              </button>
-            </div>
+    <Link to="/reservas" className="btn btn-outline-warning">
+      Reservar Online
+    </Link>
+  </div>
           </div>
         </div>
       </div>
