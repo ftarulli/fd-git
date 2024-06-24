@@ -23,5 +23,6 @@
 
 .shifted {
     /* Ajusta el margen izquierdo cuando el sidebar está abierto */
-    margin-left: 250px; /* Ajusta este valor según el ancho de tu sidebar */
+    margin-left: 250px;
+    /* Ajusta este valor según el ancho de tu sidebar */
 }

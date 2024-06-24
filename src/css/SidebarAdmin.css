@@ -19,7 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed; /* Make sure the sidebar is fixed to the left */
+  position: fixed;
+  /* Make sure the sidebar is fixed to the left */
   left: 0;
   top: 0;
   transition: width 0.3s;

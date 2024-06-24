@@ -1,81 +1,110 @@
 body {
-	overflow: auto; /* Evita el desplazamiento */
-	margin: 0; /* Elimina cualquier margen por defecto */
-	padding: 0; /* Elimina cualquier padding por defecto */
-  }
-  
-  .error-container {
+	overflow: auto;
+	/* Evita el desplazamiento */
+	margin: 0;
+	/* Elimina cualquier margen por defecto */
+	padding: 0;
+	/* Elimina cualquier padding por defecto */
+}
+
+.error-container {
 	position: relative;
 	background-color: #000;
 	color: #fff;
 	height: 100vh;
-  }
-  
-  .error-content {
+}
+
+.error-content {
 	text-align: left;
-	padding: 0; /* Elimina cualquier padding por defecto */
-  }
-  
-  .texto {
-	font-size: 7rem; /* Tamaño del texto para el h1 */
+	padding: 0;
+	/* Elimina cualquier padding por defecto */
+}
+
+.texto {
+	font-size: 7rem;
+	/* Tamaño del texto para el h1 */
 	font-weight: bold;
-	margin: 0; /* Elimina cualquier margen por defecto */
-	padding: 0 !important; /* Forza la eliminación del padding */
+	margin: 0;
+	/* Elimina cualquier margen por defecto */
+	padding: 0 !important;
+	/* Forza la eliminación del padding */
 	font-family: "Helvetica";
 	text-align: left;
 	margin-top: 250px;
-  }
-  
-  .texto1 {
-	font-size: 2rem; /* Tamaño del texto para el h3 */
-	margin: 10px 0; /* Espacio entre las líneas de texto */
-	padding: 0; /* Asegúrate de que no haya padding */
+}
+
+.texto1 {
+	font-size: 2rem;
+	/* Tamaño del texto para el h3 */
+	margin: 10px 0;
+	/* Espacio entre las líneas de texto */
+	padding: 0;
+	/* Asegúrate de que no haya padding */
 	font-family: "Helvetica";
 	font-weight: 500;
-  }
-  
-  .texto2 {
-	font-size: 18px; /* Tamaño del texto para el p */
-	margin: 10px 0; /* Espacio entre las líneas de texto */
-	padding: 0; /* Asegúrate de que no haya padding */
+}
+
+.texto2 {
+	font-size: 18px;
+	/* Tamaño del texto para el p */
+	margin: 10px 0;
+	/* Espacio entre las líneas de texto */
+	padding: 0;
+	/* Asegúrate de que no haya padding */
 	font-family: "Helvetica";
 	font-weight: 100px;
-  }
-  
-  .error-image {
+}
+
+.error-image {
 	position: absolute;
-	bottom: 0; /* Alinea al fondo */
-	right: 0; /* Alinea a la derecha */
-	width: auto; /* Ajusta el tamaño según sea necesario */
-	max-width: 50%; /* Ajusta el tamaño según sea necesario */
-  }
-  
-  .boton {
+	bottom: 0;
+	/* Alinea al fondo */
+	right: 0;
+	/* Alinea a la derecha */
+	width: auto;
+	/* Ajusta el tamaño según sea necesario */
+	max-width: 50%;
+	/* Ajusta el tamaño según sea necesario */
+}
+
+.boton {
 	margin-top: 20px;
-	font-size: 1rem; /* Ajusta el tamaño del botón */
-  }
-  
-  @media (max-width: 768px) {
+	font-size: 1rem;
+	/* Ajusta el tamaño del botón */
+}
+
+@media (max-width: 768px) {
+
 	/* Estilos para dispositivos móviles */
 	.error-container {
-	  height: auto; /* Altura automática para adaptarse al contenido */
-	  padding: 20px; /* Añade un poco de espacio alrededor del contenido */
-	  text-align: center; /* Centra el texto horizontalmente en dispositivos móviles */
-	 
-	}
-	
-
-	.h1,h3,p,.boton {
+		height: auto;
+		/* Altura automática para adaptarse al contenido */
+		padding: 20px;
+		/* Añade un poco de espacio alrededor del contenido */
 		text-align: center;
-		
+		/* Centra el texto horizontalmente en dispositivos móviles */
+
 	}
+
+
+	.h1,
+	h3,
+	p,
+	.boton {
+		text-align: center;
+
+	}
+
 	.error-image {
-	  display: none; /* Oculta la imagen en dispositivos móviles */
+		display: none;
+		/* Oculta la imagen en dispositivos móviles */
 	}
 
 
 	.boton {
-		margin-top: 20px; /* Agrega espacio superior al botón */
+		margin-top: 20px;
+		/* Agrega espacio superior al botón */
 		margin-left: 110px;
 
-  }}
+	}
+}

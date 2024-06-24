@@ -12,7 +12,8 @@
   background-image: url(../assets/img_home/fideos-carne.png);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; /* Fija la imagen de fondo */
+  background-attachment: fixed;
+  /* Fija la imagen de fondo */
   height: 70vh;
   width: 100%;
   filter: brightness(10%);
@@ -492,6 +493,7 @@
 
 /*Media queries*/
 @media screen and (max-width: 576px) {
+
   /*Seccion principal*/
   .container-columnas {
     padding-top: 1rem;
@@ -504,6 +506,7 @@
   .container-iconos-principal {
     display: none;
   }
+
   .container-texto-principal {
     width: 50%;
   }
@@ -512,6 +515,7 @@
     text-align: center;
     padding-bottom: 1rem;
   }
+
   .parrafo_uno {
     font-size: 1.5rem;
     padding-bottom: 2rem;
@@ -557,6 +561,7 @@
   .cajita-experiencia {
     margin-left: 0.2rem;
   }
+
   /*Seccion Info*/
 
   .container-info {
@@ -581,6 +586,7 @@
   .texto-info-destacado {
     font-size: 1.9rem;
   }
+
   /*Seccion Chefs*/
 
   .container-chefs-detalle {

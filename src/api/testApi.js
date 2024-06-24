@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const testApi = axios.create({
 	baseURL: 'https://proyectofinalg2-back.onrender.com/',
-
 });
 
 testApi.interceptors.request.use((config) => {

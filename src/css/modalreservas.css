@@ -1,8 +1,8 @@
 /* Estilos para el modal */
 .modal-content {
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: rgb(51, 51, 51);
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: rgb(51, 51, 51);
 }
 
 .modal-header {
@@ -52,11 +52,11 @@
 }
 
 .form-control {
-    color: black;
-    resize: none;
+  color: black;
+  resize: none;
 }
 
 .ta-comentarios {
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }

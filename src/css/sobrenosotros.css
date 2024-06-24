@@ -8,7 +8,8 @@ body {
 .contenedor {
   position: relative;
   overflow: auto;
-  padding-top: 0px; /* Ajusta el espacio superior */
+  padding-top: 0px;
+  /* Ajusta el espacio superior */
 }
 
 .banner {
@@ -18,20 +19,25 @@ body {
 
 .banner-img {
   width: 100%;
-  opacity: 0.7; /* Bajar opacidad */
+  opacity: 0.7;
+  /* Bajar opacidad */
 }
 
 .texto {
   text-align: center;
   padding: 20px;
-  max-width: 800px; /* Ancho máximo del texto */
-  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 800px;
+  /* Ancho máximo del texto */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
 }
 
 .imagen {
   text-align: center;
-  margin: 0 auto; /* Centrar horizontalmente */
-  max-width: 800px; /* Ancho máximo de la imagen */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+  max-width: 800px;
+  /* Ancho máximo de la imagen */
 }
 
 @media (min-width: 768px) {
@@ -43,121 +49,163 @@ body {
     text-align: right;
   }
 }
+
 .contenedor {
   position: relative;
   overflow: hidden;
-  padding-top: 0px; /* Agrega espacio superior */
+  padding-top: 0px;
+  /* Agrega espacio superior */
 }
 
 .banner {
   width: 100%;
   position: relative;
-  margin-bottom: 20px; /* Agrega espacio entre el banner y la primera sección */
+  margin-bottom: 20px;
+  /* Agrega espacio entre el banner y la primera sección */
 }
 
 .banner-img {
   width: 100%;
-  opacity: 0.7; /* Bajar opacidad */
+  opacity: 0.7;
+  /* Bajar opacidad */
 }
 
 .texto {
   padding: 20px;
-  max-width: 800px; /* Ancho máximo del texto */
-  margin: 0 auto; /* Centrar horizontalmente */
-  color: white; /* Color del texto */
+  max-width: 800px;
+  /* Ancho máximo del texto */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+  color: white;
+  /* Color del texto */
 }
 
 .texto h3 {
-  font-size: 24px; /* Tamaño del título */
-  margin-bottom: 10px; /* Espacio inferior del título */
+  font-size: 24px;
+  /* Tamaño del título */
+  margin-bottom: 10px;
+  /* Espacio inferior del título */
 }
 
 .texto h1 {
-  font-size: 36px; /* Tamaño del subtítulo */
-  margin-bottom: 20px; /* Espacio inferior del subtítulo */
+  font-size: 36px;
+  /* Tamaño del subtítulo */
+  margin-bottom: 20px;
+  /* Espacio inferior del subtítulo */
 }
 
 .texto p {
-  font-size: 16px; /* Tamaño del párrafo */
-  line-height: 1.5; /* Espaciado entre líneas */
-  margin-bottom: 20px; /* Espacio inferior del párrafo */
+  font-size: 16px;
+  /* Tamaño del párrafo */
+  line-height: 1.5;
+  /* Espaciado entre líneas */
+  margin-bottom: 20px;
+  /* Espacio inferior del párrafo */
 }
 
 .imagen {
   text-align: center;
-  margin: 20px auto; /* Centrar horizontalmente y agregar espacio */
-  max-width: 100%; /* Ancho máximo de la imagen */
+  margin: 20px auto;
+  /* Centrar horizontalmente y agregar espacio */
+  max-width: 100%;
+  /* Ancho máximo de la imagen */
 }
+
 /* Mover todo hacia arriba */
 .contenedor {
   position: relative;
   overflow: hidden;
-  padding-top: 0; /* Eliminar el espacio superior */
+  padding-top: 0;
+  /* Eliminar el espacio superior */
 }
 
 /* Sección 1: Texto e Imagen */
 .sobre-nosotros-section {
-  position: absolute; /* Cambiar a posición absoluta */
-  top: 0; /* Colocar la sección en la parte superior del contenedor */
-  left: 0; /* Colocar la sección en la esquina izquierda del contenedor */
-  width: 100%; /* Ajustar el ancho al del contenedor */
-  z-index: 1; /* Asegurar que la sección esté sobre el banner */
+  position: absolute;
+  /* Cambiar a posición absoluta */
+  top: 0;
+  /* Colocar la sección en la parte superior del contenedor */
+  left: 0;
+  /* Colocar la sección en la esquina izquierda del contenedor */
+  width: 100%;
+  /* Ajustar el ancho al del contenedor */
+  z-index: 1;
+  /* Asegurar que la sección esté sobre el banner */
 }
 
 /* Banner */
 .banner {
   width: 100%;
   position: relative;
-  margin-bottom: 20px; /* Agregar espacio entre el banner y la primera sección */
+  margin-bottom: 20px;
+  /* Agregar espacio entre el banner y la primera sección */
 }
 
 .banner-img {
   width: 100%;
-  opacity: 0.7; /* Bajar opacidad */
+  opacity: 0.7;
+  /* Bajar opacidad */
 }
+
 .secciones {
   position: relative;
-  top: -800px; /* Mueve todo el contenido hacia arriba */
+  top: -800px;
+  /* Mueve todo el contenido hacia arriba */
 }
 
 
 .final {
-  text-align: center; /* Centra el contenido */
-  margin-top: -700px; /* Ajusta el margen superior */
+  text-align: center;
+  /* Centra el contenido */
+  margin-top: -700px;
+  /* Ajusta el margen superior */
   margin-bottom: 200px;
 }
 
 .titulo-final {
-  font-size: 68px; /* Tamaño del título */
-  margin-bottom: 20px; /* Espaciado inferior */
+  font-size: 68px;
+  /* Tamaño del título */
+  margin-bottom: 20px;
+  /* Espaciado inferior */
   font-family: "Great Vibes";
   color: orange;
 }
 
 .texto-final {
-  max-width: 1000px; /* Ancho máximo del contenedor */
-  margin: 0 auto; /* Centrar el contenedor en la página */
-  padding: 0 20px; /* Añadir espacio interno al contenedor */
-  font-size: 18px; /* Tamaño del texto */
-  margin-bottom: 40px; /* Espaciado inferior */
+  max-width: 1000px;
+  /* Ancho máximo del contenedor */
+  margin: 0 auto;
+  /* Centrar el contenedor en la página */
+  padding: 0 20px;
+  /* Añadir espacio interno al contenedor */
+  font-size: 18px;
+  /* Tamaño del texto */
+  margin-bottom: 40px;
+  /* Espaciado inferior */
   color: aliceblue;
   font-weight: 200;
-  line-height: 1.5; /* Espaciado entre líneas */
+  line-height: 1.5;
+  /* Espaciado entre líneas */
 }
 
 /* Estilos para la Sección 1 */
 .seccion1 h1 {
   /* Estilos para el título h1 */
-  color: rgb(255, 255, 255); /* Color del texto */
-  font-size: 60px; /* Tamaño de fuente */
-  font-weight: bold; /* Grosor de la fuente */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  font-size: 60px;
+  /* Tamaño de fuente */
+  font-weight: bold;
+  /* Grosor de la fuente */
   font-family: "Inter";
 }
 
 .seccion1 h3 {
   /* Estilos para el subtítulo h3 */
-  color: orange; /* Color del texto */
-  font-size: 30px; /* Tamaño de fuente */
+  color: orange;
+  /* Color del texto */
+  font-size: 30px;
+  /* Tamaño de fuente */
   font-weight: 200;
   font-family: "Great Vibes";
 }
@@ -165,75 +213,103 @@ body {
 /* Estilos para el párrafo p de la Sección 1 */
 .seccion1 p {
   /* Estilos para el párrafo p */
-  color: rgb(255, 255, 255); /* Color del texto */
-  font-size: 16px; /* Tamaño de fuente */
-  text-align: justify; /* Alineación justificada */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  text-align: justify;
+  /* Alineación justificada */
   font-family: "Inter";
   font-weight: 150;
-  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 500px;
+  /* Ajusta el ancho máximo según sea necesario */
 }
 
 /* Estilos para la Sección 2 */
 .seccion2 h1 {
   /* Estilos para el título h1 */
-  color: rgb(255, 255, 255); /* Color del texto */
-  font-size: 45px; /* Tamaño de fuente */
-  text-align: justify; /* Alineación justificada */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  font-size: 45px;
+  /* Tamaño de fuente */
+  text-align: justify;
+  /* Alineación justificada */
   font-family: "Inter";
   font-weight: bold;
-  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 500px;
+  /* Ajusta el ancho máximo según sea necesario */
 }
 
 .seccion2 p {
   /* Estilos para el párrafo p */
-  color: rgb(255, 255, 255); /* Color del texto */
-  font-size: 16px; /* Tamaño de fuente */
-  text-align: justify; /* Alineación justificada */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  text-align: justify;
+  /* Alineación justificada */
   font-family: "Inter";
   font-weight: 150;
-  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 500px;
+  /* Ajusta el ancho máximo según sea necesario */
 }
 
 /* Estilos para la Sección 3 */
 .seccion3 h1 {
   /* Estilos para el título h1 */
-  color: rgb(255, 255, 255); /* Color del texto */
-  font-size: 45px; /* Tamaño de fuente */
-  text-align: justify; /* Alineación justificada */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  font-size: 45px;
+  /* Tamaño de fuente */
+  text-align: justify;
+  /* Alineación justificada */
   font-family: "Inter";
   font-weight: bold;
-  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 500px;
+  /* Ajusta el ancho máximo según sea necesario */
 }
 
 .seccion3 p {
   /* Estilos para el párrafo p */
-  color: rgb(255, 255, 255); /* Color del texto */
-  font-size: 16px; /* Tamaño de fuente */
-  text-align: justify; /* Alineación justificada */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  text-align: justify;
+  /* Alineación justificada */
   font-family: "Inter";
   font-weight: 150;
-  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 500px;
+  /* Ajusta el ancho máximo según sea necesario */
 }
 
 /* Estilos para la Sección 4 */
 .seccion4 h1 {
   /* Estilos para el título h1 */
-  color: rgb(255, 255, 255); /* Color del texto */
-  font-size: 45px; /* Tamaño de fuente */
-  text-align: justify; /* Alineación justificada */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  font-size: 45px;
+  /* Tamaño de fuente */
+  text-align: justify;
+  /* Alineación justificada */
   font-family: "Inter";
   font-weight: bold;
-  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 500px;
+  /* Ajusta el ancho máximo según sea necesario */
 }
 
 .seccion4 p {
   /* Estilos para el párrafo p */
-  color: rgb(255, 255, 255); /* Color del texto */
-  font-size: 16px; /* Tamaño de fuente */
-  text-align: justify; /* Alineación justificada */
+  color: rgb(255, 255, 255);
+  /* Color del texto */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  text-align: justify;
+  /* Alineación justificada */
   font-family: "Inter";
   font-weight: 150;
-  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 500px;
+  /* Ajusta el ancho máximo según sea necesario */
 }
 
 /* Estilos para la Sección 1 */
@@ -241,7 +317,8 @@ body {
 .seccion1 h3,
 .seccion1 p {
   /* Aplica margen izquierdo */
-  margin-left: 150px; /* Puedes ajustar este valor según lo necesites */
+  margin-left: 150px;
+  /* Puedes ajustar este valor según lo necesites */
 }
 
 /* Estilos para la Sección 2 */
@@ -278,7 +355,8 @@ body {
 
 
 .seccion1 {
-  margin-top: -250px; /* Ajusta el espacio superior */
+  margin-top: -250px;
+  /* Ajusta el espacio superior */
 }
 
 .seccion2 {
@@ -286,7 +364,8 @@ body {
 }
 
 .seccion3 {
-  margin-top: -250px; /* Ajusta el espacio superior */
+  margin-top: -250px;
+  /* Ajusta el espacio superior */
 }
 
 .seccion4 {
@@ -297,6 +376,7 @@ body {
 /* Para dispositivos de escritorio */
 
 @media only screen and (max-width: 768px) {
+
   /* Ocultar el banner en dispositivos móviles */
   .banner {
     display: none;
@@ -326,25 +406,28 @@ body {
     margin-top: 400px;
     text-align: center !important;
     margin-left: auto !important;
-    margin-right: auto !important; /* Centra el texto horizontalmente */
+    margin-right: auto !important;
+    /* Centra el texto horizontalmente */
   }
 
   .seccion1 {
-    margin-top: -50px; /* Ajusta el espacio superior */
+    margin-top: -50px;
+    /* Ajusta el espacio superior */
   }
-  
+
   .seccion2 {
     margin-top: -50px;
   }
-  
+
   .seccion3 {
-    margin-top: -50px; /* Ajusta el espacio superior */
-  }
-  
-  .seccion4 {
-    margin-top:-50px;
+    margin-top: -50px;
+    /* Ajusta el espacio superior */
   }
 
-  
+  .seccion4 {
+    margin-top: -50px;
+  }
+
+
 
 }

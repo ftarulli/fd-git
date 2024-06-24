@@ -1,13 +1,13 @@
 .footer-link:hover {
-    font-weight: bold;
-  }
-  
-  .project-name:hover {
-    font-weight: bold;
-  }
-  
+  font-weight: bold;
+}
 
-  .project-name,
+.project-name:hover {
+  font-weight: bold;
+}
+
+
+.project-name,
 .rights-reserved {
   font-weight: normal !important;
 }
@@ -17,5 +17,6 @@
 }
 
 .text-md-start {
-  text-align: center !important; /* Añade !important para anular estilos MDBContainer */
+  text-align: center !important;
+  /* Añade !important para anular estilos MDBContainer */
 }
