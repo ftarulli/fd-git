@@ -9,10 +9,10 @@ import {
 } from 'mdb-react-ui-kit';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import apiTest from '../api/apiTest';
 import '../css/reservas.css'; // Asegúrate de tener estilos personalizados si es necesario
 import PhoneInput from 'react-phone-input-2'; // Librería para entrada de teléfono
 import 'react-phone-input-2/lib/style.css'; // Estilos de la librería de entrada de teléfono
+import testApi from '../api/testApi';
 
 export const Reservas = () => {
 	const [name, setName] = useState('');
@@ -51,7 +51,7 @@ export const Reservas = () => {
 		console.log(tiempo);
 
 		try {
-			const resp = await apiTest.post('/auth/saveReservas', {
+			const resp = await testApi.post('/auth/saveReservas', {
 				name,
 				tiempo,
 				cant,
