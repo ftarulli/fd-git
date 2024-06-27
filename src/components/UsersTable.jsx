@@ -1,6 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
 import Table from 'react-bootstrap/Table';
-import apiTest from '../api/apiTest';
 import { UserRow } from './UserRow';
 import { EditUserModal } from './EditUserModal';
 import '../css/UsersTable.css';
