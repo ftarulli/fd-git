@@ -26,7 +26,7 @@ export const AppRouter = () => {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
-        <Route path="/404" element={<ErrorPage />} />
+        <Route path="/error404" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

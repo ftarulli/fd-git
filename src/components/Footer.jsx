@@ -38,7 +38,7 @@ export const Footer = () => {
 							<h6 className="text-uppercase fw-bold mb-4">Enlaces Útiles</h6>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -47,7 +47,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -56,7 +56,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -65,7 +65,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -74,7 +74,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -83,7 +83,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -96,7 +96,7 @@ export const Footer = () => {
 							<h6 className="text-uppercase fw-bold mb-4">Ayuda?</h6>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -105,7 +105,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -114,7 +114,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -123,7 +123,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -132,7 +132,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
@@ -141,7 +141,7 @@ export const Footer = () => {
 							</p>
 							<p>
 								<a
-									href="/404"
+									href="/error404"
 									className="text-reset footer-link"
 									style={{ textDecoration: 'none' }}
 								>
