@@ -11,6 +11,7 @@ import image2 from '../assets/img-registro/chef-working-together-professional-ki
 import image3 from '../assets/img-registro/group-friends-eating-restaurant.jpg';
 import image4 from '../assets/img-registro/medium-shot-woman-working-luxury-restaurant.jpg';
 import image5 from '../assets/img-registro/woman-eating-pasta-italian-restaurant.jpg';
+import icon from '../assets/img-registro/Vector.png';
 
 export const Registro = () => {
 	const navigate = useNavigate();
@@ -145,7 +146,7 @@ export const Registro = () => {
                             <a href="/login" className="iniciar-sesion">
                                 Iniciar Sesión
                             </a>{' '}
-                            <img src="src/assets/img-registro/Vector.png" alt="Icono de Usuario" />
+                            <img src={icon} alt="Icono de Usuario" />
                         </p>
                     </div>
                     <br />
