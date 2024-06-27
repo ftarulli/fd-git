@@ -19,6 +19,7 @@ export const Login = () => {
 			console.log(resp.data);
 			localStorage.setItem('token', resp.data.token);
 			navigate('/');
+			window.location.reload();
 		} catch (error) {
 			console.log(error);
 		}

@@ -19,7 +19,6 @@ export const Navegador = () => {
 				setTokenData(decodedToken);
 				setIsLoggedIn(true);
 				setIsAdmin(decodedToken.isAdmin);
-				window.location.reload();
 			} catch (error) {
 				console.error('Error decoding token:', error);
 			}
