@@ -130,11 +130,8 @@
 }
 
 .shifted {
-    /* Ajusta el margen izquierdo cuando el sidebar está abierto */
     margin-left: 250px;
-    /* Ajusta este valor según el ancho de tu sidebar */
     transition: margin-left 0.3s ease;
-    /* Agrega una transición suave */
 }
 
 @media (max-width: 768px) {

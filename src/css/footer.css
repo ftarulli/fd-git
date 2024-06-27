@@ -18,5 +18,4 @@
 
 .text-md-start {
   text-align: center !important;
-  /* Añade !important para anular estilos MDBContainer */
 }

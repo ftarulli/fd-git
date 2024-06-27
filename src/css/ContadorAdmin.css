@@ -15,14 +15,12 @@
 .bloquesdatos h2 {
     font-size: 40px;
     color: white;
-    /* Cambiar el color del número a blanco */
     margin-top: 20px;
 }
 
 .bloquesdatos h3 {
     font-size: 15px;
     color: #ffffff;
-    /* Color blanco para el texto "Usuarios" */
     margin-top: 20px;
 }
 

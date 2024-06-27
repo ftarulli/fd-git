@@ -45,7 +45,7 @@ export const SidebarAdmin = ({ setActiveTable }) => {
 
 	const handleSaveChanges = () => {
 		setIsModalOpen(false);
-		setIsProfileOpen(false); // Cierra el menú de perfil después de guardar cambios
+		setIsProfileOpen(false);
 	};
 
 	return (
@@ -90,7 +90,7 @@ export const SidebarAdmin = ({ setActiveTable }) => {
 				</div>
 			</div>
 			<div className={`admin-main-content ${isCollapsed ? 'collapsed' : ''}`}>
-				{/* The rest of your main content goes here */}
+			
 			</div>
 			{isModalOpen && (
 				<div className="admin-modal">

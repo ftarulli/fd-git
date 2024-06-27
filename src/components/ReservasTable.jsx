@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import PropTypes from 'prop-types'; // Importa PropTypes
+import PropTypes from 'prop-types';
 import Table from 'react-bootstrap/Table';
 import '../css/ReservasTable.css';
 import apiTest from '../api/testApi';

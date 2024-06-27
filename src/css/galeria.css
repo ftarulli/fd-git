@@ -5,7 +5,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.26);
-  /* Opacidad del 50% (0.5) */
 }
 
 body::after {
@@ -16,7 +15,6 @@ body::after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  /* Asegura que el fondo no esté sobre los demás elementos */
 }
 
 .slider-container {
@@ -27,7 +25,6 @@ body::after {
 .slider {
   display: flex;
   gap: 43px;
-  /* Espacio entre cada imagen */
 }
 
 .slider img {
@@ -48,11 +45,9 @@ body::after {
 
 .slider-image {
   flex: 0 0 auto;
-  /* Evita que las imágenes se redimensionen automáticamente */
   max-width: 100%;
   height: auto;
   margin-right: 10px;
-  /* Ajusta el margen entre imágenes según sea necesario */
 }
 
 .slider-container-wrapper {
@@ -66,20 +61,14 @@ body::after {
   height: 328px;
   margin: 0 auto;
   border-radius: 5px;
-  /* Borde redondeado */
   overflow: hidden;
-  /* Evita que las imágenes se desborden del contenedor */
 }
 
 .title {
   text-align: center;
-  /* Centra el texto horizontalmente */
   color: rgb(255, 255, 255);
-  /* Color del texto */
   font-size: 2rem;
-  /* Tamaño de la fuente */
   margin-bottom: 10px;
-  /* Margen inferior */
   font-family: "Inter";
   font-weight: 600;
   font-size: 60px;
@@ -87,13 +76,9 @@ body::after {
 
 .subtitle {
   text-align: center;
-  /* Centra el texto horizontalmente */
   color: orange;
-  /* Color del texto */
   font-size: 1.5rem;
-  /* Tamaño de la fuente */
   margin-bottom: 20px;
-  /* Margen inferior */
   font-family: "Great Vibes";
   font-weight: 200;
   font-size: 50px;
@@ -102,7 +87,6 @@ body::after {
 
 .orange-text {
   color: orange;
-  /* Color naranja */
 }
 
 /* Estilos específicos del modal de la galería */
@@ -113,20 +97,16 @@ body::after {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  /* Fondo oscuro con opacidad */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  /* Asegura que el modal esté en la parte superior */
 }
 
 .galeria-modal-content {
   position: relative;
   width: 90%;
-  /* Ajusta el ancho del modal según sea necesario */
   max-height: 90%;
-  /* Ajusta la altura máxima del modal según sea necesario */
   overflow: auto;
 }
 
@@ -134,11 +114,8 @@ body::after {
   display: block;
   margin: 0 auto;
   width: 30%;
-  /* Hace que la imagen ocupe todo el ancho disponible en el modal */
   height: auto;
-  /* Permite que la altura de la imagen se ajuste automáticamente */
   border-radius: 20px;
-  /* Agrega un borde redondeado a la imagen */
 }
 
 .galeria-close {
@@ -158,11 +135,9 @@ body::after {
   object-fit: cover;
 }
 
-/* @media query para dispositivos móviles */
 @media (max-width: 768px) {
   .slider-container .slick-slide {
     padding: 0;
-    /* Elimina el espacio entre las imágenes en dispositivos móviles */
     margin-left: 5px;
   }
 }
