@@ -1,0 +1,57 @@
+.imagenFondo {
+  background-image: url("src/assets/imgContacto/fondo.jpeg");
+  /* Ruta relativa de la imagen de fondo */
+  min-height: 100vh;
+  /* Cambiado de height a min-height */
+  background-size: cover;
+  /* Ajustar tamaño de la imagen para cubrir el contenedor */
+  background-repeat: no-repeat;
+}
+
+.fondoDiv1 {
+  position: absolute;
+  left: 470px;
+  top: 350px;
+  color: #000000;
+}
+
+.icono-social {
+  width: 30px;
+  /* Ancho deseado */
+  height: auto;
+  /* Altura automática para mantener la proporción */
+  margin-right: 20px;
+  /* Espacio entre los iconos */
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .icono-social {
+    display: flex;
+    /* Mostrar los iconos en un flex container */
+    justify-content: center;
+    /* Centrar horizontalmente los iconos */
+    gap: 20px;
+    /* Espacio entre los iconos */
+    margin: 20px auto;
+    /* Centrar horizontalmente */
+  }
+
+  /* Ajustes para la caja contenedora */
+  .fondoDiv1 {
+    position: absolute;
+    left: 50%;
+    /* Ajusta la posición horizontal al centro */
+    top: 50%;
+    /* Ajusta la posición vertical al centro */
+    transform: translate(-50%, -50%);
+    /* Centra el elemento */
+    text-align: center;
+    /* Centra el texto */
+    padding: 50px;
+    /* Añade espacio interno a la caja contenedora */
+  }
+
+}

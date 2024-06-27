@@ -1,0 +1,35 @@
+/* Estilos para el contador de arriba de la pagina */
+.ControlNumbers {
+    width: 80vw;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloquesdatos {
+    width: 141px;
+    height: 141px;
+    text-align: center;
+}
+
+.bloquesdatos h2 {
+    font-size: 40px;
+    color: white;
+    /* Cambiar el color del número a blanco */
+    margin-top: 20px;
+}
+
+.bloquesdatos h3 {
+    font-size: 15px;
+    color: #ffffff;
+    /* Color blanco para el texto "Usuarios" */
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .Panel {
+        margin-top: 0px;
+        margin-left: 80px;
+    }
+}

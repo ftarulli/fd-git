@@ -1,0 +1,67 @@
+.color {
+  background-color: #00000000;
+  /* Fondo transparente */
+  font-family: "Inter", "Work Sans";
+  letter-spacing: 0.3px;
+  /* Espacio entre letras */
+}
+
+.color .nav-link {
+  color: #ffffff;
+  /* Color de texto blanco */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  font-weight: 300;
+  /* Grosor regular */
+  margin-right: 20px;
+  /* Espacio entre enlaces */
+}
+
+.color .nav-link:hover {
+  color: orange;
+  /* Color de texto naranja al hacer hover */
+  font-weight: 500;
+  /* Grosor del texto al hacer hover */
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:active,
+.navbar-nav .show>.nav-link {
+  color: orange !important;
+  /* Color de texto naranja para enlaces activos */
+  font-weight: 500;
+  /* Grosor del texto para enlaces activos */
+}
+
+/* Estilos específicos para Iniciar Sesión, Registrarse y Cerrar Sesión */
+.color .nav-link.login-register {
+  margin-right: 10px;
+  /* Ajuste de margen para separar los enlaces */
+}
+
+.color .nav-link.login-register:hover {
+  color: orange;
+  /* Color de texto naranja al hacer hover */
+}
+
+.color .nav-link.logout {
+  color: #ffffff;
+  /* Color de texto blanco */
+  margin-left: 10px;
+  /* Ajuste de margen para separar los enlaces */
+}
+
+.color .nav-link.logout:hover {
+  color: orange;
+  /* Color de texto naranja al hacer hover */
+}
+
+.admin-button {
+  background-color: orange;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 10px;
+  /* Ajuste de margen para separar el botón */
+}
