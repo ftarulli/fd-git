@@ -2,6 +2,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/ErrorPage.css';
 
+import errorImage from '../assets/img-404/Frame (1).png';
+
 export const ErrorPage = () => {
 	return (
 		<Container fluid className="error-container imagenFondo">
@@ -11,7 +13,7 @@ export const ErrorPage = () => {
 						<h1 className="texto">Error 404</h1>
 						<h3 className="lead texto1">Página no encontrada</h3>
 						<p className="texto2">
-							Lo sentimos, no pudimos encontrar la página que estás buscando
+							Lo sentimos, no pudimos encontrar la página que estás buscando.
 						</p>
 						<Button variant="warning" className="boton" href="/">
 							Volver al Inicio
@@ -21,7 +23,7 @@ export const ErrorPage = () => {
 			</Row>
 			<div className="error-image">
 				<img
-					src="src\assets\img-404\Frame (1).png"
+					src={errorImage}
 					alt="404 Error"
 					className="img-fluid"
 				/>

@@ -6,11 +6,11 @@ import { Galeria } from "../pages/Galeria";
 import { Login } from "../pages/Login";
 import { Registro } from "../pages/Registro";
 import { SobreNosotros } from "../pages/SobreNosotros";
-import ErrorPage from "../pages/ErrorPage";
 import { Reservas } from "../pages/Reservas";
 import { AdminPage } from "../pages/AdminPage";
 import { Footer } from "../components/Footer";
 import { Navegador } from "../components/Navegador";
+import ErrorPage from "../pages/ErrorPage";
 
 
 export const AppRouter = () => {
