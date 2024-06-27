@@ -7,6 +7,9 @@ import '../css/reservas.css';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import testApi from '../api/testApi';
+import backgroundImg from '../assets/img-reservas/plato.jpeg';
+
+
 
 export const Reservas = () => {
     const [name, setName] = useState('');
@@ -88,8 +91,7 @@ export const Reservas = () => {
         <div
             className="background-image"
             style={{
-                backgroundImage:
-                    'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.10)), url("src/assets/img-reservas/plato.jpeg")',
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.10)), url(${backgroundImg})`,
                 marginTop: '-50px',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',

@@ -6,6 +6,12 @@ import { useNavigate } from 'react-router-dom';
 import '../css/registro.css';
 import testApi from '../api/testApi';
 
+import image1 from '../assets/img-registro/chef-taking-pizza-out-woodburning-oven-old-cafe-city-center-small-local-business.jpg';
+import image2 from '../assets/img-registro/chef-working-together-professional-kitchen.jpg';
+import image3 from '../assets/img-registro/group-friends-eating-restaurant.jpg';
+import image4 from '../assets/img-registro/medium-shot-woman-working-luxury-restaurant.jpg';
+import image5 from '../assets/img-registro/woman-eating-pasta-italian-restaurant.jpg';
+
 export const Registro = () => {
 	const navigate = useNavigate();
 	const [index, setIndex] = useState(0);
@@ -14,12 +20,14 @@ export const Registro = () => {
 		setIndex(selectedIndex);
 	};
 
-	const [nombre, setNombre] = useState('');
-	const [apellido, setApellido] = useState('');
-	const [mail, setMail] = useState('');
-	const [password, setPassword] = useState('');
-	const [confirmPassword, setConfirmPassword] = useState('');
-	const [aceptaTerminos, setAceptaTerminos] = useState(false);
+	const [formData, setFormData] = useState({
+		nombre: '',
+		apellido: '',
+		mail: '',
+		password: '',
+		confirmPassword: '',
+		aceptaTerminos: false,
+	});
 
 	const registroComplete = async (nombre, apellido, mail, password) => {
 		try {
@@ -32,15 +40,15 @@ export const Registro = () => {
 
 			alert('Registro Correcto');
 
-			// Limpiar campos después del registro exitoso
-			setNombre('');
-			setApellido('');
-			setMail('');
-			setPassword('');
-			setConfirmPassword('');
-			setAceptaTerminos(false);
+			setFormData({
+				nombre: '',
+				apellido: '',
+				mail: '',
+				password: '',
+				confirmPassword: '',
+				aceptaTerminos: false,
+			});
 
-			// Redirigimos a la pagina de login
 			navigate('/login');
 		} catch (error) {
 			const errorMsg =
@@ -52,9 +60,9 @@ export const Registro = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
+		const { nombre, apellido, mail, password, confirmPassword, aceptaTerminos } = formData;
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-		//Validaciones necesarias para registrarse
 		if (!nombre || !apellido || !mail || !password || !confirmPassword) {
 			return alert('Todos los campos son obligatorios');
 		} else if (nombre.length < 2 || nombre.length > 25) {
@@ -76,131 +84,144 @@ export const Registro = () => {
 		registroComplete(nombre, apellido, mail, password);
 	};
 
+	const handleChange = (e) => {
+		const { name, value, checked, type } = e.target;
+		setFormData({
+			...formData,
+			[name]: type === 'checkbox' ? checked : value,
+		});
+	};
+
 	return (
-		<div className="contenedor-registro">
-			<Carousel activeIndex={index} onSelect={handleSelect} className="carrousel">
-				<Carousel.Item>
-					<img
-						className="d-block w-100"
-						src="src\assets\img-registro\chef-taking-pizza-out-woodburning-oven-old-cafe-city-center-small-local-business.jpg"
-						alt="First slide"
-					/>
-					<Carousel.Caption className="caption-right"></Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img
-						className="d-block w-100"
-						src="src\assets\img-registro\chef-working-together-professional-kitchen.jpg"
-						alt="Second slide"
-					/>
-					<Carousel.Caption className="caption-right"></Carousel.Caption>
-				</Carousel.Item>
-				{/* Agrega más elementos Carousel.Item según sea necesario */}
-				<Carousel.Item>
-					<img
-						className="d-block w-100"
-						src="src\assets\img-registro\group-friends-eating-restaurant.jpg"
-						alt="Third slide"
-					/>
-					<Carousel.Caption className="caption-right"></Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img
-						className="d-block w-100"
-						src="src\assets\img-registro\medium-shot-woman-working-luxury-restaurant.jpg"
-						alt="Third slide"
-					/>
-					<Carousel.Caption className="caption-right"></Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img
-						className="d-block w-100"
-						src="src\assets\img-registro\woman-eating-pasta-italian-restaurant.jpg"
-						alt="Third slide"
-					/>
-					<Carousel.Caption className="caption-right"></Carousel.Caption>
-				</Carousel.Item>
-			</Carousel>
-			<div className="cuadrado-blanco">
-				<div className="info-contenedor">
-					<div>
-						<h1>Regístrate</h1>
-						<p>
-							¿Ya estás registrado?{' '}
-							<a href="/login" className="iniciar-sesion">
-								Iniciar Sesión
-							</a>{' '}
-							<img src="src/assets/img-registro/Vector.png" alt="Icono de Usuario" />
-						</p>
-					</div>
-					<br />
-					<Form onSubmit={handleSubmit}>
-						<Form.Group className="mb-3" controlId="nombre">
-							<Form.Label>Nombre</Form.Label>
-							<Form.Control
-								type="text"
-								placeholder="Ejemplo: Juan Pablo"
-								value={nombre}
-								onChange={(e) => setNombre(e.target.value)}
-							/>
-						</Form.Group>
+        <div className="contenedor-registro">
+            <Carousel activeIndex={index} onSelect={handleSelect} className="carrousel">
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={image1}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption className="caption-right"></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={image2}
+                        alt="Second slide"
+                    />
+                    <Carousel.Caption className="caption-right"></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={image3}
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption className="caption-right"></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={image4}
+                        alt="Fourth slide"
+                    />
+                    <Carousel.Caption className="caption-right"></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={image5}
+                        alt="Fifth slide"
+                    />
+                    <Carousel.Caption className="caption-right"></Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+            <div className="cuadrado-blanco">
+                <div className="info-contenedor">
+                    <div>
+                        <h1>Regístrate</h1>
+                        <p>
+                            ¿Ya estás registrado?{' '}
+                            <a href="/login" className="iniciar-sesion">
+                                Iniciar Sesión
+                            </a>{' '}
+                            <img src="src/assets/img-registro/Vector.png" alt="Icono de Usuario" />
+                        </p>
+                    </div>
+                    <br />
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group className="mb-3" controlId="nombre">
+                            <Form.Label>Nombre</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Ejemplo: Juan Pablo"
+                                name="nombre"
+                                value={formData.nombre}
+                                onChange={handleChange}
+                            />
+                        </Form.Group>
 
-						<Form.Group className="mb-3" controlId="apellido">
-							<Form.Label>Apellido</Form.Label>
-							<Form.Control
-								type="text"
-								placeholder="Ejemplo: Pérez"
-								value={apellido}
-								onChange={(e) => setApellido(e.target.value)}
-							/>
-						</Form.Group>
+                        <Form.Group className="mb-3" controlId="apellido">
+                            <Form.Label>Apellido</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Ejemplo: Pérez"
+                                name="apellido"
+                                value={formData.apellido}
+                                onChange={handleChange}
+                            />
+                        </Form.Group>
 
-						<Form.Group className="mb-3" controlId="email">
-							<Form.Label>Correo Electrónico</Form.Label>
-							<Form.Control
-								type="email"
-								placeholder="Ejemplo: usuario@example.com"
-								value={mail}
-								onChange={(e) => setMail(e.target.value)}
-							/>
-						</Form.Group>
+                        <Form.Group className="mb-3" controlId="email">
+                            <Form.Label>Correo Electrónico</Form.Label>
+                            <Form.Control
+                                type="email"
+                                placeholder="Ejemplo: usuario@example.com"
+                                name="mail"
+                                value={formData.mail}
+                                onChange={handleChange}
+                            />
+                        </Form.Group>
 
-						<Form.Group className="mb-3" controlId="password">
-							<Form.Label>Contraseña</Form.Label>
-							<Form.Control
-								type="password"
-								placeholder="Ejemplo: contraseña123"
-								value={password}
-								onChange={(e) => setPassword(e.target.value)}
-							/>
-						</Form.Group>
+                        <Form.Group className="mb-3" controlId="password">
+                            <Form.Label>Contraseña</Form.Label>
+                            <Form.Control
+                                type="password"
+                                placeholder="Ejemplo: contraseña123"
+                                name="password"
+                                value={formData.password}
+                                onChange={handleChange}
+                            />
+                        </Form.Group>
 
-						<Form.Group className="mb-3" controlId="confirmPassword">
-							<Form.Label>Confirmar Contraseña</Form.Label>
-							<Form.Control
-								type="password"
-								placeholder="Confirmar Contraseña"
-								value={confirmPassword}
-								onChange={(e) => setConfirmPassword(e.target.value)}
-							/>
-						</Form.Group>
+                        <Form.Group className="mb-3" controlId="confirmPassword">
+                            <Form.Label>Confirmar Contraseña</Form.Label>
+                            <Form.Control
+                                type="password"
+                                placeholder="Confirmar Contraseña"
+                                name="confirmPassword"
+                                value={formData.confirmPassword}
+                                onChange={handleChange}
+                            />
+                        </Form.Group>
 
-						<Form.Group className="mb-3" controlId="aceptaTerminos">
-							<Form.Check
-								type="checkbox"
-								label="Estoy de acuerdo con los términos y condiciones"
-								checked={aceptaTerminos}
-								onChange={(e) => setAceptaTerminos(e.target.checked)}
-							/>
-						</Form.Group>
+                        <Form.Group className="mb-3" controlId="aceptaTerminos">
+                            <Form.Check
+                                type="checkbox"
+                                label="Estoy de acuerdo con los términos y condiciones"
+                                name="aceptaTerminos"
+                                checked={formData.aceptaTerminos}
+                                onChange={handleChange}
+                            />
+                        </Form.Group>
 
-						<Button className="custom-btn" type="submit">
-							Registrarse
-						</Button>
-					</Form>
-				</div>
-				<hr />
-			</div>
-		</div>
-	);
+                        <Button className="custom-btn" type="submit">
+                            Registrarse
+                        </Button>
+                    </Form>
+                </div>
+                <hr />
+            </div>
+        </div>
+    );
 };
