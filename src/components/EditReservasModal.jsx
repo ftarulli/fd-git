@@ -1,7 +1,7 @@
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import PropTypes from 'prop-types'; // Importa PropTypes
+import PropTypes from 'prop-types';
 import '../css/modalreservas.css';
 import { InputGroup } from 'react-bootstrap';
 

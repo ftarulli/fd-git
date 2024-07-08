@@ -13,7 +13,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  /* Fija la imagen de fondo */
   height: 70vh;
   width: 100%;
   filter: brightness(10%);

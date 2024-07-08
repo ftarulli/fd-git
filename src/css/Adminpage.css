@@ -6,14 +6,11 @@
 }
 
 
-
 @media (max-width: 600px) {
     .ContenedorAdmin {
         margin-left: 0vw;
     }
 }
-
-
 
 
 .ContenedorAdmin {
@@ -22,7 +19,5 @@
 }
 
 .shifted {
-    /* Ajusta el margen izquierdo cuando el sidebar está abierto */
     margin-left: 250px;
-    /* Ajusta este valor según el ancho de tu sidebar */
 }
