@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import  { useState } from 'react';
 import Swal from 'sweetalert2';
 import { MDBBtn, MDBCol, MDBInput, MDBRow } from 'mdb-react-ui-kit';
 import DatePicker from 'react-datepicker';
@@ -8,8 +8,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import testApi from '../api/testApi';
 import backgroundImg from '../assets/img-reservas/plato.jpeg';
-
-
+import { setHours, setMinutes } from 'date-fns';
 
 export const Reservas = () => {
     const [name, setName] = useState('');
@@ -23,6 +22,15 @@ export const Reservas = () => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const isValidEmail = emailRegex.test(email);
 
+    const nameRegex = /^[a-zA-Z\s]*$/;
+    const isValidName = nameRegex.test(name);
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Ajustamos a la medianoche del día actual para comparaciones de fecha
+
+    const minTime = setHours(setMinutes(new Date(), 30), 9); // 09:30 AM
+    const maxTime = setHours(setMinutes(new Date(), 30), 23); // 11:30 PM
+
     const tiempoFormat = (dat, tim) => {
         const combinar = new Date(dat);
         combinar.setHours(tim.getHours());
@@ -33,10 +41,16 @@ export const Reservas = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!isValidEmail || !name || !date || !time || !comment || !phone || !cant) {
+        if (!isValidEmail || !isValidName || !date || !time || !comment || !phone || !cant) {
             alert('Por favor completa todos los campos correctamente');
             return;
         }
+
+        if (date < today) {
+            alert('No se puede hacer una reserva en una fecha anterior a la actual');
+            return;
+        }
+
         const tiempo = tiempoFormat(date, time);
 
         try {
@@ -106,7 +120,6 @@ export const Reservas = () => {
                     <MDBCol md="12">
                         <div className="text-center mb-4">
                             <h3 className="text-warning">Reservaciones</h3>
-
                             <h1 className="mb-3" style={{ color: '#FF9800' }}>
                                 Reserva tu <span style={{ color: '#FFF' }}>mesa</span>
                             </h1>
@@ -115,18 +128,24 @@ export const Reservas = () => {
                         <form className="mb-0" onSubmit={handleSubmit}>
                             <MDBRow className="mb-4">
                                 <MDBCol md="6">
-                                    <label className="form-label text-white">
-                                        Nombre y Apellido *
-                                    </label>
-                                    <MDBInput
-                                        type="text"
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value)}
-                                        className="text-dark"
-                                        style={{ backgroundColor: '#FFF', borderColor: '#555' }}
-                                        placeholder="Ejemplo: Juan Pablo Martinez"
-                                    />
-                                </MDBCol>
+    <label className="form-label text-white">
+        Nombre y Apellido *
+    </label>
+    <MDBInput
+        type="text"
+        value={name}
+        onChange={(e) => {
+            if (/^[a-zA-Z\s]*$/.test(e.target.value)) {
+                setName(e.target.value);
+            }
+        }}
+        className="text-dark"
+        style={{ backgroundColor: '#FFF', borderColor: '#555' }}
+        placeholder="Ejemplo: Juan Pablo Martinez"
+        title="Solo se permiten letras y espacios"
+    />
+</MDBCol>
+
                                 <MDBCol md="6">
                                     <label className="form-label text-white">
                                         Número de teléfono *
@@ -180,6 +199,7 @@ export const Reservas = () => {
                                         dateFormat="dd/MM/yyyy"
                                         autoComplete="off"
                                         calendarClassName="orange-calendar"
+                                        minDate={today}
                                     />
                                 </MDBCol>
                             </MDBRow>
@@ -196,6 +216,8 @@ export const Reservas = () => {
                                         timeIntervals={30}
                                         timeCaption="Hora"
                                         dateFormat="h:mm aa"
+                                        minTime={minTime}
+                                        maxTime={maxTime}
                                         className="form-control text-white date-picker"
                                         style={{ backgroundColor: '#FFF', borderColor: '#555' }}
                                     />
