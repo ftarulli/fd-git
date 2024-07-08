@@ -14,86 +14,95 @@ import image5 from '../assets/img-registro/woman-eating-pasta-italian-restaurant
 import icon from '../assets/img-registro/Vector.png';
 
 export const Registro = () => {
-	const navigate = useNavigate();
-	const [index, setIndex] = useState(0);
+    const navigate = useNavigate();
+    const [index, setIndex] = useState(0);
 
-	const handleSelect = (selectedIndex) => {
-		setIndex(selectedIndex);
-	};
+    const handleSelect = (selectedIndex) => {
+        setIndex(selectedIndex);
+    };
 
-	const [formData, setFormData] = useState({
-		nombre: '',
-		apellido: '',
-		mail: '',
-		password: '',
-		confirmPassword: '',
-		aceptaTerminos: false,
-	});
+    const [formData, setFormData] = useState({
+        nombre: '',
+        apellido: '',
+        mail: '',
+        password: '',
+        confirmPassword: '',
+        aceptaTerminos: false,
+    });
 
-	const registroComplete = async (nombre, apellido, mail, password) => {
-		try {
-			const response = await testApi.post('/user/register', {
-				nombre: nombre.trim(),
-				apellido: apellido.trim(),
-				mail: mail.trim(),
-				password: password.trim(),
-			});
+    const registroComplete = async (nombre, apellido, mail, password) => {
+        try {
+            const response = await testApi.post('/user/register', {
+                nombre: nombre.trim(),
+                apellido: apellido.trim(),
+                mail: mail.trim(),
+                password: password.trim(),
+            });
 
-			alert('Registro Correcto');
+            alert('Registro Correcto');
 
-			setFormData({
-				nombre: '',
-				apellido: '',
-				mail: '',
-				password: '',
-				confirmPassword: '',
-				aceptaTerminos: false,
-			});
+            setFormData({
+                nombre: '',
+                apellido: '',
+                mail: '',
+                password: '',
+                confirmPassword: '',
+                aceptaTerminos: false,
+            });
 
-			navigate('/login');
-		} catch (error) {
-			const errorMsg =
-				error.response.data.msg || 'Error en el registro. Intenta nuevamente.';
-			return alert(errorMsg);
-		}
-	};
+            navigate('/login');
+        } catch (error) {
+            const errorMsg =
+                error.response.data.msg || 'Error en el registro. Intenta nuevamente.';
+            return alert(errorMsg);
+        }
+    };
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-		const { nombre, apellido, mail, password, confirmPassword, aceptaTerminos } = formData;
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const { nombre, apellido, mail, password, confirmPassword, aceptaTerminos } = formData;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const nameRegex = /^[a-zA-Z\s]*$/;
 
-		if (!nombre || !apellido || !mail || !password || !confirmPassword) {
-			return alert('Todos los campos son obligatorios');
-		} else if (nombre.length < 2 || nombre.length > 25) {
-			return alert('El nombre debe tener entre 2 y 25 caracteres');
-		} else if (apellido.length < 2 || apellido.length > 25) {
-			return alert('El apellido debe tener entre 2 y 25 caracteres');
-		} else if (!emailRegex.test(mail)) {
-			return alert('Por favor ingrese un email valido');
-		} else if (password.length < 8) {
-			return alert('La contraseña debe tener al menos 8 caracteres');
-		} else if (password !== confirmPassword) {
-			return alert('Las contraseñas no coinciden');
-		}
+        if (!nombre || !apellido || !mail || !password || !confirmPassword) {
+            return alert('Todos los campos son obligatorios');
+        } else if (nombre.length < 2 || nombre.length > 25 || !nameRegex.test(nombre)) {
+            return alert('El nombre debe tener entre 2 y 25 caracteres y solo puede contener letras');
+        } else if (apellido.length < 2 || apellido.length > 25 || !nameRegex.test(apellido)) {
+            return alert('El apellido debe tener entre 2 y 25 caracteres y solo puede contener letras');
+        } else if (!emailRegex.test(mail)) {
+            return alert('Por favor ingrese un email válido');
+        } else if (password.length < 8) {
+            return alert('La contraseña debe tener al menos 8 caracteres');
+        } else if (password !== confirmPassword) {
+            return alert('Las contraseñas no coinciden');
+        }
 
-		if (!aceptaTerminos) {
-			return alert('Debes aceptar los términos y condiciones.');
-		}
+        if (!aceptaTerminos) {
+            return alert('Debes aceptar los términos y condiciones.');
+        }
 
-		registroComplete(nombre, apellido, mail, password);
-	};
+        registroComplete(nombre, apellido, mail, password);
+    };
 
-	const handleChange = (e) => {
-		const { name, value, checked, type } = e.target;
-		setFormData({
-			...formData,
-			[name]: type === 'checkbox' ? checked : value,
-		});
-	};
+    const handleChange = (e) => {
+        const { name, value, checked, type } = e.target;
 
-	return (
+        if (name === 'nombre' || name === 'apellido') {
+            const nameRegex = /^[a-zA-Z\s]*$/;
+            if (!nameRegex.test(value)) {
+                return;
+            }
+        }
+
+        setFormData({
+            ...formData,
+            [name]: type === 'checkbox' ? checked : value,
+        });
+    };
+
+    return (
         <div className="contenedor-registro">
             <Carousel activeIndex={index} onSelect={handleSelect} className="carrousel">
                 <Carousel.Item>
