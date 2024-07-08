@@ -247,3 +247,15 @@ body {
 .carousel-control-next {
     display: none;
 }
+
+/* Oculta la barra de desplazamiento horizontal y vertical */
+.contenedor-registro {
+  overflow: hidden;
+}
+
+/* Para asegurar que el contenido no se recorte, habilita el desplazamiento automático */
+.cuadrado-blanco {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
