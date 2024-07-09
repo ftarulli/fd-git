@@ -1,4 +1,3 @@
-/* Estilos para el modal */
 .modal-content {
   border-radius: 10px;
   background-color: #ffffff;
@@ -23,7 +22,6 @@
   border-bottom-right-radius: 10px;
 }
 
-/* Estilos para los inputs del formulario dentro del modal */
 .modal-body .form-group {
   margin-bottom: 20px;
 }
@@ -36,7 +34,6 @@
   border-radius: 5px;
 }
 
-/* Estilos para el botón de submit */
 .modal-body button[type="submit"] {
   background-color: #007bff;
   color: #fff;

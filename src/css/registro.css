@@ -40,7 +40,6 @@ body {
   object-fit: cover;
 }
 
-/* Estilos para el cuadrado blanco */
 .cuadrado-blanco {
   position: center;
   top: 50%;
@@ -61,7 +60,6 @@ body {
   color: #222222;
 }
 
-/* Estilos para el título "Regístrate" dentro del cuadrado blanco */
 .cuadrado-blanco h1 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -75,7 +73,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Estilos para el primer párrafo ("Ingresa tu información") */
 .cuadrado-blanco .info-grande {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -84,7 +81,6 @@ body {
   color: #ffffff;
 }
 
-/* Estilos para el contenedor del segundo párrafo */
 .cuadrado-blanco .info-chica-container {
   max-width: 300px;
   margin-top: 20px;
@@ -248,12 +244,10 @@ body {
     display: none;
 }
 
-/* Oculta la barra de desplazamiento horizontal y vertical */
 .contenedor-registro {
   overflow: hidden;
 }
 
-/* Para asegurar que el contenido no se recorte, habilita el desplazamiento automático */
 .cuadrado-blanco {
   overflow-y: auto;
   overflow-x: hidden;

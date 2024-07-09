@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/*Sección principal*/
 
 
 
@@ -36,7 +35,6 @@
   padding-right: 4rem;
 }
 
-/* Columna íconos */
 .container-iconos-principal {
   display: flex;
   flex-direction: column;
@@ -68,7 +66,6 @@
   color: #ffffff;
 }
 
-/* Columna texto */
 
 .container-texto-principal {
   color: #ffffff;
@@ -103,13 +100,11 @@
   color: #ff9f0d;
 }
 
-/* Columna imagen plato */
 
 .imagen-principal-plato {
   width: 100%;
 }
 
-/*Sección elegirnos*/
 .container-elegirnos {
   color: #ffffff;
   margin: 5rem;
@@ -196,7 +191,6 @@
   font-size: 1.2rem;
 }
 
-/*Sección Info*/
 
 .container-info {
   background-image: url(../assets/img_home/fondo4.png);
@@ -244,7 +238,6 @@
   font-weight: 700;
 }
 
-/*Sección Chefs*/
 
 .container-chefs-fondo {
   background-image: url(../assets/img_home/fondo1.png);
@@ -299,7 +292,6 @@
   text-align: center;
 }
 
-/*Sección Testimonios Clientes */
 
 .container-testimonios {
   background-image: url(../assets/img_home/fondo2.png);
@@ -376,7 +368,6 @@
   padding: 1rem;
 }
 
-/*Sección Banner*/
 
 .container-banner {
   background-image: url(../assets/img_home/fondo5.png);
@@ -416,7 +407,6 @@
   font-size: 1rem;
 }
 
-/*Sección Nuestros platos */
 
 .container-platos {
   width: 95%;
@@ -490,10 +480,8 @@
 
 
 
-/*Media queries*/
 @media screen and (max-width: 576px) {
 
-  /*Seccion principal*/
   .container-columnas {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -530,7 +518,6 @@
     margin-left: 3rem;
   }
 
-  /*Seccion elegirnos*/
 
   .imagen-grupo-elegirnos {
     width: 10%;
@@ -561,7 +548,6 @@
     margin-left: 0.2rem;
   }
 
-  /*Seccion Info*/
 
   .container-info {
     display: none;
@@ -586,7 +572,6 @@
     font-size: 1.9rem;
   }
 
-  /*Seccion Chefs*/
 
   .container-chefs-detalle {
     padding-top: 2rem;
@@ -608,7 +593,6 @@
     padding-right: 1rem;
   }
 
-  /*Sección testimonios*/
 
   .container-testimonios {
     display: none;
@@ -636,7 +620,6 @@
     font-size: 1.5rem;
   }
 
-  /*Sección platos*/
 
   .container-platos {
     margin-top: 12rem;

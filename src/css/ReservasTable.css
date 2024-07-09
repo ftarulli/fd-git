@@ -174,7 +174,6 @@
     }
 
     .shifted {
-        /* Centra el contenido cuando el sidebar está abierto en dispositivos móviles */
         margin-left: auto;
         margin-right: auto;
     }

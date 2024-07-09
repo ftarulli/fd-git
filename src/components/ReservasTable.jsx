@@ -35,7 +35,7 @@ export const ReservasTable = ({ sidebarOpen }) => {
 	}, [handleClickOutside]);
 
 	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true); // Agregamos esta función para abrir el modal
+	const handleShow = () => setShow(true); 
 
 	const listReservas = useCallback(async () => {
 		try {
@@ -107,7 +107,6 @@ export const ReservasTable = ({ sidebarOpen }) => {
 	);
 };
 
-// Definir validación de tipo para la propiedad sidebarOpen
 ReservasTable.propTypes = {
 	sidebarOpen: PropTypes.bool.isRequired,
 };

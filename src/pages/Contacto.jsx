@@ -2,7 +2,6 @@ import { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Contacto.css';
 
-// Importar las imágenes de redes sociales
 import TwitterIcon from '../assets/imgContacto/Twitter.png';
 import FacebookIcon from '../assets/imgContacto/Facebook.png';
 import TelegramIcon from '../assets/imgContacto/Social.png';
@@ -20,7 +19,6 @@ export const Contacto = () => {
                 <p>info@rincongourmet.com</p>
                 <p>Av. Principal 598 - Tucuman - Argentina</p>
 
-                {/* Iconos de redes sociales */}
                 <div className="redes-sociales">
                     <Link to="/404" className="red-social">
                         <img

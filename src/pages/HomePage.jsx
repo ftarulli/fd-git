@@ -27,13 +27,9 @@ const HomePage = () => {
 	});
 	return (
 		<div className="container-general">
-			{/*Sección principal */}
-			{/* Container Imagen fondo principal */}
 			<div className="container-imagen-principal"></div>
-			{/* Container principal */}
 			<div className="container-fluid container-principal">
 				<div className="row container-columnas">
-					{/* Columna íconos principal */}
 					<div className="col-10 col-md-2 container-iconos-principal">
 						<div className="linea-vertical-principal my-3"></div>
 						<div className="iconos-redes-principal">
@@ -51,7 +47,6 @@ const HomePage = () => {
 						</div>
 						<div className="linea-vertical-principal my-3"></div>
 					</div>
-					{/* Columna texto principal */}
 					<div className="col-10 col-md-6 container-texto-principal">
 						<h1 className="texto_uno">¡Es rápido y divertido!</h1>
 						<p className="parrafo_uno">
@@ -70,22 +65,18 @@ const HomePage = () => {
 							<button className="btn btn-warning boton-reserva">Reservar</button>
 						</Link>
 					</div>
-					{/* Columna imagen principal */}
 					<div className="col-10 offset-1 col-md-4 offset-md-0 container-imagen-plato">
 						<img src={principal} alt="" className="imagen-principal-plato" />
 					</div>
 				</div>
 			</div>
-			{/*Sección elegirnos */}
 			<div className="container-fluid container-elegirnos">
 				<div className="row container-filas-elegirnos">
-					{/* Columna grupo de imágenes */}
 					<div className="col-11 col-md-5">
 						<div className="imagen-grupo-elegirnos">
 							<img src={grupo} alt="" />
 						</div>
 					</div>
-					{/* Columna texto e iconos */}
 					<div className="col-10 col-md-5">
 						<div>
 							<p className="texto_uno">¿Por qué elegirnos?</p>
@@ -149,7 +140,6 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			{/*Sección info */}
 			<div className="container-info"></div>
 			<div className="container container-iconos-info">
 				<div className="row filas-iconos-info">
@@ -199,7 +189,6 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			{/*Sección Chefs */}
 			<div className="container-chefs-fondo"></div>
 
 			<div className="container-chefs">
@@ -235,7 +224,6 @@ const HomePage = () => {
 				</div>
 			</div>
 
-			{/*Sección Testimonios Clientes */}
 
 			<div className="container-testimonios"></div>
 
@@ -389,7 +377,6 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			{/*Sección Banner */}
 			<div className="container-banner"></div>
 
 			<div className="container container-texto-banner">
@@ -415,7 +402,6 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			{/*Sección Nuestros platos */}
 			<div className="container-platos">
 				<div className="row fila-card-texto">
 					<div className="col">

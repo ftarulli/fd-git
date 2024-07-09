@@ -1,6 +1,5 @@
 import '../css/sobrenosotros.css';
 
-// Importar las imágenes
 import BannerImage from '../assets/img-sobrenosotros/Sobre nosotros.png';
 import Image1 from '../assets/img-sobrenosotros/Group 1000002274.png';
 import Image2 from '../assets/img-sobrenosotros/Group 1000002276.png';
@@ -10,7 +9,6 @@ import Image4 from '../assets/img-sobrenosotros/Group 1000002278.png';
 export const SobreNosotros = () => {
     return (
         <div className="contenedor">
-            {/* Banner */}
             <div className="row filas">
                 <div className="col-12">
                     <div className="banner">
@@ -23,11 +21,8 @@ export const SobreNosotros = () => {
                 </div>
             </div>
 
-            {/* Contenedor de todas las secciones */}
             <div className="secciones">
-                {/* Sección 1: Texto e Imagen */}
                 <div className="row filas align-items-center">
-                    {/* Texto */}
                     <div className="col-10 col-md-6 align-self-center columna">
                         <div className="texto">
                             <div className="seccion1">
@@ -48,7 +43,6 @@ export const SobreNosotros = () => {
                             </div>
                         </div>
                     </div>
-                    {/* Imagen */}
                     <div className="col-10 col-md-6 align-self-center columna">
                         <div className="imagen">
                             <img
@@ -60,7 +54,6 @@ export const SobreNosotros = () => {
                     </div>
                 </div>
 
-                {/* Sección 2: Texto e Imagen */}
                 <div className="row filas">
                     <div className="col-10 col-md-6 order-md-0 align-self-center columna">
                         <div className="imagen">
@@ -72,7 +65,6 @@ export const SobreNosotros = () => {
                         </div>
                     </div>
 
-                    {/* Texto */}
                     <div className="col-10 col-md-6 order-md-1 align-self-center columna">
                         <div className="texto">
                             <div className="seccion2">
@@ -93,9 +85,7 @@ export const SobreNosotros = () => {
                     </div>
                 </div>
 
-                {/* Sección 3: Texto e Imagen */}
                 <div className="row filas">
-                    {/* Texto */}
                     <div className="col-10 col-md-6 align-self-center columna">
                         <div className="texto">
                             <div className="seccion3">
@@ -114,7 +104,6 @@ export const SobreNosotros = () => {
                             </div>
                         </div>
                     </div>
-                    {/* Imagen */}
                     <div className="col-10 col-md-6 align-self-center columna">
                         <div className="imagen">
                             <img
@@ -126,7 +115,6 @@ export const SobreNosotros = () => {
                     </div>
                 </div>
 
-                {/* Sección 4: Texto e Imagen */}
                 <div className="row filas">
                     <div className="col-10 col-md-6 order-md-0 align-self-center columna">
                         <div className="imagen">
@@ -137,7 +125,6 @@ export const SobreNosotros = () => {
                             />
                         </div>
                     </div>
-                    {/* Texto */}
                     <div className="col-10 col-md-6 order-md-1 align-self-center columna">
                         <div className="texto">
                             <div className="seccion4">
@@ -161,7 +148,6 @@ export const SobreNosotros = () => {
                 </div>
             </div>
 
-            {/* Final */}
             <div className="final">
                 <h1 className="titulo-final">Unite a nosotros</h1>
                 <h4 className="texto-final">

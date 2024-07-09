@@ -22,7 +22,6 @@ strong {
 	max-width: 800px;
 }
 
-/* reservas.css */
 
 .form-label {
 	display: block;
@@ -63,7 +62,6 @@ strong {
 	color: #FF9800 !important;
 }
 
-/* Estilos adicionales para el selector de número de comensales */
 select.form-select.text-white {
 	color: #ccc;
 	background-color: #3f3f3f;

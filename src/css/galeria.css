@@ -1,4 +1,3 @@
-/* galeria.css */
 
 body {
   background-size: cover;
@@ -89,7 +88,6 @@ body::after {
   color: orange;
 }
 
-/* Estilos específicos del modal de la galería */
 .galeria-modal-overlay {
   position: fixed;
   top: 0;

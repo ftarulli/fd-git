@@ -1,4 +1,3 @@
-/* Estilos para la tabla de usuarios */
 .Tabla_Usuarios {
     max-width: 85vw;
     min-width: 85vw;
@@ -53,7 +52,6 @@
     width: 7%;
 }
 
-/* Estilos para el desplegable que aparece al clickear los tres puntos */
 .menu-container {
     position: relative;
     display: inline-block;
